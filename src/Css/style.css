@@ -1,0 +1,210 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+ /* Menu sub reposive  */
+.menu-sub-responsive {
+    background-color: #F7F5F2;
+    bottom: 0;
+    width: 300px;
+    left: -500px;
+    transition: .4s;
+    display: none;
+}
+/* body:hover .menu-sub-responsive{
+    left: 0;
+    transition: .4s;
+} */
+.icon-menu-sub-responsive{
+    display: none;
+}
+.icon-menu-sub-responsive button{
+    font-size: 23px;
+}
+.menu-sub-responsive .close-menu-sub-reponsive button, .icon-menu-sub-responsive button{
+    border: none;
+    background-color: transparent;
+}
+.menu-sub-responsive .logo img{
+    width: 160px;
+}
+.menu-sub-responsive .menu ul{
+    list-style: none;
+}
+.menu-sub-responsive .menu ul li{
+    margin-bottom: 15px;
+    transition: .3s;
+}
+.menu-sub-responsive .menu ul .menu-sub-page-respon {
+    cursor: pointer;
+}
+.menu-sub-responsive .menu ul .menu-sub-page-respon span i{
+    font-size: 20px;
+}
+.menu-sub-responsive .menu ul li a{
+    text-decoration: none;
+    color: #043542;
+}
+.menu-sub-responsive .menu-responsive{
+    color: #043542;
+}
+.menu-sub-responsive .menu-responsive .menu-sub-page-respon .menu-mini-respon {
+    padding: 10px 10px 10px 5px ;
+}
+.menu-sub-responsive .menu-responsive .menu-sub-page-respon .menu-mini-respon li {
+    padding: 10px 0px 10px 10px ;
+    transition: .4s;
+}
+.dpnon{
+    display: none;
+}
+.click-menu-sub-respon{
+     left: 0;
+    transition: .4s;
+}
+/* End Menu sub reposive  */
+
+/* Menu Home Pc  */
+
+.menu-oppentime .menu ul {
+    list-style: none;
+}
+.menu-oppentime .menu ul li{
+    transition: .3s
+}
+.menu-oppentime .menu > ul > li:hover{
+    border-bottom: 1px solid #262626;
+    transition: .3s;
+}
+.menu-oppentime .menu ul li a {
+    text-decoration: none;
+    color: #262626;
+}
+.logo-menu-oppenTime .logo img {
+    width: 120px;
+}
+.banner-page{
+    z-index: -1;
+}
+.banner-page{
+    height: 400px;
+    overflow: hidden;
+    width: 100%;
+    opacity: .3;
+    background-color: #FDF5E6;
+    background-image: url(https://templatekit.jegtheme.com/naylish/wp-content/uploads/sites/221/2022/01/woman-coming-to-nail-artist-for-manicure.jpg);
+    background-position: 0px 73%;
+        background-repeat: no-repeat;
+    background-size: cover;
+}
+.menu-sub-page{
+    position: relative;
+}
+.menu-sub-page .menu-mini{
+    display: none;
+    position: absolute;
+    width: 180px;
+    background-color: white;
+    left: 0px;
+    top: 27px;
+    padding: 10px;
+}
+.menu-sub-page span i{
+    font-size: 25px;
+    font-weight: normal;
+    font-family: 'Poppins', sans-serif;
+}
+.menu-sub-page .menu-mini li{
+    transition: .4s;
+    padding: 10px ;
+}
+.menu-sub-page:hover .menu-mini{
+    display: block; 
+    cursor: pointer;
+}
+.menu-mini li:hover,  .menu-sub-responsive .menu-responsive .menu-sub-page-respon .menu-mini-respon li:hover{
+    transition: .4s;
+    background-color: #043542 !important;
+    color: white;
+}
+.menu-mini li:hover > a, .menu-sub-responsive .menu-responsive .menu-sub-page-respon .menu-mini-respon li:hover > a{
+     transition: .4s;
+    color: white !important;
+}
+.logo-menu-oppenTime .menu-oppentime .oppentime-icon{
+    font-size: 25px;
+}
+.logo-menu-oppenTime .menu-oppentime .oppentime-icon i{
+    cursor: pointer;
+}
+.logo-menu-oppenTime .menu-oppentime .oppentime-icon > button {
+    border: none;
+    background-color: transparent;
+}
+.oppenTime-box{
+    position: fixed;
+    background-color: #000000da;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    transition:1.5s;
+    width: 0%;
+    cursor: pointer;
+}
+.oppenTime-box .information-oppenTime{
+    position: absolute;
+    background-color: white;
+    right: -500px;
+    transition:1s;
+    width: 500px;
+    height: 100%;
+    padding: 30px;
+}
+.oppenTime-box .information-oppenTime .logo img {
+    width: 230px;
+}
+.oppenTime-box-Click{
+width: 100%;
+transition:.5s;
+}
+.information-oppenTime-Click{
+transition: 2.5s;
+ right: 0 !important;
+}
+.oppenTime-box .information-oppenTime .opening-hours{
+    margin: 0 auto;
+}
+.oppenTime-box .information-oppenTime .map-phone-email .icon i{
+    color: #C6641B;
+    font-size: 20px;
+}
+.oppenTime-box .information-oppenTime .social-network{
+    color: #C6641B;
+    font-size: 25px;
+}
+.oppenTime-box .information-oppenTime .close-information-oppenTime button {
+        border: none;
+    background-color: transparent;
+}
+/* End Menu Home Pc  */
+
+/* responsive  */
+@media (max-width: 1000px) {
+  .logo-menu-oppenTime .menu-oppentime{
+    display: none !important;
+}
+.icon-menu-sub-responsive{
+    display: block;
+}
+.menu-sub-responsive{
+    display: block;
+}
+.oppenTime-box{
+    display: none;
+}
+}
+
+/* end responsive  */
