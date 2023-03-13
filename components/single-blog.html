@@ -28,7 +28,7 @@
   
   <body>
     <div class="box-main">
-      <header>
+       <header>
         <div class="header-menutop-banner">
           <div
             class="logo-menu-oppenTime d-flex justify-content-between align-items-center container position-relative"
@@ -43,23 +43,23 @@
             <div class="menu-oppentime d-flex gap-5">
               <div class="menu">
                 <ul class="d-flex gap-3">
-                  <li><a href="">HOME</a></li>
-                  <li><a href="">ABOUT US</a></li>
-                  <li><a href="">SERVICES</a></li>
+                  <li><a href="headerHomePage.html">HOME</a></li>
+                  <li><a href="About.html">ABOUT US</a></li>
+                  <li><a href="ourService.html">SERVICES</a></li>
                   <li class="menu-sub-page">
                     <span class="d-flex align-items-center"
                       >PAGE <i class="bx bx-chevron-down"></i
                     ></span>
-                    <ul class="menu-mini">
-                      <li><a href="">Our Team</a></li>
-                      <li><a href="">FAQ</a></li>
-                      <li><a href="">Booking</a></li>
+                     <ul class="menu-mini">
+                      <li><a href="ourTeamPage.html">Our Team</a></li>
+                      <li><a href="FaqPage.html">FAQ</a></li>
+                      <li><a href="Booking.html">Booking</a></li>
                       <li><a href="">404 Page</a></li>
-                      <li><a href="">Blog</a></li>
-                      <li><a href="">Single Blog</a></li>
+                      <li><a href="blog.html">Blog</a></li>
+                      <li><a href="single-blog.html">Single Blog</a></li>
                     </ul>
                   </li>
-                  <li><a href="">CONTACT US</a></li>
+                  <li><a href="contact.html">CONTACT US</a></li>
                 </ul>
               </div>
               <div class="oppentime-icon">
@@ -68,10 +68,31 @@
                 <button type="button" onclick="iconOpenBoxClick()">
                   <i class="bx bx-align-right open-Time"></i>
                 </button>
+                 <button type="button" onclick="" class="user-login">
+                  <a href="login.html" class="text-black"><i class='bx bx-user-circle'></i></a>
+                </button>
+                 <button type="button" onclick="" class="user-account position-relative" onclick="iconOpenBoxClick()">
+                  <img src="https://images.unsplash.com/photo-1503023345310-bd7c1de61c7d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8aHVtYW58ZW58MHx8MHx8&w=1000&q=80" alt="">
+
+                </button>
+                  <div class="box-fs-account position-absolute">
+                    <ul >
+                      <li><a href="">Xem thông tin</a></li>
+                      <li><a href="">Sửa thông tin</a></li>
+                      <li><a href="">Đăng Xuất</a></li>
+                    </ul>
+                  </div>
               </div>
             </div>
           </div>
-          <div class="banner-page position-absolute top-0"></div>
+          <div class="banner-text-page">
+            <div class="banner-page position-absolute top-0">
+            </div>
+            <div class="text-center-banner">
+              <h1>Our Team</h1>
+              <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</span>
+            </div>
+          </div>
         </div>
       </header>
 
@@ -422,7 +443,7 @@
         </div>
       </div>
     </div>
-    <div class="menu-sub-responsive position-fixed top-0">
+     <div class="menu-sub-responsive position-fixed top-0">
         <div class="close-menu-sub-reponsive">
              <button type="button" class="float-end me-2 mt-2 fs-3" onclick="iconOpenMenuSubClick()">
             <i class="bx bx-x"></i>
@@ -433,23 +454,36 @@
         </div>
            <div class="menu menu-responsive">
                 <ul>
-                  <li><a href="">HOME</a></li>
-                  <li><a href="">ABOUT US</a></li>
-                  <li><a href="">SERVICES</a></li>
+                  <li><a href="headerHomePage.html">HOME</a></li>
+                  <li><a href="About.html">ABOUT US</a></li>
+                  <li><a href="ourService.html">SERVICES</a></li>
                   <li class="menu-sub-page-respon">
                     <span class="d-flex align-items-center justify-content-between pe-1 mb-1"
                       >PAGE <i class="bx bx-chevron-down"></i
                     ></span>
                     <ul class="menu-mini-respon">
-                      <li><a href="">Our Team</a></li>
-                      <li><a href="">FAQ</a></li>
-                      <li><a href="">Booking</a></li>
+                        <li><a href="ourTeamPage.html">Our Team</a></li>
+                      <li><a href="FaqPage.html">FAQ</a></li>
+                      <li><a href="Booking.html">Booking</a></li>
                       <li><a href="">404 Page</a></li>
-                      <li><a href="">Blog</a></li>
-                      <li><a href="">Single Blog</a></li>
+                      <li><a href="blog.html">Blog</a></li>
+                      <li><a href="single-blog.html">Single Blog</a></li>
                     </ul>
                   </li>
-                  <li><a href="">CONTACT US</a></li>
+                  <li><a href="contact.html">CONTACT US</a></li>
+                  <li class="pe-3">  <button type="button" onclick="" class="user-login-responsive w-100">
+                  <a href="login.html" class="text-white border-0 d-flex align-items-center gap-3 p-2"><i class='bx bx-user-circle'></i> Đăng Nhập</a>
+                </button></li>
+                  <li class="user-account pe-3">
+                <button class="box-account-responsive border-0 d-flex align-items-center gap-3 p-2 w-100">
+                    <img src="https://images.unsplash.com/photo-1503023345310-bd7c1de61c7d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8aHVtYW58ZW58MHx8MHx8&w=1000&q=80" alt=""> 
+                  <span class="fs-5">Lê Sỹ Hải</span>
+                </button>
+                    <ul class="box-fs-account-responsive">
+                      <li><a href="">Xem thông tin</a></li>
+                      <li><a href="">Sửa thông tin</a></li>
+                      <li><a href="">Đăng Xuất</a></li>
+                    </ul></li>
                 </ul>
               </div>
     </div>

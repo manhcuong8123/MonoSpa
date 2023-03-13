@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="../src/Image/photo_2023-03-10_10-33-00.png" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="../src/Css/style.css" />
+    <title>Booking</title>
+  </head>
+  <body>
+    <div class="box-main">
+     <header>
+        <div class="header-menutop-banner">
+          <div
+            class="logo-menu-oppenTime d-flex justify-content-between align-items-center container position-relative"
+          >
+            <div class="logo">
+              <img src="../src/Image/photo_2023-03-10_10-33-00.png" alt="" />
+            </div>
+            <div class="icon-menu-sub-responsive">
+                 <button type="button" onclick="iconOpenMenuSubClick()">
+             <i class='bx bx-menu'></i>
+            </div>
+            <div class="menu-oppentime d-flex gap-5">
+              <div class="menu">
+                <ul class="d-flex gap-3">
+                  <li><a href="headerHomePage.html">HOME</a></li>
+                  <li><a href="About.html">ABOUT US</a></li>
+                  <li><a href="ourService.html">SERVICES</a></li>
+                  <li class="menu-sub-page">
+                    <span class="d-flex align-items-center"
+                      >PAGE <i class="bx bx-chevron-down"></i
+                    ></span>
+                     <ul class="menu-mini">
+                      <li><a href="ourTeamPage.html">Our Team</a></li>
+                      <li><a href="FaqPage.html">FAQ</a></li>
+                      <li><a href="Booking.html">Booking</a></li>
+                      <li><a href="">404 Page</a></li>
+                      <li><a href="blog.html">Blog</a></li>
+                      <li><a href="single-blog.html">Single Blog</a></li>
+                    </ul>
+                  </li>
+                  <li><a href="contact.html">CONTACT US</a></li>
+                </ul>
+              </div>
+              <div class="oppentime-icon">
+                <i class="bx bxl-facebook"></i>
+                <i class="bx bxl-instagram"></i>
+                <button type="button" onclick="iconOpenBoxClick()">
+                  <i class="bx bx-align-right open-Time"></i>
+                </button>
+                 <button type="button" onclick="" class="user-login">
+                  <a href="login.html" class="text-black"><i class='bx bx-user-circle'></i></a>
+                </button>
+                 <button type="button" onclick="" class="user-account position-relative" onclick="iconOpenBoxClick()">
+                  <img src="https://images.unsplash.com/photo-1503023345310-bd7c1de61c7d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8aHVtYW58ZW58MHx8MHx8&w=1000&q=80" alt="">
+
+                </button>
+                  <div class="box-fs-account position-absolute">
+                    <ul >
+                      <li><a href="">Xem thông tin</a></li>
+                      <li><a href="">Sửa thông tin</a></li>
+                      <li><a href="">Đăng Xuất</a></li>
+                    </ul>
+                  </div>
+              </div>
+            </div>
+          </div>
+          <div class="banner-text-page">
+            <div class="banner-page position-absolute top-0">
+            </div>
+            <div class="text-center-banner">
+              <h1>Our Team</h1>
+              <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</span>
+            </div>
+          </div>
+        </div>
+      </header>
+      <main>
+        <div class="service-menu">
+            <div class="title-service-menu text-center mb-5">
+                <span>Service Menu</span>
+                <p class="hr-after-menu"></p>
+                <h1>Give Your Nails A Sweet Treat</h1>
+            </div>
+            <div class="box-service-menu container">
+              <div class="row">
+                <div class="col-12 col-md-6 col-lg-6 box-question" data-aos="fade-up">
+                <span class="d-flex align-items-center price-service"><h5>Manicure</h5><hr class="dotted"> $ 12.00</span>
+                <p>Lorem ipsum dolor sit amet, consectetur.</p>
+                <span class="d-flex align-items-center price-service "><h5>Pedicure</h5> <hr class="dotted"> $ 12.00</span>
+                <p>Lorem ipsum dolor sit amet, consectetur.</p>
+                <span class="d-flex align-items-center price-service "><h5>Nail Clippers</h5> <hr class="dotted"> $ 9.50</span>
+                <p>Lorem ipsum dolor sit amet, consectetur.</p>
+                <span class="d-flex align-items-center price-service "><h5>Manicure & Pedicure</h5> <hr class="dotted"> $ 14.00</span>
+                <p>Lorem ipsum dolor sit amet, consectetur.</p>
+              </div>
+                       <div class="col-12 col-md-6 col-lg-6 box-question2" data-aos="fade-up">
+                <span class="d-flex align-items-center price-service"><h5>Nail Fix</h5><hr class="dotted"> $ 12.00</span>
+                <p>Lorem ipsum dolor sit amet, consectetur.</p>
+                <span class="d-flex align-items-center price-service"><h5>Nail Art</h5><hr class="dotted"> $ 12.00</span>
+                <p>Lorem ipsum dolor sit amet, consectetur.</p>
+                <span class="d-flex align-items-center price-service"><h5>Gel Coloring</h5><hr class="dotted"> $ 9.50</span>
+                <p>Lorem ipsum dolor sit amet, consectetur.</p>
+                <span class="d-flex align-items-center price-service"><h5>Hand/nail Moisturizer</h5> <hr class="dotted">$ 14.00</span>
+                <p>Lorem ipsum dolor sit amet, consectetur.</p>
+              </div>
+              </div>
+            </div>
+        </div>
+        <div class="make-appointment mt-5">
+          <div class="background-make-appointment"></div>
+          <div class="box-make-appointment container d-flex">
+            <div class="row">
+            <div class="text-left-make-appointment col-12 col-sm-6" data-aos="fade-right">
+                <div class="title-text-make-appointment">
+                  <span>Make Appointment</span>
+                   <p class="hr-after-form"></p>
+                <h1>Get Our Service</h1>
+                <p class="mt-3 mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris</p>
+
+                <span class="opening-span">Opening Hours</span>
+                <p class="mt-4">Monday – Friday____________09.00 AM – 19.00 PM</p>
+                <p>Saturday___________________09.00 AM – 19.00 PM</p>
+                <p>Sunday_____________________09.00 AM – 19.00 PM</p>
+                </div>
+            </div>
+            <div class="form-right-make-appointment col-12 col-sm-6 container" data-aos="fade-up">
+                <form action="" id="form">
+                   <input type="text" placeholder="Your Name" id="name">
+                    <small class="error-message"></small>
+  <div class="box-form-grid-2 d-flex gap-4 align-items-center justify-content-between mt-5">
+    <div class="box-form">
+      <input type="email" placeholder="Your Email" class="" id="email">
+       <small class="error-message"></small>
+      <br>
+     <div class="select-form">
+       <select id="select" class="mt-5">
+        <option value="0">Manicure</option>
+        <option value="">Pedicure</option>
+        <option value="">Nail Polish</option>
+        <option value="">Nail Trim</option>
+        <option value="">Gel Coloring</option>
+        <option value="">Nail Art</option>
+      </select>
+      <small class="error-message"></small>
+     </div>
+    </div>
+    <small class="error-message"></small>
+    <div class="box-form">
+      <input type="tel" placeholder="Your Phone"  id="tel">
+       <small class="error-message"></small>
+       <br>
+      <div class="input-date">
+        <input type="date" placeholder="Select Date" id="date" class="mt-5">
+        <small class="error-message date-err"></small>
+      </div>
+       
+    </div>
+  </div>
+ <div class="box-textarea">
+   <textarea name="" id="textarea" cols="53" rows="5" placeholder="Your Message" class="mt-5"></textarea>
+    <small class="error-message date-err"></small>
+ </div>
+  <button type="submit" class="mt-5">Book Appointment</button>
+                </form>
+            </div>
+          </div>
+          </div>
+        </div>
+                    <div class="question-click-box container mt-5 box-question-click-booking">
+                <div class="row">
+            <div class="col-12 col-md-6 col-lg-6 box-question-text-booking" data-aos="fade-down">
+                <div class="text-question-click-left">
+                  <h1>Client Question</h1>
+                  <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque.</p>
+                  <button>Learn More</button>
+                </div>
+                <div class="img">
+                  <img src="../src/Image/leaf@2x.png" alt="">
+                </div>
+            </div>
+                <div class="col-12 col-md-6 col-lg-6 box-question-booking" data-aos="fade-up">
+                <div class="box-text-question ">
+                    <div class="text-question">
+                        <span class="d-flex align-items-center gap-2 fs-5"><i class='bx bx-plus icon-Question' ></i>How often should I get a pedicure?</span>
+                    </div>
+                    <div class="reply-question">
+                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu.</p>
+                    </div>
+                </div>
+                <div class="box-text-question">
+                    <div class="text-question">
+                        <span class="d-flex align-items-center gap-2 fs-5"><i class='bx bx-plus icon-Question' ></i>What manicure should I choose?</span>
+                    </div>
+                    <div class="reply-question">
+                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu.</p>
+                    </div>
+                </div>
+                <div class="box-text-question">
+                    <div class="text-question">
+                        <span class="d-flex align-items-center gap-2 fs-5"><i class='bx bx-plus icon-Question' ></i>Can I use my phone during my nail salon appointment?</span>
+                    </div>
+                    <div class="reply-question">
+                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu.</p>
+                    </div>
+                </div>
+            </div>
+            </div>
+
+            </div>
+
+      </main>
+      <footer>
+
+      </footer>
+    </div>
+    <div class="oppenTime-box">
+      <div class="information-oppenTime">
+        <div class="close-information-oppenTime fs-2">
+          <button type="button" onclick="iconOpenBoxClick()">
+            <i class="bx bx-x"></i>
+          </button>
+        </div>
+        <div class="logo container text-center">
+          <img src="../src/Image/photo_2023-03-10_10-33-00.png" alt="" />
+        </div>
+        <div class="text text-center">
+          <span
+            >Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam vel
+            risus imperdiet, gravida justo eu.</span
+          >
+        </div>
+        <hr />
+        <div class="map-phone-email container">
+          <div
+            class="icon d-flex align-items-center justify-content-center gap-1 mb-3"
+          >
+            <i class="bx bxs-map"></i>
+            <div class="span">Jl. Pantai Batu Mejan, Canggu, Bali</div>
+          </div>
+          <div
+            class="icon d-flex align-items-center justify-content-center gap-1 mb-3"
+          >
+            <i class="bx bxs-phone"></i>
+            <div class="span">(+62)81 234 567</div>
+          </div>
+          <div
+            class="icon d-flex align-items-center justify-content-center gap-1 mb-3"
+          >
+            <i class="bx bxs-envelope"></i>
+            <div class="span">naylish@domain.com</div>
+          </div>
+        </div>
+        <hr />
+        <div
+          class="opening-hours d-flex align-items-center gap-3 container justify-content-center"
+        >
+          <div class="day container">
+            <p>Monday - Friday :</p>
+            <p>Saturday :</p>
+            <p>Sunday :</p>
+          </div>
+          <div class="time container text-center">
+            <p>09:00 AM - 19:00 PM</p>
+            <p>09:00 AM - 19:00 PM</p>
+            <p>09:00 AM - 19:00 PM</p>
+          </div>
+        </div>
+        <hr />
+        <div
+          class="social-network d-flex align-items-center gap-2 container justify-content-center"
+        >
+          <i class="bx bxl-facebook"></i>
+          <i class="bx bxl-twitter"></i>
+          <i class="bx bxl-instagram"></i>
+          <i class="bx bxl-pinterest-alt"></i>
+        </div>
+      </div>
+    </div>
+   <div class="menu-sub-responsive position-fixed top-0">
+        <div class="close-menu-sub-reponsive">
+             <button type="button" class="float-end me-2 mt-2 fs-3" onclick="iconOpenMenuSubClick()">
+            <i class="bx bx-x"></i>
+          </button>
+        </div>
+        <div class="logo ps-3">
+            <img src="../src/Image/photo_2023-03-10_10-33-00.png" alt="">
+        </div>
+           <div class="menu menu-responsive">
+                <ul>
+                  <li><a href="headerHomePage.html">HOME</a></li>
+                  <li><a href="About.html">ABOUT US</a></li>
+                  <li><a href="ourService.html">SERVICES</a></li>
+                  <li class="menu-sub-page-respon">
+                    <span class="d-flex align-items-center justify-content-between pe-1 mb-1"
+                      >PAGE <i class="bx bx-chevron-down"></i
+                    ></span>
+                    <ul class="menu-mini-respon">
+                        <li><a href="ourTeamPage.html">Our Team</a></li>
+                      <li><a href="FaqPage.html">FAQ</a></li>
+                      <li><a href="Booking.html">Booking</a></li>
+                      <li><a href="">404 Page</a></li>
+                      <li><a href="blog.html">Blog</a></li>
+                      <li><a href="single-blog.html">Single Blog</a></li>
+                    </ul>
+                  </li>
+                  <li><a href="contact.html">CONTACT US</a></li>
+                  <li class="pe-3">  <button type="button" onclick="" class="user-login-responsive w-100">
+                  <a href="login.html" class="text-white border-0 d-flex align-items-center gap-3 p-2"><i class='bx bx-user-circle'></i> Đăng Nhập</a>
+                </button></li>
+                  <li class="user-account pe-3">
+                <button class="box-account-responsive border-0 d-flex align-items-center gap-3 p-2 w-100">
+                    <img src="https://images.unsplash.com/photo-1503023345310-bd7c1de61c7d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8aHVtYW58ZW58MHx8MHx8&w=1000&q=80" alt=""> 
+                  <span class="fs-5">Lê Sỹ Hải</span>
+                </button>
+                    <ul class="box-fs-account-responsive">
+                      <li><a href="">Xem thông tin</a></li>
+                      <li><a href="">Sửa thông tin</a></li>
+                      <li><a href="">Đăng Xuất</a></li>
+                    </ul></li>
+                </ul>
+              </div>
+    </div>
+    <script src="../src/Js/main.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+     <script>
+      AOS.init(); 
+    </script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

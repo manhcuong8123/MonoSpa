@@ -3,8 +3,9 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-family: "Poppins", sans-serif;
+   font-family: 'Roboto Slab', serif;
 }
+
 /* Menu sub reposive  */
 .menu-sub-responsive {
   background-color: #f7f5f2;
@@ -14,16 +15,100 @@
   transition: 0.4s;
   display: none;
 }
-/* body:hover .menu-sub-responsive{
-    left: 0;
-    transition: .4s;
-} */
 .icon-menu-sub-responsive {
   display: none;
 }
 .icon-menu-sub-responsive button {
   font-size: 23px;
 }
+.user-login{
+  display: none !important;
+}
+.user-login-responsive{
+  background-color: #043542c2;
+  color: white;
+  border: none;
+  display: none;
+}
+.user-login-responsive a{
+  font-size: 20px;
+}
+.user-login-responsive a i{
+  font-size: 30px;
+}
+.user-account  img{
+  width: 40px ;
+  height: 40px;
+  border-radius: 50%;
+}
+ .box-fs-account{
+  right: 1%;
+  top: 70%;
+  overflow: hidden;
+  height: 0;
+  transition: .3s;
+}
+.box-fs-account-home{
+  z-index: 1;
+}
+.click-box-fs-account{
+  height: 123px !important;
+  transition: .3s;
+}
+ .box-fs-account ul{
+  list-style: none;
+  background-color: rgba(255, 255, 255, 0.349);
+  padding: 5px 10px ;
+  border-radius: 10px;
+ }
+  .box-fs-account ul li {
+    transition: .4s;
+     border-radius: 5px;
+  }
+   .box-fs-account ul li:hover {
+    transition: .4s;
+    background-color: #043542;
+    color: white;
+  }
+  .box-fs-account ul li:hover a{
+    color: white;
+    transition: .4s;
+    padding: 5px;
+  }
+  .box-fs-account ul li a{
+ text-decoration: none;
+ color: #043542;
+ padding: 5px;
+ transition: .4s;
+ }
+ .box-account-responsive{
+  background-color: #043542c2;
+  color: white;
+  cursor: pointer;
+ }
+ .box-fs-account-responsive{
+  overflow: hidden;
+  height: 0;
+  transition: .3s;
+  margin: 10px 0;
+  margin-left: -20px;
+ }
+ .box-fs-account-responsive li{
+  transition: .3s;
+  padding: 10px;
+ }
+ .box-fs-account-responsive li:hover{
+   background-color: #043542;
+   transition: .3s;
+  }
+  .box-fs-account-responsive li:hover a{
+   color: white !important;
+
+}
+ .click-account-responsive{
+  height: 160px !important;
+  transition: .3s;
+ }
 .menu-sub-responsive .close-menu-sub-reponsive button,
 .icon-menu-sub-responsive button {
   border: none;
@@ -34,6 +119,16 @@
 }
 .menu-sub-responsive .menu ul {
   list-style: none;
+}
+.menu-sub-responsive .menu-responsive {
+  height: 515px;
+  overflow: scroll;
+  overflow: -moz-scrollbars-none;
+  -ms-overflow-style: none;
+}
+.menu-sub-responsive .menu-responsive::-webkit-scrollbar {
+  width: 0 !important;
+  display: none;
 }
 .menu-sub-responsive .menu ul li {
   margin-bottom: 15px;
@@ -53,7 +148,9 @@
   color: #043542;
 }
 .menu-sub-responsive .menu-responsive .menu-sub-page-respon .menu-mini-respon {
-  padding: 10px 10px 10px 5px;
+  height: 0;
+  overflow: hidden;
+  transition: .3s;
 }
 .menu-sub-responsive
   .menu-responsive
@@ -63,8 +160,12 @@
   padding: 10px 0px 10px 10px;
   transition: 0.4s;
 }
+.click-menu-responsive-page{
+  height: 350px !important;
+  transition: .3s;
+}
 .dpnon {
-  display: none;
+  display: block !important;
 }
 .click-menu-sub-respon {
   left: 0;
@@ -79,7 +180,6 @@
 }
 .menu-oppentime .menu ul li {
   transition: 0.3s;
-  padding: 0 20px;
 }
 .menu-oppentime .menu > ul > li:hover {
   border-bottom: 1px solid #262626;
@@ -96,11 +196,11 @@
   z-index: -1;
 }
 .banner-page {
-  padding: 150px 0 180px;
+  height: 400px;
   overflow: hidden;
   width: 100%;
   opacity: 0.3;
-  background-color: #f1e7d3;
+  background-color: #fdf5e6;
   background-image: url(https://templatekit.jegtheme.com/naylish/wp-content/uploads/sites/221/2022/01/woman-coming-to-nail-artist-for-manicure.jpg);
   background-position: 0px 73%;
   background-repeat: no-repeat;
@@ -128,6 +228,11 @@
   background-size: cover;
   transition: background 0.3s, border-radius 0.3s, opacity 0.5s;
 }
+.text-center-banner {
+  text-align: center;
+  width: 40%;
+  margin: 0 auto;
+}
 .menu-sub-page {
   position: relative;
 }
@@ -139,6 +244,9 @@
   left: 0px;
   top: 27px;
   padding: 10px;
+}
+.menu-mini-home{
+  z-index: 2;
 }
 .menu-sub-page span i {
   font-size: 25px;
@@ -192,6 +300,7 @@
   transition: 1.5s;
   width: 0%;
   cursor: pointer;
+  z-index: 10;
 }
 .oppenTime-box .information-oppenTime {
   position: absolute;
@@ -229,6 +338,543 @@
   background-color: transparent;
 }
 /* End Menu Home Pc  */
+
+/*====================== Css Page Our Team ==========================*/
+
+/* main our team page  */
+.professional-team {
+  margin-top: 300px;
+}
+.professional-team .title-professional-team {
+  margin: 0 auto;
+  width: 50%;
+  margin-bottom: 30px;
+}
+.professional-team .title-professional-team .hr-after {
+  background-color: #c7651b;
+  width: 90px;
+  height: 3px;
+  margin: 10px auto;
+}
+.professional-team .title-professional-team h1 {
+  color: #043542;
+}
+.box-professional-team {
+  height: 95%;
+  position: relative;
+  margin-bottom: 20px;
+  cursor: pointer;
+  overflow: hidden;
+}
+.box-professional-team .img {
+  overflow: hidden;
+}
+.box-professional-team .img img {
+  width: 100%;
+}
+.box-professional-team .hover-background {
+  background-color: #2626267e;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transition: 0.3s;
+}
+.box-professional-team:hover .hover-background {
+  opacity: 1;
+  transition: 0.3s;
+}
+.box-professional-team .name {
+  position: absolute;
+  left: 20px;
+  right: 0;
+  bottom: 0;
+  font-size: 25px;
+  opacity: 0;
+  transition: 0.5s;
+  color: white;
+}
+.box-professional-team:hover .name {
+  opacity: 1;
+  transition: 0.5s;
+}
+.box-professional-team .contact-icon {
+  position: absolute;
+  right: 20px;
+  bottom: 0px;
+  font-size: 25px;
+  transition: 0.5s;
+  color: white;
+  opacity: 0;
+}
+.box-professional-team .contact-icon i {
+  background-color: #043542;
+  padding: 5px;
+  border-radius: 50%;
+}
+.box-professional-team:hover .contact-icon {
+  bottom: 50px;
+  opacity: 1;
+}
+.box-professional-team .location {
+  position: absolute;
+  top: 50px;
+  right: -40px;
+  font-size: 15px;
+  transition: 0.5s;
+  color: white;
+  transform: rotate(90deg);
+}
+.box-professional-team:hover .location {
+  right: 5px;
+}
+.working-hour {
+  position: relative;
+  overflow: hidden;
+  height: 580px;
+}
+.working-hour .working-hour-img img {
+  width: 100%;
+  height: 100%;
+}
+
+.working-hour .text-working-hour {
+  position: absolute;
+  color: white;
+  top: 20%;
+  right: 10%;
+}
+.working-hour .text-working-hour .hr-befor {
+  background-color: #c7651b;
+  width: 115px;
+  height: 3px;
+}
+.working-hour .text-working-hour h1 {
+  margin: 20px 0;
+}
+.working-hour .text-working-hour button {
+  width: 150px;
+  height: 65px;
+  border: none;
+  background-color: #043542;
+  color: white;
+  transition: 0.5s;
+  margin-top: 20px;
+}
+.working-hour .text-working-hour button:hover {
+  transform: scale(0.9);
+  transition: 0.5s;
+}
+.latest-blog .title-latest-blog {
+  width: 50%;
+  margin: 0 auto;
+}
+.latest-blog .box-latest-blog {
+  margin-bottom: 20px;
+}
+.latest-blog .box-latest-blog .img {
+  position: relative;
+}
+.latest-blog .box-latest-blog .img {
+  overflow: hidden;
+  height: 277px;
+}
+.latest-blog .box-latest-blog .img a img {
+  width: 100%;
+}
+.latest-blog .box-latest-blog .box-tips-nail {
+  position: absolute;
+  bottom: 0;
+}
+.latest-blog .box-latest-blog .tips-nail {
+  background-color: white;
+  padding: 7px 20px;
+  color: #c6641b;
+  font-weight: bold;
+}
+.latest-blog .box-latest-blog .title a h4{
+  height: 50px;
+}
+.latest-blog .box-latest-blog .time-update,
+.latest-blog .box-latest-blog .demo-content,
+.latest-blog .box-latest-blog a button {
+  color: #7a7b7b;
+}
+.latest-blog .box-latest-blog a button {
+  border: none;
+  background-color: transparent;
+}
+.follow-our-instagram .title-follow-our-instagram h2 {
+  color: #043542;
+}
+.follow-our-instagram .box-insta-bottom,
+.follow-our-instagram .box-insta-bottom .img {
+  width: 100%;
+  height: 100%;
+}
+.follow-our-instagram .box-insta-bottom .img {
+  overflow: hidden;
+  position: relative;
+}
+.follow-our-instagram .box-insta-bottom .img img {
+  width: 100%;
+}
+.follow-our-instagram .box-insta-bottom .backgrond-hover-image-insta {
+  background-color: #00000059;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: 0.5s;
+}
+.follow-our-instagram .box-insta-bottom .icon-insta-follow {
+  position: absolute;
+  top: 40%;
+  bottom: 0;
+  left: 40%;
+  right: 0;
+  color: white;
+  opacity: 0;
+  transition: 0.5s;
+}
+.follow-our-instagram .box-insta-bottom:hover .backgrond-hover-image-insta,
+.follow-our-instagram .box-insta-bottom:hover .icon-insta-follow {
+  opacity: 1;
+  transition: 0.5s;
+}
+.hr-insta{
+   background-color: #c7651b;
+  width: 115px;
+  height: 3px;
+  margin: 5px auto;
+}
+/* end main our team page  */
+
+/* working hour */
+
+
+/*======================== Css Page FAQ ============================*/
+
+.client-question .title-question {
+  margin-top: 300px;
+}
+.box-text-question {
+  margin-bottom: 10px;
+}
+.box-text-question .text-question {
+  border-left: 1px solid #cdcdcd;
+  border-right: 1px solid #cdcdcd;
+  border-top: 1px solid #cdcdcd;
+  padding: 10px;
+  cursor: pointer;
+}
+.box-text-question .reply-question {
+  border-left: 1px solid #cdcdcd;
+  border-right: 1px solid #cdcdcd;
+  border-bottom: 1px solid #cdcdcd;
+  padding: 0 10px;
+  cursor: pointer;
+  overflow: hidden;
+  height: 0px;
+  transition: 0.5s;
+}
+.box-text-question .reply-question p {
+  padding-top: 10px;
+}
+.show-question {
+  height: 160px !important;
+  transition: 0.5s;
+}
+.add-background-question {
+  background-color: #043542;
+  color: white;
+}
+
+/*======================== Css Page Booking ============================*/
+
+.service-menu {
+  margin-top: 20%;
+}
+.service-menu .box-service-menu p {
+  color: #7a7b7b;
+  margin: 20px 0px 20px 0px;
+}
+.service-menu .box-service-menu span h5 .service-menu .box-service-menu span {
+  color: #043542;
+  width: max-content !important;
+}
+hr.dotted {
+  margin: 0 5px !important;
+  border-top: 2px dotted #000000;
+  border-color: #c6641b;
+}
+.box-question span:nth-child(1) hr {
+  width: 70% !important;
+}
+.box-question span:nth-child(3) hr {
+  width: 70% !important;
+}
+.box-question span:nth-child(5) hr {
+  width: 65% !important;
+}
+.box-question span:nth-child(7) hr {
+  width: 52% !important;
+}
+.box-question2 span:nth-child(1) hr {
+  width: 70% !important;
+}
+.box-question2 span:nth-child(3) hr {
+  width: 70% !important;
+}
+.box-question2 span:nth-child(5) hr {
+  width: 62% !important;
+}
+.box-question2 span:nth-child(7) hr {
+  width: 48% !important;
+}
+.service-menu .title-service-menu span {
+  font-size: 20px;
+}
+.hr-after-menu {
+  background-color: #c7651b;
+  width: 115px;
+  height: 3px;
+  margin: 10px auto;
+}
+.make-appointment {
+  position: relative;
+}
+.background-make-appointment {
+  background-color: #fdf4e7;
+  width: 70%;
+  height: 800px;
+}
+.box-make-appointment {
+  position: absolute;
+  top: 10%;
+  right: 0;
+  left: 0;
+}
+.title-text-make-appointment {
+  margin-top: 20%;
+}
+.title-text-make-appointment p:nth-child(4) {
+  width: 90%;
+}
+.form-right-make-appointment {
+  background-color: #ffffff;
+  height: 100%;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+.opening-span {
+  font-size: 25px;
+  color: #043542;
+}
+.hr-after-form {
+  background-color: #c7651b;
+  width: 115px;
+  height: 3px;
+  margin: 5px 0;
+}
+.form-right-make-appointment {
+  padding: 40px;
+  width: 40%;
+}
+.form-right-make-appointment form > input {
+  width: 100%;
+  height: 52px;
+  padding: 10px;
+}
+.form-right-make-appointment
+  form
+  .box-form-grid-2
+  .box-form
+  input[type="text"] {
+  width: 100%;
+  height: 52px;
+  padding: 10px;
+}
+.form-right-make-appointment form .box-form-grid-2 .box-form select {
+  width: 100%;
+  height: 52px;
+  padding: 10px;
+}
+.form-right-make-appointment
+  form
+  .box-form-grid-2
+  .box-form
+  input[type="date"] {
+  width: 100%;
+  height: 52px;
+  padding: 10px;
+}
+.form-right-make-appointment
+  form
+  .box-form-grid-2
+  .box-form
+  input[type="email"] {
+  width: 100%;
+  height: 52px;
+  padding: 10px;
+}
+.form-right-make-appointment form .box-form-grid-2 .box-form input[type="tel"] {
+  width: 100%;
+  height: 52px;
+  padding: 10px;
+}
+.form-right-make-appointment form textarea {
+  padding-top: 10px;
+  padding-left: 10px;
+  width: 100%;
+}
+.form-right-make-appointment form button {
+  width: 50%;
+  height: 50px;
+  border: none;
+  background-color: #043542;
+  color: white;
+}
+.text-question-click-left button {
+  width: 20%;
+  height: 70px;
+  border: none;
+  background-color: #043542;
+  color: white;
+}
+.box-question-booking {
+  width: 40%;
+}
+.box-question-click-booking {
+  margin-top: 100px !important;
+}
+.box-question-text-booking {
+  position: relative;
+}
+.box-question-text-booking .img img {
+  height: 300px;
+  position: absolute;
+  top: 50%;
+  right: 20%;
+  transform: rotate(30deg);
+}
+.error-message{
+  color: red;
+  width: max-content;
+}
+.date-err{
+  font-size: 15px;
+}
+
+/* responsive  */
+@media (max-width: 1000px) {
+  .logo-menu-oppenTime .menu-oppentime {
+    display: none !important;
+  }
+  .icon-menu-sub-responsive {
+    display: block;
+  }
+  .menu-sub-responsive {
+    display: block;
+  }
+  .oppenTime-box {
+    display: none;
+  }
+  .working-hour .text-working-hour button {
+    width: 100px;
+    height: 35px;
+  }
+  .working-hour .text-working-hour {
+    position: absolute;
+    color: white;
+    top: 5%;
+    right: 5%;
+  }
+  .working-hour .text-working-hour h1 {
+    font-size: 20px;
+    margin: 10px 0;
+  }
+  .working-hour .text-working-hour p {
+    font-size: 15px;
+  }
+  .form-right-make-appointment {
+  padding: 40px;
+  width: 80% !important;
+  height: 55%;
+}
+.box-question-click-booking {
+ margin-top: 100% !important;
+}
+.box-question-booking{
+  width: 100% !important;
+  margin-top: 30px;
+}
+.text-question-click-left button {
+  width: 30%;
+}
+}
+@media (min-width: 765px) and (max-width: 1000px){
+  .box-question-click-booking {
+ margin-top: 85% !important;
+}
+}
+
+/* end responsive  */
+
+/* End Menu Home Pc  */
+/* FOOTER  */
+footer .list-support li{
+    margin: 10px 0px;
+}
+footer .link-icon li{
+    margin-left: 10px;
+}
+footer .link-icon a{
+    font-size: 20px;
+    color: aliceblue;
+    transition: 1s;
+}
+footer .link-icon a:hover{
+    color: #40545a7c;
+    transition: 1s;
+}
+footer .text a{
+    text-decoration: none;
+    color: #F7F5F2;
+}
+footer .text p{
+    font-size: 15px;
+}
+footer h4{
+    font-size: 26px;
+    font-family: 'Amiri', serif;
+}
+footer .box-input-email input{
+    border: 1px solid #FDF5E6;
+    background-color: #043542;
+    outline: none;
+    border-radius: 1px;
+  color: #ffffff;
+  padding: 3px;
+  height: 40px;
+  transition: 1s;
+  
+    
+}
+footer .box-input-email input:focus{
+    background-color: #fdf5e615;
+    transition: 1s;
+}
+footer .box-input-email button{
+   background-color: #FDF5E6;
+   border: none;
+   height: 40px;
+   padding: 5px;
+  
+}
+ 
 
 /* responsive  */
 @media (max-width: 1000px) {
@@ -968,7 +1614,7 @@ main .contact p {
   font-weight: 400;
   font-family: "Roboto Slab", serif;
 }
-h1 {
+.contact h1, .single-blog h1, .blog h1{
   font-size: 60px;
   color: #043542;
   font-weight: 400;
@@ -1298,5 +1944,22 @@ footer .coppyright {
     }
 
 }
+/*footer*/
+footer .row-footer{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+}
 
+@media (max-width: 768px){
+    footer .row-footer{
+    display: grid;
+    grid-template-columns: 1fr ;
+    gap: 40px;
+}
+        footer .coppyright {
+            display: block;
+            
+        }
+}
 /* end responsive  */
