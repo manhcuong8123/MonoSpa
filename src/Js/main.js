@@ -42,3 +42,47 @@ const menuSubResponsive = document.querySelector(".menu-sub-responsive");
         menuSubResponsive.classList.add("click-menu-sub-respon");
       }
     };
+
+
+
+
+//    pocup===============
+function test(){
+     // document.querySelector('.content-modal-mockup').style.display = 'none';
+     document.querySelector('.modal-mockup').innerHTML=`
+     <div class="content-modal-mockup">
+     <div class="item-modal-mockup">
+        <img src="../src/Image/photo_2023-03-10_10-33-00.png" width="100px" alt="">
+        <h5>"Mono Bovis Spa = Chạm đến làn da không tuổi"</h5>
+        <h3>ƯU ĐÃI YÊU THƯƠNG</h3>
+        <p>Nâng tầm sắc đẹp Việt</p>
+        <img src="../src/Image/Screenshot 2023-03-12 160307.png" width="50%" alt=""> 
+         <p class="title-give"> * Nhận món quà siêu khủng từ MonoSpa chỉ với 1 phút cập nhật đầy đủ *</p>
+         <div class="form-modal text-center">
+           
+        <form>
+            <div class="value-form-modal">
+                <label>Họ và tên </label>
+          :  <input type="text" name="name" placeholder="nhập tên anh/chị">
+            </div>
+            <div class="value-form-modal">
+                <label>Số điện thoại :</label>
+            <input type="text" name="phone" placeholder="nhập SĐT anh/chị">
+            </div>
+            <div class="value-form-modal">
+                <label>Email</label>
+           : <input type="email" placeholder="nhập email anh/chị">
+            </div>
+            <a href=""><button class="btn submit-form-modal">GỬI THÔNG TIN</button></a>
+        </form>
+                
+         </div>
+        <button class="close-modal btn" onclick="myStopFunction()"><i class='bx bx-x bx-tada' ></i></button>
+      </div>
+  </div>`;
+}
+const modal = setTimeout(test, 5000);
+function myStopFunction() {
+     clearTimeout(modal);
+     document.querySelector('.content-modal-mockup').style.display = 'none';
+   }

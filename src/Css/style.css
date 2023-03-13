@@ -73,7 +73,8 @@
     list-style: none;
 }
 .menu-oppentime .menu ul li{
-    transition: .3s
+    transition: .3s;
+    padding: 0 20px;
 }
 .menu-oppentime .menu > ul > li:hover{
     border-bottom: 1px solid #262626;
@@ -90,15 +91,37 @@
     z-index: -1;
 }
 .banner-page{
-    height: 400px;
+    padding: 150px 0 180px;
     overflow: hidden;
     width: 100%;
     opacity: .3;
-    background-color: #FDF5E6;
-    background-image: url(https://templatekit.jegtheme.com/naylish/wp-content/uploads/sites/221/2022/01/woman-coming-to-nail-artist-for-manicure.jpg);
+    background-color: #f1e7d3;
+     background-image: url(https://templatekit.jegtheme.com/naylish/wp-content/uploads/sites/221/2022/01/woman-coming-to-nail-artist-for-manicure.jpg); 
     background-position: 0px 73%;
         background-repeat: no-repeat;
     background-size: cover;
+}
+.h2-text-banner-header{
+    font-size: 58px;
+    color: #053543;
+    font-weight: 400;
+    font-family: 'Roboto Slab', serif;
+}
+.p-title-banner-header{
+    color: #7c7c7c;
+    width: 50%;
+    margin: auto;
+}
+.header-homePage{
+    padding: 0px 0 130px;
+    overflow: hidden;
+    width: 100%;
+    background-color: #FDF5E6;
+    background-image: url(https://templatekit.jegtheme.com/naylish/wp-content/uploads/sites/221/2022/01/bg-3.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: background 0.3s, border-radius 0.3s, opacity 0.5s;
 }
 .menu-sub-page{
     position: relative;
@@ -208,3 +231,421 @@ transition: 2.5s;
 }
 
 /* end responsive  */
+
+/* '''''''''''''''''''Banner HomePage================ */
+.left-banner-Homepage{
+    padding: 6% 0;
+}
+.left-banner-Homepage h2 {
+    font-size: 90px;
+    color: #043542;
+    font-weight: 400;
+    font-family: 'Roboto Slab', serif;
+    margin: 20px 0;
+}
+.left-banner-Homepage p{
+    color: #909497;
+}
+.link-left-banner-homePage{
+    display: flex;  
+}
+.link-left-banner-homePage a:nth-child(1) button {
+    background-color: #053543;
+    color: #fff;
+    padding: 25px 45px;
+    margin: 30px 30px 30px 0 ;
+    transition: .2s linear;
+    border: 1px solid #053543;
+}
+.link-left-banner-homePage a:nth-child(1) button:hover{
+    transition: .2s linear;
+    transform: scale(0.9);
+}
+.link-left-banner-homePage a:nth-child(2) button{
+    border: 1px solid #053543;
+    padding: 25px 45px;
+    margin: 30px 30px ;
+    transition: .2s linear;
+}
+.link-left-banner-homePage a:nth-child(2) button:hover{
+    background-color: #043542;
+    transition: .2s linear;
+    color: #fff;
+    transform: scale(0.9);
+}
+.right-banner-Homepage{
+    position: relative;
+}
+.image1-banner-homePage{
+    display: flex;
+    justify-content: flex-end;
+}
+.image2-banner-HomePage{
+    position: absolute;
+    bottom: 80px;
+    left: -80px;
+}
+/* ==========about-us============== */
+.About-Us{
+    margin-top: 150px;
+}
+.experience-about-us{
+    margin: 60px 0;
+}
+.left-about-us{
+    position: relative;
+    padding: 0 50px;
+    display: grid;
+    align-items: center;
+grid-template-columns: 1fr 2fr;
+column-gap: 20px;
+}
+.item-absol-about-us{
+    position: absolute;
+    bottom: -52px;
+    left: 93px;
+}
+.margin-our-service{
+    margin-top: 100px;
+}
+.text-under-h4-HomePage{
+    color: #262626;
+    font-weight: 600;
+    position: relative;
+}
+.text-under-h4-HomePage::after{
+    content: "";
+    height: 3px;
+    width: 80px;
+    background-color: #C6641B;
+    position: absolute;
+    bottom: -8px;
+    left: 0;
+}
+.text-title-HomePage{
+    font-size: 58px;
+    color: #043542;
+    font-weight: 400;
+    font-family: 'Roboto Slab', serif;
+    margin-top: 50px;
+}
+.p-title-Hompage{
+    color: #909497;
+    margin: 20px 0;
+}
+.p-title-about-us{
+    margin: 40px 0;
+}
+.item-right-about-us{
+    display: flex;
+}
+.content-item-right{
+    margin: 20px 100px 0 0;
+    text-align: center;
+}
+.text-content-item-right-about-us p:nth-child(1){
+    font-weight: 600;
+    font-size: 30px;
+}
+.btn-about-us{
+    background-color: #053543;
+    padding: 25px 35px;
+    transition: .2s linear;
+    color: #fff;
+}
+.btn-about-us:hover{
+    transition: .2s linear;
+    transform: scale(0.9);
+    background-color: #053543;
+    color: #fff;
+}
+/* ============our-service============ */
+.our-service{
+    margin-top: 180px;
+}
+.item-image-service {
+    margin-top: 100px;
+}
+.item-image-service{
+    position: relative;
+}
+
+.text-item-image-service{
+    width: 50%;
+    right: 0;
+    left: 0;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    position: absolute;
+    bottom: -80px;
+    text-align: center;
+    transition: .2s linear;
+}
+.text-item-image-service:hover{
+    background-color: #053543;
+    transition: .2s linear;
+    color: #fff;
+    cursor: pointer;
+    transform: scale(1.1);
+}
+.text-item-image-service:hover button{
+    color: #fff;
+}
+/* ===========treatment-price========== */
+.treatment-price{
+    margin-top: 200px;
+}
+.background-treat-price{
+    background-image: url(../Image/bg-mobile.jpg);
+    background-image: linear-gradient(270deg, #FFFFFF00 30%, #FDF5E6 0%);
+    opacity: 1;
+    padding: 100px 0 100px;
+}
+.title-lefy-streatment{
+    margin: 50px 0 0;
+}
+.option-and-price{
+    display: flex;
+    align-items: center;
+}
+.style-option{
+    width: 70%;
+    border-top: 1px dotted #262626;
+    height: 1px;
+}
+.title-lefy-streatment>p{
+    color: #909497;
+}
+.bg-testminal{
+    padding: 0px 0 130px;
+ 
+    width: 100%;
+    margin-top: 100px;
+    background-image: url(https://templatekit.jegtheme.com/naylish/wp-content/uploads/sites/221/2022/01/bg-3.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 1;
+}
+.testimonial-row{
+    margin-top: 100px;
+    z-index: 0;
+}
+.update-h4-testmional{
+width: max-content;
+margin: auto;
+}
+.text-infor-testminal p{
+    color: #909497;
+    width: 50%;
+    margin: auto;
+}
+.right-testimonial {
+    margin-top: 200px;
+}
+.right-testimonial p{
+    color: #909497;
+}
+.start-testimonal i{
+    color: #f0cf12;
+}
+.user-vote-treatmen{
+    display: flex;
+    margin-top: 30px;
+}
+.user-vote-treatmen img{
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    border-radius: 50%;
+    margin: 0 20px 0 0;
+}
+.text-user-vote p:nth-child(1){
+    color: #f7730f;
+    font-weight: bold;
+    font-size: 20px;
+}
+/* ============working-hour======= */
+.working-hour{
+    background-image: url(https://templatekit.jegtheme.com/naylish/wp-content/uploads/sites/221/2022/01/beautiful-hand-of-woman-with-white-manicure--e1643347008496.jpg);
+
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 100px 0 100px 0;
+}
+.hour-right-working{
+    display: flex;
+    align-items: center;
+    color: #fff;
+    margin-top: 30px;
+}
+.style-hour-woking{
+    height: 1px;
+    width: 30%;
+    border-bottom: 1px solid #fff;
+}
+.btn-book{
+    padding: 15px 25px;
+    background-color: #053543;
+    color: #fff;
+    margin-top: 60px;
+    transition: .2s linear;
+}
+.btn-book:hover{
+    background-color: #043542;
+    transform: scale(0.9);
+    transition: .2s linear;
+    color: #fff;
+}
+.row-lastest{
+    margin-top: 100px;
+}
+.item-lastest-blog h3{
+    color: #262626;
+    font-weight: bolder;
+    font-size: 32px;
+    margin: 50px 0;
+}
+.item-lastest-blog h3:hover{
+    color: #08a7d8;
+    cursor: pointer;
+}
+.time-lastest-blog{
+    display: flex;
+    color: #909497;
+    margin: 20px 0;
+}
+.btn-read-more{
+    background-color: #053543;
+    padding: 15px 25px;
+    color: #fff;
+    margin-top: 50px;
+    transition: .2s linear;
+    border-radius: 20px;
+}
+.btn-read-more:hover{
+    background-color: #043542;
+    transition: .2s linear;
+    transform: scale(0.9);
+    color: #fff;
+}
+.text-follow{
+    width: max-content;
+    margin: 50px  auto;
+}
+.text-follow::after{
+    width: 180px;
+}
+.row-follow{
+    margin-top: 50px;
+}
+.col-follow{
+    transition: .2s linear;
+    overflow: hidden;
+}
+.col-follow img{
+    transition: .2s linear;
+}
+.col-follow:hover img{
+    transform: scale(1.1);
+    transition: .2s linear;
+}
+/* =============modal-mockup============= */
+.modal-mockup{
+    position: relative;
+}
+.content-modal-mockup{
+    background-color: #262626cb;
+    position: fixed !important;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+}
+.title-give{
+    font-style: italic;
+    color: #C6641B;
+    margin: 20px 0;
+}
+.close-modal{
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    font-size: 40px;
+   
+}
+.item-modal-mockup{
+   right: 0;
+   left: 0;
+   width: 50%;
+   margin: 0 auto;
+    top: 50px;
+    position: absolute;
+    text-align: center;
+    background-color: #fff;
+    border-radius: 20px;
+}
+.form-modal{
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    
+}
+.value-form-modal label{
+    width: 111px;
+}
+.value-form-modal input{
+    border: none;
+    padding: 0px 20px 5px 0;
+    font-style: italic;
+    color: #053543;
+    outline: none;
+    border-bottom: 1px solid #053543;
+}
+.value-form-modal input::placeholder{
+    font-style: normal;
+    font-size: 13px;
+    color: #1c117a;
+}
+.submit-form-modal{
+    background-color: #053543;
+    color: #eee;
+    padding: 10px 15px;
+    margin: 20px 0;
+    transition: .2s linear;
+}
+.submit-form-modal:hover{
+    background-color: #043542;
+    color: #eee;
+    transform: scale(0.9);
+    transition: .2s linear;
+}
+/* ==login================ */
+.divider:after,
+.divider:before {
+content: "";
+flex: 1;
+height: 1px;
+background: #eee;
+}
+.h-custom {
+height: calc(100% - 73px);
+}
+@media (max-width: 450px) {
+.h-custom {
+height: 100%;
+}
+}
+
+.bg-login{
+
+    background-color: #f1e7d3;
+    width: 100%;
+    background-image: url(https://templatekit.jegtheme.com/naylish/wp-content/uploads/sites/221/2022/01/bg-3.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 1;
+}
