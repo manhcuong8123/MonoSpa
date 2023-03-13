@@ -86,3 +86,121 @@ function myStopFunction() {
      clearTimeout(modal);
      document.querySelector('.content-modal-mockup').style.display = 'none';
    }
+
+
+   /*VALIDATE CONTACT AND SINGLE BLOG*/
+
+/*validate form contact*/
+const form_contact = document.getElementById('form-contact');
+const nameInput_contact = document.getElementById('name-form-contact');
+const emailInput_contact = document.getElementById('email-form-contact');
+const subjectInput = document.getElementById('subject-form-contact');
+const messageInput = document.getElementById('form-contact');
+
+if (form_contact){
+
+  form_contact.addEventListener('submit', function(e) {
+      e.preventDefault(); // prevent the form from submitting
+      console.log(form_contact);
+      // Validate name
+      if (nameInput_contact.value.trim() === '') {
+          document.getElementById('nameform-contact-error').textContent = 'Please enter your name';
+      } else {
+          document.getElementById('nameform-contact-error').textContent = '';
+      }
+      
+      // Validate email
+      const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+      if (!emailRegex.test(emailInput_contact.value)) {
+          document.getElementById('emailform-contact-error').textContent = 'Please enter a valid email address';
+      } else {
+          document.getElementById('emailform-contact-error').textContent = '';
+      }
+      
+      // Validate subject
+      if (subjectInput.value.trim() === '') {
+          document.getElementById('subject-contact-error').textContent = 'Please enter a subject';
+      } else {
+          document.getElementById('subject-contact-error').textContent = '';
+      }
+      
+      // Validate message
+      if (messageInput.value === '') {
+          document.getElementById('form-contact-error').textContent = 'Please enter a message';
+      } else {
+          document.getElementById('form-contact-error').textContent = '';
+      }
+      
+      // Submit the form if all fields are valid
+      if (nameInput_contact.value.trim() !== '' && emailRegex.test(emailInput_contact.value) && subjectInput.value.trim() !== '' && messageInput.value.trim() !== '') {
+          form_contact.submit();
+      }
+  });
+}
+/*  end validate from contact */
+    // validate form comment
+    const form_cmt = document.getElementById('form-comment');
+    const comment = document.querySelector('#comment');
+    const nameComment = document.querySelector('#name-comment');
+    const emailComment = document.querySelector('#email-comment');
+    const website = document.querySelector('#website-comment');
+    const commentError = document.querySelector('#comment-error');
+    const nameCommentError = document.querySelector('#nameComment-error');
+    const emailCommentError = document.querySelector('#emailComment-error');
+    const websiteError = document.querySelector('#website-error');
+    
+    if (form_cmt){
+      
+      form_cmt.addEventListener('submit', function(event) {
+        console.log(form_cmt);
+        event.preventDefault();
+      
+        if (!comment.value) {
+          commentError.textContent = 'Please enter a comment.';
+        } else {
+          commentError.textContent = '';
+        }
+      
+        if (!nameComment.value) {
+          nameCommentError.textContent = 'Please enter your nameComment.';
+        } else {
+          nameCommentError.textContent = '';
+        }
+      
+        if (!emailComment.value) {
+          emailCommentError.textContent = 'Please enter your emailComment.';
+        } else if (!isValidEmailComment(emailComment.value)) {
+          emailCommentError.textContent = 'Please enter a valid emailComment.';
+        } else {
+          emailCommentError.textContent = '';
+        }
+      
+        if (website.value && !isValidUrl(website.value)) {
+          websiteError.textContent = 'Please enter a valid URL.';
+        } else {
+          websiteError.textContent = '';
+        }
+      
+        if (comment.value && nameComment.value && emailComment.value) {
+          form_cmt.submit();
+        }
+      });
+      
+      function isValidEmailComment(emailComment) {
+        const emailCommentRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        return emailCommentRegex.test(emailComment);
+      }
+      
+      function isValidUrl(url) {
+        try {
+          new URL(url);
+          return true;
+        } catch (error) {
+          return false;
+        }
+      }
+    }
+    
+
+/* end the validate form */
+
