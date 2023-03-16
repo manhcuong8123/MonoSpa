@@ -24,7 +24,7 @@
             <div class="row d-flex justify-content-center align-items-center h-100">
 
                 <div class="col-md-8 col-lg-6 col-xl-4 offset-xl-1">
-                    <form id="formLogin">
+                    <form id="formforgot">
 
 
                         <div class="divider d-flex align-items-center my-4">
@@ -33,15 +33,17 @@
                         <!-- Name input -->
                         <div class="form-outline mb-4">
                             <label class="form-label" for="form3Example3">Mật khẩu mới</label>
-                            <input type="text" name="name" class="form-control form-control-lg input-login email-login"
+                            <input type="text" name="name" class="form-control form-control-lg input-login email-login" id="pass-forgot"
                                 placeholder="nhập tên đăng nhập" />
+                                <small class="error-message"></small>
                         </div>
 
                         <!-- Password input -->
                         <div class="form-outline mb-3">
                             <label class="form-label" for="form3Example4">Nhập lại Mật khẩu</label>
-                            <input type="password" class="form-control form-control-lg input-login pass-login"
+                            <input type="password" class="form-control form-control-lg input-login pass-login" id="repass-forgot"
                                 placeholder="nhập mật khẩu của bạn" />
+                                <small class="error-message"></small>
                         </div>
 
                         

@@ -37,10 +37,15 @@
 .user-login-responsive a i{
   font-size: 30px;
 }
-.user-account  img{
-  width: 40px ;
-  height: 40px;
+.user-account {
+  bottom: 10% !important;
+  padding: 0 !important;
+}
+.user-account > img{
+  width: 30px ;
+  height: 30px;
   border-radius: 50%;
+  padding-top: 0 !important;
 }
  .box-fs-account{
   right: 1%;
@@ -58,7 +63,7 @@
 }
  .box-fs-account ul{
   list-style: none;
-  background-color: rgba(255, 255, 255, 0.349);
+  background-color: white;
   padding: 5px 10px ;
   border-radius: 10px;
  }
@@ -294,13 +299,15 @@
   transition: 0.4s;
   color: white !important;
 }
+
 .logo-menu-oppenTime .menu-oppentime .oppentime-icon {
   font-size: 25px;
 }
 .logo-menu-oppenTime .menu-oppentime .oppentime-icon i {
+  padding: 0 5px !important;
   cursor: pointer;
 }
-.logo-menu-oppenTime .menu-oppentime .oppentime-icon > button {
+.logo-menu-oppenTime .menu-oppentime .oppentime-icon  button {
   border: none;
   background-color: transparent;
 }
@@ -308,7 +315,7 @@
   position: fixed;
   background-color: #000000da;
   top: 0;
-  right: 0;
+  right: 0; 
   bottom: 0;
   transition: 1.5s;
   width: 0%;
