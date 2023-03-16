@@ -203,6 +203,7 @@ function isPhoneValid(phone) {
 //    pocup===============
 function test() {
   // document.querySelector('.content-modal-mockup').style.display = 'none';
+
   const mockup = document.querySelector(".modal-mockup");
   if (mockup){
 
@@ -238,8 +239,53 @@ function test() {
         </div>
     </div>`;
   }
+
+  document.querySelector(".modal-mockup").innerHTML = `
+  <div class="content-modal-mockup">
+    <div class="item-modal-mockup">
+    <div class="row">
+    <div class="col-sm-6 col-md-12">
+        <img src="../src/Image/photo_2023-03-10_10-33-00.png" width="100px" alt="">
+<h5 class="h5-item-modal-mockup">"Mono Bovis Spa - Chạm đến làn da không tuổi"</h5>
+<p><i class='bx bxs-star' style='color:#e8880a'  ></i>
+<i class='bx bxs-star' style='color:#e8880a'  ></i>
+<i class='bx bxs-star' style='color:#e8880a'  ></i>
+<i class='bx bxs-star' style='color:#e8880a'  ></i>
+<i class='bx bxs-star' style='color:#e8880a'  ></i></p>
+<h3 class="h3-item-modal-mockup">Ưu đãi khách hàng</h3>
+<p>Nâng tầm sắc đẹp Việt</p>
+<p class="title-give"> * Nhận món quà siêu khủng từ MonoSpa chỉ với 1 phút cập nhật đầy đủ *</p>
+<div class="form-modal text-center">
+
+    <form>
+        <div class="value-form-modal">
+            <label>Họ và tên </label>
+            : <input type="text" name="name" placeholder="Nhập tên anh/chị">
+        </div>
+        <div class="value-form-modal">
+            <label>Số điện thoại :</label>
+            <input type="text" name="phone" placeholder="Nhập SĐT anh/chị">
+        </div>
+        <div class="value-form-modal">
+            <label>Email</label>
+            : <input type="email" placeholder="Nhập email anh/chị">
+        </div>
+        <a href=""><button class="btn submit-form-modal">GỬI THÔNG TIN</button></a>
+    </form>
+
+</div>
+    </div>
+    <div class="col-sm-6 col-md-12 img-modal">
+<img src="../src/Image/Screenshot 2023-03-12 160307.png" width="100%" alt="">
+
+    </div>
+</div>
+        <button class="close-modal btn" onclick="myStopFunction()"><i class='bx bx-x bx-tada' ></i></button>
+    </div>
+  </div>`;
+
 }
-const modal = setTimeout(test, 5000);
+const modal = setTimeout(test, 1000);
 function myStopFunction() {
   clearTimeout(modal);
   document.querySelector(".content-modal-mockup").style.display = "none";
