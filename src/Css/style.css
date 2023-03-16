@@ -120,6 +120,15 @@
 .menu-sub-responsive .menu ul {
   list-style: none;
 }
+.menu-sub-responsive{
+  height: 100%;
+  overflow: scroll;
+  overflow: -moz-scrollbars-none;
+  -ms-overflow-style: none;
+}
+::-webkit-scrollbar{
+  display: none;
+}
 .menu-sub-responsive .menu-responsive {
   height: 515px;
   overflow: scroll;
@@ -1242,12 +1251,19 @@ footer .box-input-email button{
   left: 0;
   width: 50%;
   margin: 0 auto;
-  top: 50px;
+  top: 3%;
+  bottom: 3%;
+  height: 90%;
   position: absolute;
   text-align: center;
   background-color: #fff;
   border-radius: 20px;
+  overflow: scroll;
+  overflow: -moz-scrollbars-none;
+  -ms-overflow-style: none;
 }
+
+
 .form-modal {
   width: 100%;
   margin: auto;
@@ -1413,6 +1429,13 @@ span {
 .box-right .box-popular-new-item-title a {
   text-decoration: none;
   color: #0a299b;
+}
+.box-right .box-popular-new-item-title a:hover {
+  color: #071856;
+}
+.blog-page .box-text a:hover {
+  text-decoration: none;
+  color: #5f6c9b;
 }
 /* categories */
 .box-right .categories-list a {
@@ -1925,7 +1948,7 @@ footer .row-footer {
 
 @media (max-width: 768px) {
 footer .background-image-footer {
-    height: 890px;
+    height: 900px;
 }
 
 
