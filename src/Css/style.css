@@ -1309,21 +1309,13 @@ footer .box-input-email button{
   z-index: 1;
 }
 /*BLOG---------------*/
-
-main .blog {
-  text-align: center;
-  margin: auto;
-  width: 40%;
-  height: 300px;
+.blog-page-box{
+  margin-top: 300px;
 }
-/*  blog-item */
-main .blog h1,
-main .blog p {
-  font-family: "Amiri", sans-serif;
-}
+/* 
 .blog-page, .single-blog-page, .contact-information{
   margin-top: 10% !important;
-}
+} */
 .blog-page h3 {
   font-family: "Amiri", sans-serif;
 }
@@ -1778,10 +1770,118 @@ main .contact p {
 }
 /*FOOOOOOTER*/
 
+/*FOOOOOOTER*/
 
+/* FOOTER  */
+footer {
+  width: 100%;
+}
+
+footer .background-image-footer {
+  background-image: url('../Image/Footer-bg-2.png');
+  background-position: 0 77%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: rgb(5, 53, 67);
+  z-index: -1000;
+
+}
+
+footer .text {
+  z-index: 100;
+}
+
+footer .text .row-footer .col {
+  color: aliceblue;
+}
+
+footer .text .row-footer .col img {
+  width: 100px;
+}
+
+footer .text .row-footer .col h4 {
+  color: #FDF5E6;
+}
+
+footer .list-support li {
+  margin: 10px 0px;
+}
+
+footer .link-icon li {
+  margin-left: 10px;
+}
+
+footer .link-icon a {
+  font-size: 20px;
+  color: aliceblue;
+  transition: 1s;
+}
+
+footer .link-icon a:hover {
+  color: #40545a7c;
+  transition: 1s;
+}
+
+footer .text a {
+  text-decoration: none;
+  color: #F7F5F2;
+}
+
+footer .text p {
+  font-size: 15px;
+}
+
+footer h4 {
+  font-size: 26px;
+
+}
+
+footer .box-input-email input {
+  border: 1px solid #FDF5E6;
+  background-color: #043542;
+  outline: none;
+  border-radius: 1px;
+  color: #ffffff;
+  padding: 3px;
+  height: 40px;
+  transition: 0.5s;
+
+
+}
+
+footer .box-input-email input:focus {
+  background-color: #fdf5e615;
+  transition: 0.5s;
+}
+
+footer .box-input-email button {
+  background-color: #FDF5E6;
+  border: none;
+  height: 40px;
+  padding: 5px;
+
+}
+
+footer .coppyright {
+  color: aliceblue;
+  display: flex;
+  justify-content: space-between;
+}
+
+
+
+
+/* responsive  */
+@media (max-width: 2410px) {
+  footer .background-image-footer {
+      height: 350px;
+  }
+
+
+}
 
 @media (max-width: 1200px) {
-    
+  
 
 
 }
@@ -1806,57 +1906,39 @@ main .contact p {
 
    
 
-    /*footer*/
-    /*height lại cho thằng backgorund footer*/
-    footer .background-image-footer {
-        height: 490px;
-    }
+  /*footer*/
+  /*height lại cho thằng backgorund footer*/
+  footer .background-image-footer {
+    height: 490px;
+}
 
-    footer .row-footer {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: 40px;
+footer .row-footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
 
-    }
+}
 
 }
 
 
 
 @media (max-width: 768px) {
-    footer .background-image-footer {
-        height: 890px;
-    }
-    
-    
-    footer .row-footer {
-        display: grid;
-        grid-template-columns: 1fr;
-        gap: 40px;
-    }
-
-    footer .coppyright {
-        display: block;
-        
-    }
-
+footer .background-image-footer {
+    height: 890px;
 }
-/*footer*/
-footer .row-footer{
+
+
+footer .row-footer {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
     gap: 40px;
 }
 
-@media (max-width: 768px){
-    footer .row-footer{
-    display: grid;
-    grid-template-columns: 1fr ;
-    gap: 40px;
+footer .coppyright {
+    display: block;
+    
 }
-        footer .coppyright {
-            display: block;
-            
-        }
+
 }
 /* end responsive  */
