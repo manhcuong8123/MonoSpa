@@ -591,14 +591,14 @@
   padding: 0 10px;
   cursor: pointer;
   overflow: hidden;
-  height: 0px;
+  height: 160px;
   transition: 0.5s;
 }
 .box-text-question .reply-question p {
   padding-top: 10px;
 }
 .show-question {
-  height: 160px !important;
+  height: 0px !important;
   transition: 0.5s;
 }
 .add-background-question {
@@ -650,6 +650,11 @@ hr.dotted {
 }
 .service-menu .title-service-menu span {
   font-size: 20px;
+}
+.select-booking,.email-booking,.phone-booking,.date-booking,.name-booking{
+  padding:10px 20px;
+  width:100%;
+  margin:25px 0;
 }
 .hr-after-menu {
   background-color: #c7651b;
@@ -757,14 +762,13 @@ hr.dotted {
   background-color: #043542;
   color: white;
 }
-.box-question-booking {
-  width: 40%;
-}
+
 .box-question-click-booking {
   margin-top: 100px !important;
 }
 .box-question-text-booking {
   position: relative;
+  margin:200px 0 100px 0;
 }
 .box-question-text-booking .img img {
   height: 300px;
@@ -827,6 +831,9 @@ hr.dotted {
 .text-question-click-left button {
   width: 30%;
 }
+}
+.text-question-click-left{
+  margin-top:150px
 }
 @media (min-width: 765px) and (max-width: 1000px){
   .box-question-click-booking {
@@ -1349,7 +1356,7 @@ font-family: 'Pacifico', cursive;
 }
 /*BLOG---------------*/
 .blog-page-box{
-  margin-top: 300px;
+  margin-top: 10%;
 }
 /* 
 .blog-page, .single-blog-page, .contact-information{
@@ -1364,12 +1371,17 @@ font-family: 'Pacifico', cursive;
 .blog-page .col-md-6 {
   padding: 1.5rem;
 }
+/* thêm*/
 .blog-page .box-text {
-  width: 95%;
+  width: auto;
 }
 .blog-page .box-text a {
   text-decoration: none;
   color: #0a1b5b;
+}
+.blog-page .box-text a:hover {
+  text-decoration: none;
+  color: #5f6c9b;
 }
 .blog-page .box-image span {
   background-color: aliceblue;
@@ -1434,6 +1446,14 @@ font-family: 'Pacifico', cursive;
     width: 90%;
     height: auto;
   }
+  .box-popular-new-item {
+    display: block !important;
+    text-align: center;
+  }
+  .box-popular-new-item .image img{
+    width: 100%;
+    margin: 5% 0;
+  }
 }
 
 /* end responsive  */
@@ -1451,7 +1471,11 @@ span {
 }
 .box-right .box-popular-new-item-title a {
   text-decoration: none;
-  color: #0a299b;
+  color: #304693;
+}
+.box-right .box-popular-new-item-title a:hover {
+  
+  color: #071856;
 }
 .box-right .box-popular-new-item-title a:hover {
   color: #071856;
@@ -1505,6 +1529,11 @@ span {
 }
 .box-right .box-question-list li {
   margin: 10px 0px;
+}
+@media (max-width: 768px) {
+  .box-right .have-any-question-box {
+  background-color: rgba(35, 75, 88, 0.878);
+    }
 }
 /*-------------SINGLE BLOG*/
 
@@ -1582,7 +1611,7 @@ main .blog p {
 
 @media (max-width: 1000px) {
   .blog-page .box-right .p-5 {
-    width: 80%;
+    width: auto;
     padding: 1rem;
   }
   .single-blog-page .col-md-4 {
@@ -1594,9 +1623,13 @@ main .blog p {
   .single-blog-page .content .image img {
     padding: 10px 0px;
   }
+  
 }
 
 @media (max-width: 768px) {
+  .top-self{
+     display: block !important;
+    }
 }
 
 /*   ----------------CONTACT*/

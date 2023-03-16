@@ -60,13 +60,14 @@ textQuestion.forEach((btnClick) => {
     if (replyQuestion.classList.contains("show-question")) {
       replyQuestion.classList.remove("show-question");
       btnClick.classList.remove("add-background-question");
-      iconQuestion.classList.add("bx-plus");
-      iconQuestion.classList.remove("bx-x");
+      iconQuestion.classList.remove("bx-plus");
+      iconQuestion.classList.add("bx-x");
+
     } else {
       replyQuestion.classList.add("show-question");
       btnClick.classList.add("add-background-question");
-      iconQuestion.classList.remove("bx-plus");
-      iconQuestion.classList.add("bx-x");
+      iconQuestion.classList.add("bx-plus");
+      iconQuestion.classList.remove("bx-x");
     }
   });
 });
