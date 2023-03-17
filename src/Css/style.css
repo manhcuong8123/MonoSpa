@@ -40,7 +40,7 @@
   bottom: 10% !important;
   padding: 0 !important;
 }
-.user-account > img{
+.user-account > img, .user-account button > img {
   width: 30px ;
   height: 30px;
   border-radius: 50%;
