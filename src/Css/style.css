@@ -64,7 +64,11 @@
  .box-fs-account ul{
   list-style: none;
 
+
   background-color: rgba(248, 248, 230, 0.888);
+
+  background-color: white;
+
   padding: 5px 10px ;
   border-radius: 10px;
  }
