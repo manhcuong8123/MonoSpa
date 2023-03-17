@@ -607,14 +607,14 @@
   padding: 0 10px;
   cursor: pointer;
   overflow: hidden;
-  height: 160px;
+  height: 0px;
   transition: 0.5s;
 }
 .box-text-question .reply-question p {
   padding-top: 10px;
 }
 .show-question {
-  height: 0px !important;
+  height: 120px !important;
   transition: 0.5s;
 }
 .add-background-question {
@@ -780,11 +780,11 @@ hr.dotted {
 }
 
 .box-question-click-booking {
-  margin-top: 100px !important;
+  margin: 100px auto !important;
 }
 .box-question-text-booking {
   position: relative;
-  margin:200px 0 100px 0;
+  margin:0px 0 0px 0;
 }
 .box-question-text-booking .img img {
   height: 300px;
@@ -847,14 +847,32 @@ hr.dotted {
 .text-question-click-left button {
   width: 30%;
 }
+.box-question-text-booking{
+  margin-top: 10%;
+  width: 100%;
 }
-.text-question-click-left{
-  margin-top:150px
+}
+
+@media (max-width: 765px){
+.box-question-text-booking{
+  margin-top: 25%;
+}
+}
+@media  (min-width: 765px) and  (max-width: 880px){
+.box-question-text-booking{
+  margin-top: 20%;
+}
+}
+@media (min-width: 880px) and (max-width: 1000px){
+.box-question-text-booking{
+  margin-top: -30%;
+}
 }
 @media (min-width: 765px) and (max-width: 1000px){
   .box-question-click-booking {
  margin-top: 85% !important;
 }
+
 }
 
 /* end responsive  */
@@ -1304,10 +1322,13 @@ font-family: 'Pacifico', cursive;
   text-align: center;
   background-color: #fff;
   border-radius: 20px;
-  overflow: scroll;
+  padding: 10px 20px;
+}
+.row-mokup{
+   overflow: scroll;
   overflow: -moz-scrollbars-none;
   -ms-overflow-style: none;
-  padding: 10px 20px;
+  height: 100%;
 }
 
 .img-modal{
@@ -1870,7 +1891,7 @@ footer .background-image-footer {
   background-position: 0 77%;
   background-repeat: no-repeat;
   background-size: cover;
-  background-color: #fdf5e6;
+  background-color: #333333;
   z-index: -1000;
 
 }
@@ -1880,7 +1901,7 @@ footer .text {
 }
 
 footer .text .row-footer .col {
-  color: #043542;
+  color: white !important;
 }
 
 footer .text .row-footer .col img {
@@ -1888,7 +1909,7 @@ footer .text .row-footer .col img {
 }
 
 footer .text .row-footer .col h4 {
-  color: #043542;
+  color:  white;
 
 }
 
@@ -1902,8 +1923,7 @@ footer .link-icon li {
 
 footer .link-icon a {
   font-size: 20px;
-  color: #043542;
-
+ color: white;
   transition: 1s;
 }
 
@@ -1914,7 +1934,7 @@ footer .link-icon a:hover {
 
 footer .text a {
   text-decoration: none;
-  color: #043542;
+  color: white;
 
 }
 
