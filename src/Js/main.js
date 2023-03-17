@@ -60,14 +60,14 @@ textQuestion.forEach((btnClick) => {
     if (replyQuestion.classList.contains("show-question")) {
       replyQuestion.classList.remove("show-question");
       btnClick.classList.remove("add-background-question");
-      iconQuestion.classList.remove("bx-plus");
-      iconQuestion.classList.add("bx-x");
-
+        iconQuestion.classList.add("bx-plus");
+        iconQuestion.classList.remove("bx-x");
     } else {
       replyQuestion.classList.add("show-question");
       btnClick.classList.add("add-background-question");
-      iconQuestion.classList.add("bx-plus");
-      iconQuestion.classList.remove("bx-x");
+      iconQuestion.classList.remove("bx-plus");
+      iconQuestion.classList.add("bx-x");
+    
     }
   });
 });
@@ -204,91 +204,7 @@ function isPhoneValid(phone) {
 //    pocup===============
 function test() {
   // document.querySelector('.content-modal-mockup').style.display = 'none';
-
   document.querySelector(".modal-mockup").style.display = 'block';
-
-
-  const mockup = document.querySelector(".modal-mockup");
-  if (mockup){
-
-    mockup.innerHTML = `
-       <div class="content-modal-mockup">
-       <div class="item-modal-mockup">
-          <img src="../src/Image/photo_2023-03-10_10-33-00.png" width="100px" alt="">
-          <h5>"Mono Bovis Spa = Chạm đến làn da không tuổi"</h5>
-          <h3>ƯU ĐÃI YÊU THƯƠNG</h3>
-          <p>Nâng tầm sắc đẹp Việt</p>
-          <img src="../src/Image/Screenshot 2023-03-12 160307.png" width="50%" alt=""> 
-           <p class="title-give"> * Nhận món quà siêu khủng từ MonoSpa chỉ với 1 phút cập nhật đầy đủ *</p>
-           <div class="form-modal text-center">
-             
-          <form>
-              <div class="value-form-modal">
-                  <label>Họ và tên </label>
-            :  <input type="text" name="name" placeholder="nhập tên anh/chị">
-              </div>
-              <div class="value-form-modal">
-                  <label>Số điện thoại :</label>
-              <input type="text" name="phone" placeholder="nhập SĐT anh/chị">
-              </div>
-              <div class="value-form-modal">
-                  <label>Email</label>
-             : <input type="email" placeholder="nhập email anh/chị">
-              </div>
-              <a href=""><button class="btn submit-form-modal">GỬI THÔNG TIN</button></a>
-          </form>
-                  
-           </div>
-          <button class="close-modal btn" onclick="myStopFunction()"><i class='bx bx-x bx-tada' ></i></button>
-        </div>
-    </div>`;
-  }
-
-  document.querySelector(".modal-mockup").innerHTML = `
-  <div class="content-modal-mockup">
-    <div class="item-modal-mockup">
-    <div class="row">
-    <div class="col-sm-6 col-md-12">
-        <img src="../src/Image/photo_2023-03-10_10-33-00.png" width="100px" alt="">
-<h5 class="h5-item-modal-mockup">"Mono Bovis Spa - Chạm đến làn da không tuổi"</h5>
-<p><i class='bx bxs-star' style='color:#e8880a'  ></i>
-<i class='bx bxs-star' style='color:#e8880a'  ></i>
-<i class='bx bxs-star' style='color:#e8880a'  ></i>
-<i class='bx bxs-star' style='color:#e8880a'  ></i>
-<i class='bx bxs-star' style='color:#e8880a'  ></i></p>
-<h3 class="h3-item-modal-mockup">Ưu đãi khách hàng</h3>
-<p>Nâng tầm sắc đẹp Việt</p>
-<p class="title-give"> * Nhận món quà siêu khủng từ MonoSpa chỉ với 1 phút cập nhật đầy đủ *</p>
-<div class="form-modal text-center">
-
-    <form>
-        <div class="value-form-modal">
-            <label>Họ và tên </label>
-            : <input type="text" name="name" placeholder="Nhập tên anh/chị">
-        </div>
-        <div class="value-form-modal">
-            <label>Số điện thoại :</label>
-            <input type="text" name="phone" placeholder="Nhập SĐT anh/chị">
-        </div>
-        <div class="value-form-modal">
-            <label>Email</label>
-            : <input type="email" placeholder="Nhập email anh/chị">
-        </div>
-        <a href=""><button class="btn submit-form-modal">GỬI THÔNG TIN</button></a>
-    </form>
-
-</div>
-    </div>
-    <div class="col-sm-6 col-md-12 img-modal">
-<img src="../src/Image/Screenshot 2023-03-12 160307.png" width="100%" alt="">
-
-    </div>
-</div>
-        <button class="close-modal btn" onclick="myStopFunction()"><i class='bx bx-x bx-tada' ></i></button>
-    </div>
-  </div>`;
-
-
 }
 const modal = setTimeout(test, 1000);
 function myStopFunction() {
@@ -334,7 +250,7 @@ if (form_contact) {
       document.getElementById("subject-contact-error").textContent = "";
     }
 
-    // Validate message
+// Validate message
     if (messageInput.value === "") {
       document.getElementById("form-contact-error").textContent =
         "Please enter a message";
@@ -607,7 +523,7 @@ function checkRePass() {
     removeErrorFor(nameRepass);
   }
 
-  if (emailValue === "") {
+if (emailValue === "") {
     setErrorFor(emailRepass, "Email cannot be blank");
   } else if (!isEmail(emailValue)) {
     setErrorFor(emailRepass, "Email is not valid");
@@ -828,4 +744,53 @@ function setSuccessFor(input) {
   const formControl = input.parentElement;
   formControl.className = "box-form success";
 }
+
+// vaidate mokup
+
+const formMokup = document.getElementById("form-modal-t");
+const nameMokup = document.getElementById("name-mokup");
+const phoneMokup = document.getElementById("phone-mokup");
+const emailMokup = document.getElementById("email-mokup");
+
+if (formMokup) {
+  formMokup.addEventListener("submit", (e) => {
+    e.preventDefault();
+
+    const nameValue = nameMokup.value.trim();
+    const phoneValue = phoneMokup.value.trim();
+    const emailValue = emailMokup.value.trim();
+    const regEmail = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    const regPhone = /^\d{10}$/;
+
+    let isNameValid = true;
+    let isPhoneValid = true;
+    let isEmailValid = true;
+
+    if (nameValue === "") {
+      alert("Name cannot be blank");
+      isNameValid = false;
+    }
+    if (phoneValue === "") {
+      alert("Phone number is empty");
+      isPhoneValid = false;
+    } else if (!regPhone.test(phoneValue)) {
+      alert("Invalid phone number");
+      isPhoneValid = false;
+    }
+    if (emailValue === "") {
+      alert("Email cannot be blank");
+      isEmailValid = false;
+    } else if (!regEmail.test(emailValue)) {
+      alert("Invalid email");
+      isEmailValid = false;
+    }
+
+    if (isNameValid && isPhoneValid && isEmailValid) {
+      formMokup.submit();
+    }
+  });
+}
+
+
+
 /* end the validate form */
