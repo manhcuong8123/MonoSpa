@@ -9,6 +9,7 @@
 /* Menu sub reposive  */
 .menu-sub-responsive {
   background-color: #f7f5f2;
+  box-shadow: 0 0 10px 10px rgba(128, 128, 128, 0.442);
   bottom: 0;
   width: 300px;
   left: -500px;
@@ -219,6 +220,9 @@
   background-position: 0px 73%;
   background-repeat: no-repeat;
   background-size: cover;
+}
+.left-banner-Homepage{
+  padding: 20px;
 }
 .h2-text-banner-header {
   font-size: 58px;
@@ -930,7 +934,7 @@ footer .box-input-email button{
 .link-left-banner-homePage a:nth-child(1) button {
   background-color: #053543;
   color: #fff;
-  padding: 25px 45px;
+  padding: 15px 25px;
   margin: 30px 30px 30px 0;
   transition: 0.2s linear;
   border: 1px solid #053543;
@@ -941,7 +945,7 @@ footer .box-input-email button{
 }
 .link-left-banner-homePage a:nth-child(2) button {
   border: 1px solid #053543;
-  padding: 25px 45px;
+  padding:15px 25px;
   margin: 30px 30px;
   transition: 0.2s linear;
 }
@@ -1017,6 +1021,9 @@ footer .box-input-email button{
 .item-right-about-us {
   display: flex;
 }
+.right-about-us,.left-about-us{
+  margin-top: 60px;
+}
 .content-item-right {
   margin: 20px 100px 0 0;
   text-align: center;
@@ -1073,6 +1080,9 @@ footer .box-input-email button{
 /* ===========treatment-price========== */
 .treatment-price {
   margin-top: 200px;
+}
+.left-treatment-price,.right-treatment-price,.left-our-service,.right-our-service{
+  margin-top: 50px;
 }
 .background-treat-price {
   background-image: url(../Image/bg-mobile.jpg);
@@ -1199,7 +1209,7 @@ footer .box-input-email button{
   background-color: #053543;
   padding: 15px 25px;
   color: #fff;
-  margin-top: 50px;
+  margin: 50px 0;
   transition: 0.2s linear;
   border-radius: 20px;
 }
@@ -1242,6 +1252,12 @@ footer .box-input-email button{
   width: 100%;
   height: 100vh;
 }
+.h5-item-modal-mockup{
+  /* font-family: 'Lobster', cursive; */
+font-family: 'Pacifico', cursive;
+/* font-family: 'Roboto', sans-serif; */
+/* font-family: 'Roboto Slab', serif; */
+}
 .title-give {
   font-style: italic;
   color: #c6641b;
@@ -1256,21 +1272,26 @@ footer .box-input-email button{
 .item-modal-mockup {
   right: 0;
   left: 0;
-  width: 50%;
+  width: 70%;
   margin: 0 auto;
-  top: 3%;
-  bottom: 3%;
+  top: 5%;
+  bottom: 5%;
   height: 90%;
   position: absolute;
   text-align: center;
-  background-color: #fff;
+  background-color: #f1e7d3;
   border-radius: 20px;
   overflow: scroll;
   overflow: -moz-scrollbars-none;
   -ms-overflow-style: none;
+  padding: 10px 20px;
 }
 
-
+.img-modal{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 .form-modal {
   width: 100%;
   margin: auto;
@@ -1282,15 +1303,17 @@ footer .box-input-email button{
 .value-form-modal input {
   border: none;
   padding: 0px 20px 5px 0;
-  font-style: italic;
   color: #053543;
   outline: none;
   border-bottom: 1px solid #053543;
+  background-color: transparent;
+  padding: 10px ;
 }
 .value-form-modal input::placeholder {
   font-style: normal;
   font-size: 13px;
-  color: #1c117a;
+  color: #070323;
+  font-style: italic;
 }
 .submit-form-modal {
   background-color: #053543;
