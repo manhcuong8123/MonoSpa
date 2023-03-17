@@ -1866,7 +1866,7 @@ footer .background-image-footer {
   background-position: 0 77%;
   background-repeat: no-repeat;
   background-size: cover;
-  background-color: rgb(5, 53, 67);
+  background-color: #fdf5e6;
   z-index: -1000;
 
 }
@@ -1876,7 +1876,7 @@ footer .text {
 }
 
 footer .text .row-footer .col {
-  color: aliceblue;
+  color: #043542;
 }
 
 footer .text .row-footer .col img {
@@ -1884,7 +1884,8 @@ footer .text .row-footer .col img {
 }
 
 footer .text .row-footer .col h4 {
-  color: #FDF5E6;
+  color: #043542;
+
 }
 
 footer .list-support li {
@@ -1897,7 +1898,8 @@ footer .link-icon li {
 
 footer .link-icon a {
   font-size: 20px;
-  color: aliceblue;
+  color: #043542;
+
   transition: 1s;
 }
 
@@ -1908,7 +1910,8 @@ footer .link-icon a:hover {
 
 footer .text a {
   text-decoration: none;
-  color: #F7F5F2;
+  color: #043542;
+
 }
 
 footer .text p {
@@ -1922,17 +1925,18 @@ footer h4 {
 
 footer .box-input-email input {
   border: 1px solid #a47b60;
-  background-color: #043542;
+  background-color: transparent;
   outline: none;
   border-radius: 1px;
-  color: #ffffff;
+  color: #043542;
+
   padding: 3px;
   height: 40px;
   transition: 0.5s;
 }
 
 footer .box-input-email input:focus {
-  background-color: #fdf5e615;
+  background-color: #ccb99515;
   transition: 0.5s;
 }
 
