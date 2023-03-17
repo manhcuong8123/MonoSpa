@@ -60,13 +60,14 @@ textQuestion.forEach((btnClick) => {
     if (replyQuestion.classList.contains("show-question")) {
       replyQuestion.classList.remove("show-question");
       btnClick.classList.remove("add-background-question");
-      iconQuestion.classList.add("bx-plus");
-      iconQuestion.classList.remove("bx-x");
+      iconQuestion.classList.remove("bx-plus");
+      iconQuestion.classList.add("bx-x");
+
     } else {
       replyQuestion.classList.add("show-question");
       btnClick.classList.add("add-background-question");
-      iconQuestion.classList.remove("bx-plus");
-      iconQuestion.classList.add("bx-x");
+      iconQuestion.classList.add("bx-plus");
+      iconQuestion.classList.remove("bx-x");
     }
   });
 });
@@ -331,4 +332,416 @@ if (form_cmt) {
   }
 }
 
+
+// validate login
+const formLogin = document.getElementById("formLogin");
+const emailLogin = document.getElementById("email-login");
+const passLogin = document.getElementById("pass-login");
+
+if (formLogin) {
+  formLogin.addEventListener("submit", (e) => {
+    console.log(1);
+    e.preventDefault();
+    checkLogin();
+  });
+}
+
+function checkLogin() {
+  const emailValue = emailLogin.value.trim();
+  const passValue = passLogin.value.trim();
+
+  if (emailValue === "") {
+    setErrorFor(emailLogin, "Email cannot be blank");
+  } else if (!isEmail(emailValue)) {
+    setErrorFor(emailLogin, "Email is not valid");
+  } else {
+    setSuccessFor(emailLogin);
+    removeErrorFor(emailLogin);
+  }
+  
+  if (passValue === "") {
+    setErrorFor(passLogin, "Password number is empty");
+  } else if (!isPassValid(passValue)) {
+    setErrorFor(passLogin, "Invalid password number");
+  } else {
+    setSuccessFor(passLogin);
+    removeErrorFor(passLogin);
+  }
+}
+
+function setErrorFor(input, message) {
+  const formControl = input.parentElement;
+  const small = formControl.querySelector("small");
+  formControl.className = "box-form error";
+  small.innerText = message;
+  small.style.display = "block";
+}
+
+function removeErrorFor(input) {
+  const formGroup = input.parentElement;
+  formGroup.classList.remove("error-message");
+  const small = formGroup.querySelector("small");
+  small.style.display = "none";
+}
+
+function setSuccessFor(input) {
+  const formControl = input.parentElement;
+  formControl.className = "box-form success";
+}
+
+function isEmail(email) {
+  return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
+}
+function isPassValid(phone) {
+  return /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$/.test(phone);
+}
+
+// validate signup 
+const formSignup = document.getElementById("formSignup");
+const nameSignup = document.getElementById("name-signup");
+const emailSignup = document.getElementById("email-signup");
+const phoneSignup = document.getElementById("phone-signup");
+const passSignup = document.getElementById("pass-signup");
+const repassSignup = document.getElementById("repass-signup");
+
+if (formSignup) {
+  formSignup.addEventListener("submit", (e) => {
+    e.preventDefault();
+    checkSignup();
+  });
+}
+
+function checkSignup() {
+  const nameValue = nameSignup.value.trim();
+  const emailValue = emailSignup.value.trim();
+  const phoneValue = phoneSignup.value.trim();
+  const passValue = emailSignup.value.trim();
+  const repassValue = phoneSignup.value.trim();
+
+  if (nameValue === "") {
+    setErrorFor(nameSignup, "Name cannot be blank");
+  } else {
+    setSuccessFor(nameSignup);
+    removeErrorFor(nameSignup);
+  }
+
+  if (emailValue === "") {
+    setErrorFor(emailSignup, "Email cannot be blank");
+  } else if (!isEmail(emailValue)) {
+    setErrorFor(emailSignup, "Email is not valid");
+  } else {
+    setSuccessFor(emailSignup);
+    removeErrorFor(emailSignup);
+  }
+   if (phoneValue === "") {
+     setErrorFor(phoneSignup, "Password number is empty");
+   } else if (!isPhoneValid(passValue)) {
+     setErrorFor(phoneSignup, "Invalid password number");
+   } else {
+     setSuccessFor(phoneSignup);
+     removeErrorFor(phoneSignup);
+   }
+  
+  if (passValue === "") {
+    setErrorFor(passSignup, "Password number is empty");
+  } else if (!isPassValid(passValue)) {
+    setErrorFor(passSignup, "Invalid password number");
+  } else {
+    setSuccessFor(passSignup);
+    removeErrorFor(passSignup);
+  }
+  if (repassValue === "") {
+    setErrorFor(repassSignup, "Password number is empty");
+  } else if (repassValue != passValue){
+      setErrorFor(repassSignup, "Invalid password");
+  }else if (!isPassValid(passValue)) {
+    setErrorFor(repassSignup, "Invalid password number");
+  } else {
+    setSuccessFor(repassSignup);
+    removeErrorFor(repassSignup);
+  }
+
+
+}
+
+function setErrorFor(input, message) {
+  const formControl = input.parentElement;
+  const small = formControl.querySelector("small");
+  formControl.className = "box-form error";
+  small.innerText = message;
+  small.style.display = "block";
+}
+
+function removeErrorFor(input) {
+  const formGroup = input.parentElement;
+  formGroup.classList.remove("error-message");
+  const small = formGroup.querySelector("small");
+  small.style.display = "none";
+}
+
+function setSuccessFor(input) {
+  const formControl = input.parentElement;
+  formControl.className = "box-form success";
+}
+
+function isEmail(email) {
+  return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
+}
+function isPassValid(phone) {
+  return /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$/.test(phone);
+}
+function isPhoneValid(phone) {
+  return /^\d{10}$/.test(phone);
+}
+
+// validate repass
+const formRepass = document.getElementById("formForgotPass");
+const nameRepass = document.getElementById("name-signup");
+const emailRepass = document.getElementById("email-signup");
+const phoneRepass = document.getElementById("phone-signup");
+const passRepass = document.getElementById("pass-signup");
+const repassRepass = document.getElementById("repass-signup");
+
+if (formRepass) {
+  formRepass.addEventListener("submit", (e) => {
+    e.preventDefault();
+    checkRePass();
+  });
+}
+
+function checkRePass() {
+  const nameValue = nameRepass.value.trim();
+  const emailValue = emailRepass.value.trim();
+  const phoneValue = phoneRepass.value.trim();
+  const passValue = emailRepass.value.trim();
+  const repassValue = phoneRepass.value.trim();
+
+  if (nameValue === "") {
+    setErrorFor(nameRepass, "Name cannot be blank");
+  } else {
+    setSuccessFor(nameRepass);
+    removeErrorFor(nameRepass);
+  }
+
+  if (emailValue === "") {
+    setErrorFor(emailRepass, "Email cannot be blank");
+  } else if (!isEmail(emailValue)) {
+    setErrorFor(emailRepass, "Email is not valid");
+  } else {
+    setSuccessFor(emailRepass);
+    removeErrorFor(emailRepass);
+  }
+  if (phoneValue === "") {
+    setErrorFor(phoneRepass, "Password number is empty");
+  } else if (!isPhoneValid(passValue)) {
+    setErrorFor(phoneRepass, "Invalid password number");
+  } else {
+    setSuccessFor(phoneRepass);
+    removeErrorFor(phoneRepass);
+  }
+
+  if (passValue === "") {
+    setErrorFor(passRepass, "Password number is empty");
+  } else if (!isPassValid(passValue)) {
+    setErrorFor(passRepass, "Invalid password number");
+  } else {
+    setSuccessFor(passRepass);
+    removeErrorFor(passRepass);
+  }
+  if (repassValue === "") {
+    setErrorFor(repassRepass, "Password number is empty");
+  } else if (repassValue != passValue) {
+    setErrorFor(repassRepass, "Invalid password");
+  } else if (!isPassValid(passValue)) {
+    setErrorFor(repassRepass, "Invalid password number");
+  } else {
+    setSuccessFor(repassRepass);
+    removeErrorFor(repassRepass);
+  }
+}
+
+function setErrorFor(input, message) {
+  const formControl = input.parentElement;
+  const small = formControl.querySelector("small");
+  formControl.className = "box-form error";
+  small.innerText = message;
+  small.style.display = "block";
+}
+
+function removeErrorFor(input) {
+  const formGroup = input.parentElement;
+  formGroup.classList.remove("error-message");
+  const small = formGroup.querySelector("small");
+  small.style.display = "none";
+}
+
+function setSuccessFor(input) {
+  const formControl = input.parentElement;
+  formControl.className = "box-form success";
+}
+
+function isEmail(email) {
+  return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
+}
+function isPassValid(phone) {
+  return /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$/.test(phone);
+}
+function isPhoneValid(phone) {
+  return /^\d{10}$/.test(phone);
+}
+
+// validate forgot password
+const formforgot = document.getElementById("formforgot");
+const passforgot = document.getElementById("pass-forgot");
+const repassforgot = document.getElementById("repass-forgot");
+
+if (formforgot) {
+  formforgot.addEventListener("submit", (e) => {
+    e.preventDefault();
+    checkForgotPass();
+  });
+}
+
+function checkForgotPass() {
+  const passValue = passforgot.value.trim();
+  const repassValue = repassforgot.value.trim();
+
+  if (passValue === "") {
+    setErrorFor(passforgot, "Password number is empty");
+  } else if (!isPassValid(passValue)) {
+    setErrorFor(passforgot, "Invalid password number");
+  } else {
+    setSuccessFor(passforgot);
+    removeErrorFor(passforgot);
+  }
+
+    if (repassValue === "") {
+      setErrorFor(repassforgot, "Password number is empty");
+    } else if (repassValue != passValue) {
+      setErrorFor(repassforgot, "Invalid password");
+    } else if (!isPassValid(passValue)) {
+      setErrorFor(repassforgot, "Invalid password number");
+    } else {
+      setSuccessFor(repassforgot);
+      removeErrorFor(repassforgot);
+    }
+}
+
+function setErrorFor(input, message) {
+  const formControl = input.parentElement;
+  const small = formControl.querySelector("small");
+  formControl.className = "box-form error";
+  small.innerText = message;
+  small.style.display = "block";
+}
+
+function removeErrorFor(input) {
+  const formGroup = input.parentElement;
+  formGroup.classList.remove("error-message");
+  const small = formGroup.querySelector("small");
+  small.style.display = "none";
+}
+
+function setSuccessFor(input) {
+  const formControl = input.parentElement;
+  formControl.className = "box-form success";
+}
+
+function isPassValid(phone) {
+  return /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$/.test(phone);
+}
+
+// validate checkmail
+const formCheckmail = document.getElementById("formCheckmail");
+const emailCheck = document.getElementById("check-mail");
+
+if (formCheckmail) {
+  formCheckmail.addEventListener("submit", (e) => {
+    console.log(1);
+    e.preventDefault();
+    checkMail();
+  });
+}
+
+function checkMail() {
+  const emailValue = emailCheck.value.trim();
+
+  if (emailValue === "") {
+    setErrorFor(emailCheck, "Email cannot be blank");
+  } else if (!isEmail(emailValue)) {
+    setErrorFor(emailCheck, "Email is not valid");
+  } else {
+    setSuccessFor(emailCheck);
+    removeErrorFor(emailCheck);
+  }
+}
+
+function setErrorFor(input, message) {
+  const formControl = input.parentElement;
+  const small = formControl.querySelector("small");
+  formControl.className = "box-form error";
+  small.innerText = message;
+  small.style.display = "block";
+}
+
+function removeErrorFor(input) {
+  const formGroup = input.parentElement;
+  formGroup.classList.remove("error-message");
+  const small = formGroup.querySelector("small");
+  small.style.display = "none";
+}
+
+function setSuccessFor(input) {
+  const formControl = input.parentElement;
+  formControl.className = "box-form success";
+}
+
+function isEmail(email) {
+  return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
+}
+
+// validate check token
+const formToken = document.getElementById("formtoken");
+const token = document.getElementById("token");
+
+if (formToken) {
+  formToken.addEventListener("submit", (e) => {
+    console.log(1);
+    e.preventDefault();
+    checkToken();
+  });
+}
+
+function checkToken() {
+  const tokenValue = token.value.trim();
+ 
+  if (tokenValue === "") {
+    setErrorFor(token, "Token is empty");
+  } else if (tokenValue.length < 6) {
+    setErrorFor(token, "Token is not correct");
+  } else {
+    setSuccessFor(token);
+    removeErrorFor(token);
+  }
+}
+
+function setErrorFor(input, message) {
+  const formControl = input.parentElement;
+  const small = formControl.querySelector("small");
+  formControl.className = "box-form error";
+  small.innerText = message;
+  small.style.display = "block";
+}
+
+function removeErrorFor(input) {
+  const formGroup = input.parentElement;
+  formGroup.classList.remove("error-message");
+  const small = formGroup.querySelector("small");
+  small.style.display = "none";
+}
+
+function setSuccessFor(input) {
+  const formControl = input.parentElement;
+  formControl.className = "box-form success";
+}
 /* end the validate form */
