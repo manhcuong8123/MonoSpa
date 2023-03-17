@@ -205,6 +205,9 @@ function isPhoneValid(phone) {
 function test() {
   // document.querySelector('.content-modal-mockup').style.display = 'none';
 
+  document.querySelector(".modal-mockup").style.display = 'block';
+
+
   const mockup = document.querySelector(".modal-mockup");
   if (mockup){
 
@@ -284,6 +287,7 @@ function test() {
         <button class="close-modal btn" onclick="myStopFunction()"><i class='bx bx-x bx-tada' ></i></button>
     </div>
   </div>`;
+
 
 }
 const modal = setTimeout(test, 1000);

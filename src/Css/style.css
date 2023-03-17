@@ -58,18 +58,24 @@
   z-index: 1;
 }
 .click-box-fs-account{
-  height: 123px !important;
+  height: 200px !important;
   transition: .3s;
 }
  .box-fs-account ul{
   list-style: none;
+
+
+  background-color: rgba(248, 248, 230, 0.888);
+
   background-color: white;
+
   padding: 5px 10px ;
   border-radius: 10px;
  }
   .box-fs-account ul li {
     transition: .4s;
      border-radius: 5px;
+     padding: 10px ;
   }
    .box-fs-account ul li:hover {
     transition: .4s;
@@ -86,6 +92,7 @@
  color: #043542;
  padding: 5px;
  transition: .4s;
+ font-size: 1.2rem;
  }
  .box-account-responsive{
   background-color: #043542c2;
@@ -356,6 +363,8 @@
 .oppenTime-box .information-oppenTime .close-information-oppenTime button {
   border: none;
   background-color: transparent;
+  float: right;
+  color: #a47b60;
 }
 /* End Menu Home Pc  */
 
@@ -1040,7 +1049,7 @@ footer .box-input-email button{
   font-size: 30px;
 }
 .btn-about-us {
-  background-color: #053543;
+  background-color: #a47b60;
   padding: 25px 35px;
   transition: 0.2s linear;
   color: #fff;
@@ -1169,6 +1178,7 @@ footer .box-input-email button{
   background-repeat: no-repeat;
   background-size: cover;
   padding: 100px 0 100px 0;
+  margin-top: 80px;
 }
 .hour-right-working {
   display: flex;
@@ -1213,7 +1223,7 @@ footer .box-input-email button{
   margin: 20px 0;
 }
 .btn-read-more {
-  background-color: #053543;
+  background-color:#a47b60;
   padding: 15px 25px;
   color: #fff;
   margin: 50px 0;
@@ -1250,6 +1260,7 @@ footer .box-input-email button{
 /* =============modal-mockup============= */
 .modal-mockup {
   position: relative;
+  display: none;
 }
 .content-modal-mockup {
   background-color: #262626cb;
@@ -1258,6 +1269,11 @@ footer .box-input-email button{
   left: 0;
   width: 100%;
   height: 100vh;
+}
+.oidoioi{
+  position: relative;
+  width: 100%;
+  height: 100%;
 }
 .h5-item-modal-mockup{
   /* font-family: 'Lobster', cursive; */
@@ -1286,7 +1302,7 @@ font-family: 'Pacifico', cursive;
   height: 90%;
   position: absolute;
   text-align: center;
-  background-color: #f1e7d3;
+  background-color: #fff;
   border-radius: 20px;
   overflow: scroll;
   overflow: -moz-scrollbars-none;
@@ -1323,14 +1339,14 @@ font-family: 'Pacifico', cursive;
   font-style: italic;
 }
 .submit-form-modal {
-  background-color: #053543;
+  background-color: #a47b60;
   color: #eee;
   padding: 10px 15px;
   margin: 20px 0;
   transition: 0.2s linear;
 }
 .submit-form-modal:hover {
-  background-color: #043542;
+  background-color: #a47b60;
   color: #eee;
   transform: scale(0.9);
   transition: 0.2s linear;
@@ -1657,6 +1673,7 @@ main .contact p {
 .contact-information-text {
   background-color: #fdf5e6;
   height: 300px;
+  border-radius: 30px;
 }
 
 .contact-information-text i {
@@ -1841,22 +1858,7 @@ main .contact p {
   }
 }
 
-@media (max-width: 1200px) {
-  .make-appointment-contact .background-make-appointment {
-    width: 100%;
-  }
-  .make-appointment-contact .box-make-appointment .col-sm-6 {
-    /* width: auto; */
-  }
-  .make-appointment-contact .box-make-appointment .map {
-  }
-  .make-appointment-contact .form-right-make-appointment {
-    /* display: inline-block; */
-  }
-}
-/*FOOOOOOTER*/
 
-/*FOOOOOOTER*/
 
 /* FOOTER  */
 footer {
@@ -1923,7 +1925,7 @@ footer h4 {
 }
 
 footer .box-input-email input {
-  border: 1px solid #FDF5E6;
+  border: 1px solid #a47b60;
   background-color: #043542;
   outline: none;
   border-radius: 1px;
@@ -1931,8 +1933,6 @@ footer .box-input-email input {
   padding: 3px;
   height: 40px;
   transition: 0.5s;
-
-
 }
 
 footer .box-input-email input:focus {
@@ -1941,11 +1941,12 @@ footer .box-input-email input:focus {
 }
 
 footer .box-input-email button {
-  background-color: #FDF5E6;
+  background-color: #a47b60;
   border: none;
   height: 40px;
   padding: 5px;
-
+  color: #fff;
+  border: 2px solid #a47b60;
 }
 
 footer .coppyright {
