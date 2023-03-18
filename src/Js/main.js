@@ -755,41 +755,67 @@ const emailMokup = document.getElementById("email-mokup");
 if (formMokup) {
   formMokup.addEventListener("submit", (e) => {
     e.preventDefault();
-
-    const nameValue = nameMokup.value.trim();
-    const phoneValue = phoneMokup.value.trim();
-    const emailValue = emailMokup.value.trim();
-    const regEmail = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-    const regPhone = /^\d{10}$/;
-
-    let isNameValid = true;
-    let isPhoneValid = true;
-    let isEmailValid = true;
-
-    if (nameValue === "") {
-      alert("Name cannot be blank");
-      isNameValid = false;
-    }
-    if (phoneValue === "") {
-      alert("Phone number is empty");
-      isPhoneValid = false;
-    } else if (!regPhone.test(phoneValue)) {
-      alert("Invalid phone number");
-      isPhoneValid = false;
-    }
-    if (emailValue === "") {
-      alert("Email cannot be blank");
-      isEmailValid = false;
-    } else if (!regEmail.test(emailValue)) {
-      alert("Invalid email");
-      isEmailValid = false;
-    }
-
-    if (isNameValid && isPhoneValid && isEmailValid) {
-      formMokup.submit();
-    }
+    checkMokup();
   });
 }
+
+function checkMokup() {
+  const nameValue = nameMokup.value.trim();
+  const phoneValue = phoneMokup.value.trim();
+  const emailValue = emailMokup.value.trim();
+
+  if (nameValue === "") {
+    setErrorFor(nameMokup, "Name cannot be blank");
+  } else {
+    setSuccessFor(nameMokup);
+    removeErrorFor(nameMokup);
+  }
+  if (phoneValue === "") {
+    setErrorFor(phoneMokup, "Password number is empty");
+  } else if (!isPhoneValid(phoneValue)) {
+    setErrorFor(phoneMokup, "Invalid password number");
+  } else {
+    setSuccessFor(phoneMokup);
+    removeErrorFor(phoneMokup);
+  }
+  if (emailValue === "") {
+    setErrorFor(emailMokup, "Email cannot be blank");
+  } else if (!isEmail(emailValue)) {
+    setErrorFor(emailMokup, "Email is not valid");
+  } else {
+    setSuccessFor(emailMokup);
+    removeErrorFor(emailMokup);
+  }
+
+  
+}
+
+function setErrorFor(input, message) {
+  const formControl = input.parentElement;
+  const small = formControl.querySelector("small");
+  formControl.className = "box-form error";
+  small.innerText = message;
+  small.style.display = "block";
+}
+
+function removeErrorFor(input) {
+  const formGroup = input.parentElement;
+  formGroup.classList.remove("error-message");
+  const small = formGroup.querySelector("small");
+  small.style.display = "none";
+}
+
+function setSuccessFor(input) {
+  const formControl = input.parentElement;
+  formControl.className = "box-form success";
+}
+
+function isEmail(email) {
+  return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
+}
+function isPhoneValid(phone) {
+  return /^\d{10}$/.test(phone);
+} 
 
 // vali date editUser 
 const formEditUser = document.querySelector(".formEditUser");
