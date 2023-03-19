@@ -110,8 +110,10 @@ const textarea = document.getElementById("textarea");
 if (form) {
   form.addEventListener("submit", (e) => {
     e.preventDefault();
-
-    checkInputs();
+    const isValid = checkInputs();
+    if (isValid) {
+      form.submit();
+    }
   });
 }
 
@@ -124,9 +126,11 @@ function checkInputs() {
   const textareaValue = textarea.value.trim();
   const today = new Date();
   const selectedDate = new Date(dateValue);
+  var isValid = true;
 
   if (nameValue === "") {
     setErrorFor(namef, "Name cannot be blank");
+    isValid = false;
   } else {
     setSuccessFor(namef);
     removeErrorFor(namef);
@@ -134,8 +138,10 @@ function checkInputs() {
 
   if (emailValue === "") {
     setErrorFor(email, "Email cannot be blank");
+    isValid = false;
   } else if (!isEmail(emailValue)) {
     setErrorFor(email, "Email is not valid");
+    isValid = false;
   } else {
     setSuccessFor(email);
     removeErrorFor(email);
@@ -143,6 +149,7 @@ function checkInputs() {
 
   if (selectValue === "0") {
     setErrorFor(select, "Please select a service");
+    isValid = false;
   } else {
     setSuccessFor(select);
     removeErrorFor(select);
@@ -150,8 +157,10 @@ function checkInputs() {
 
   if (telValue === "") {
     setErrorFor(tel, "Phone number is empty");
+    isValid = false;
   } else if (!isPhoneValid(telValue)) {
     setErrorFor(tel, "Invalid phone number");
+    isValid = false;
   } else {
     setSuccessFor(tel);
     removeErrorFor(tel);
@@ -159,8 +168,10 @@ function checkInputs() {
 
   if (dateValue === "") {
     setErrorFor(date, "Please select a date");
+    isValid = false;
   } else if (selectedDate < today) {
     setErrorFor(date, "Please select a date here");
+    isValid = false;
   } else {
     setSuccessFor(date);
     removeErrorFor(date);
@@ -168,10 +179,12 @@ function checkInputs() {
 
   if (textareaValue === "") {
     setErrorFor(textarea, "Message cannot be blank");
+    isValid = false;
   } else {
     setSuccessFor(textarea);
     removeErrorFor(textarea);
   }
+  return isValid;
 }
 
 function setErrorFor(input, message) {
@@ -218,123 +231,202 @@ function myStopFunction() {
 /*VALIDATE CONTACT AND SINGLE BLOG*/
 
 /*validate form contact*/
-const form_contact = document.getElementById("form-contact");
-const nameInput_contact = document.getElementById("name-form-contact");
-const emailInput_contact = document.getElementById("email-form-contact");
-const subjectInput = document.getElementById("subject-form-contact");
-const messageInput = document.getElementById("form-contact");
 
-if (form_contact) {
-  form_contact.addEventListener("submit", function (e) {
-    e.preventDefault(); // prevent the form from submitting
-    console.log(form_contact);
-    // Validate name
-    if (nameInput_contact.value.trim() === "") {
-      document.getElementById("nameform-contact-error").textContent =
-        "Please enter your name";
-    } else {
-      document.getElementById("nameform-contact-error").textContent = "";
-    }
-
-    // Validate email
-    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-    if (!emailRegex.test(emailInput_contact.value)) {
-      document.getElementById("emailform-contact-error").textContent =
-        "Please enter a valid email address";
-    } else {
-      document.getElementById("emailform-contact-error").textContent = "";
-    }
-
-    // Validate subject
-    if (subjectInput.value.trim() === "") {
-      document.getElementById("subject-contact-error").textContent =
-        "Please enter a subject";
-    } else {
-      document.getElementById("subject-contact-error").textContent = "";
-    }
-
-// Validate message
-    if (messageInput.value === "") {
-      document.getElementById("form-contact-error").textContent =
-        "Please enter a message";
-    } else {
-      document.getElementById("form-contact-error").textContent = "";
-    }
-
-    // Submit the form if all fields are valid
-    if (
-      nameInput_contact.value.trim() !== "" &&
-      emailRegex.test(emailInput_contact.value) &&
-      subjectInput.value.trim() !== "" &&
-      messageInput.value.trim() !== ""
-    ) {
-      form_contact.submit();
-    }
-  });
-}
 /*  end validate from contact */
-// validate form comment
-const form_cmt = document.getElementById("form-comment");
-const comment = document.querySelector("#comment");
-const nameComment = document.querySelector("#name-comment");
-const emailComment = document.querySelector("#email-comment");
-const website = document.querySelector("#website-comment");
-const commentError = document.querySelector("#comment-error");
-const nameCommentError = document.querySelector("#nameComment-error");
-const emailCommentError = document.querySelector("#emailComment-error");
-const websiteError = document.querySelector("#website-error");
 
-if (form_cmt) {
-  form_cmt.addEventListener("submit", function (event) {
-    console.log(form_cmt);
-    event.preventDefault();
+const formContact = document.querySelector("#form-contact");
+const inputContact = document.getElementById("form-contact-message");
+const nameContact = document.getElementById("name-form-contact");
+const emailContact = document.getElementById("email-form-contact");
+const websiteContact = document.getElementById("subject-form-contact");
 
-    if (!comment.value) {
-      commentError.textContent = "Please enter a comment.";
-    } else {
-      commentError.textContent = "";
-    }
-
-    if (!nameComment.value) {
-      nameCommentError.textContent = "Please enter your nameComment.";
-    } else {
-      nameCommentError.textContent = "";
-    }
-
-    if (!emailComment.value) {
-      emailCommentError.textContent = "Please enter your emailComment.";
-    } else if (!isValidEmailComment(emailComment.value)) {
-      emailCommentError.textContent = "Please enter a valid emailComment.";
-    } else {
-      emailCommentError.textContent = "";
-    }
-
-    if (website.value && !isValidUrl(website.value)) {
-      websiteError.textContent = "Please enter a valid URL.";
-    } else {
-      websiteError.textContent = "";
-    }
-
-    if (comment.value && nameComment.value && emailComment.value) {
-      form_cmt.submit();
+if (formContact) {
+  formContact.addEventListener("submit", (e) => {
+    e.preventDefault();
+    const isValid = checkContact();
+    if (isValid) {
+      formContact.submit();
     }
   });
-
-  function isValidEmailComment(emailComment) {
-    const emailCommentRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-    return emailCommentRegex.test(emailComment);
-  }
-
-  function isValidUrl(url) {
-    try {
-      new URL(url);
-      return true;
-    } catch (error) {
-      return false;
-    }
-  }
 }
 
+function checkContact() {
+  const emailValue = emailContact.value.trim();
+  const nameValue = nameContact.value.trim();
+   const websiteValue = websiteContact.value.trim();
+    const ContactValue = inputContact.value.trim();
+  var isValid = true;
+
+   if (nameValue === "") {
+     setErrorFor(nameContact, "Email cannot be blank");
+     isValid = false;
+   } else {
+     setSuccessFor(nameContact);
+     removeErrorFor(nameContact);
+   }
+
+  if (emailValue === "") {
+    setErrorFor(emailContact, "Email cannot be blank");
+    isValid = false;
+  } else if (!isEmail(emailValue)) {
+    setErrorFor(emailContact, "Email is not valid");
+    isValid = false;
+  } else {
+    setSuccessFor(emailContact);
+    removeErrorFor(emailContact);
+  }
+
+  if (websiteValue === "") {
+    setErrorFor(websiteContact, "Url number is empty");
+    isValid = false;
+  } else if (!isUrl(websiteValue)) {
+    setErrorFor(websiteContact, "Invalid url number");
+    isValid = false;
+  } else {
+    setSuccessFor(websiteContact);
+    removeErrorFor(websiteContact);
+  }
+   if (ContactValue === "") {
+     setErrorFor(inputContact, "Contact number is empty");
+     isValid = false;
+   } else {
+     setSuccessFor(inputContact);
+     removeErrorFor(inputContact);
+   }
+   
+  return isValid;
+}
+
+function setErrorFor(input, message) {
+  const formControl = input.parentElement;
+  const small = formControl.querySelector("small");
+  formControl.className = "item box-form error";
+  small.innerText = message;
+  small.style.display = "block";
+}
+
+function removeErrorFor(input) {
+  const formGroup = input.parentElement;
+  formGroup.classList.remove("error-message");
+  const small = formGroup.querySelector("small");
+  small.style.display = "none";
+}
+
+function setSuccessFor(input) {
+  const formControl = input.parentElement;
+  formControl.className = "box-form success";
+}
+
+function isEmail(email) {
+  return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
+}
+function isUrl(url) {
+  return /^((http|https):\/\/)?[a-z0-9-]+(\.[a-z0-9-]+)+([/?].*)?$/i.test(url);
+}
+function isPassValid(phone) {
+  return /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$/.test(
+    phone
+  );
+}
+// validate form contact
+
+// vaidate comment detail page
+
+// validate form comment
+const formComment = document.querySelector("#form-comment");
+const inputComment = document.getElementById("comment");
+const nameComment = document.getElementById("name-comment");
+const emailComment = document.getElementById("email-comment");
+const websiteComment = document.getElementById("website-comment");
+
+if (formComment) {
+  formComment.addEventListener("submit", (e) => {
+    e.preventDefault();
+    const isValid = checkComment();
+    if (isValid) {
+      formComment.submit();
+    }
+  });
+}
+
+function checkComment() {
+  const emailValue = emailComment.value.trim();
+  const nameValue = nameComment.value.trim();
+   const websiteValue = websiteComment.value.trim();
+    const CommentValue = inputComment.value.trim();
+  var isValid = true;
+
+   if (nameValue === "") {
+     setErrorFor(nameComment, "Email cannot be blank");
+     isValid = false;
+   } else {
+     setSuccessFor(nameComment);
+     removeErrorFor(nameComment);
+   }
+
+  if (emailValue === "") {
+    setErrorFor(emailComment, "Email cannot be blank");
+    isValid = false;
+  } else if (!isEmail(emailValue)) {
+    setErrorFor(emailComment, "Email is not valid");
+    isValid = false;
+  } else {
+    setSuccessFor(emailComment);
+    removeErrorFor(emailComment);
+  }
+
+  if (websiteValue === "") {
+    setErrorFor(websiteComment, "Url number is empty");
+    isValid = false;
+  } else if (!isUrl(websiteValue)) {
+    setErrorFor(websiteComment, "Invalid url number");
+    isValid = false;
+  } else {
+    setSuccessFor(websiteComment);
+    removeErrorFor(websiteComment);
+  }
+   if (CommentValue === "") {
+     setErrorFor(inputComment, "Comment number is empty");
+     isValid = false;
+   } else {
+     setSuccessFor(inputComment);
+     removeErrorFor(inputComment);
+   }
+   
+  return isValid;
+}
+
+function setErrorFor(input, message) {
+  const formControl = input.parentElement;
+  const small = formControl.querySelector("small");
+  formControl.className = "box-form error";
+  small.innerText = message;
+  small.style.display = "block";
+}
+
+function removeErrorFor(input) {
+  const formGroup = input.parentElement;
+  formGroup.classList.remove("error-message");
+  const small = formGroup.querySelector("small");
+  small.style.display = "none";
+}
+
+function setSuccessFor(input) {
+  const formControl = input.parentElement;
+  formControl.className = "box-form success";
+}
+
+function isEmail(email) {
+  return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
+}
+function isUrl(url) {
+  return /^((http|https):\/\/)?[a-z0-9-]+(\.[a-z0-9-]+)+([/?].*)?$/i.test(url);
+}
+function isPassValid(phone) {
+  return /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$/.test(
+    phone
+  );
+} 
 
 // validate login
 const formLogin = document.getElementById("formLogin");
@@ -343,20 +435,25 @@ const passLogin = document.getElementById("pass-login");
 
 if (formLogin) {
   formLogin.addEventListener("submit", (e) => {
-    console.log(1);
     e.preventDefault();
-    checkLogin();
+    const isValid = checkLogin();
+    if (isValid) {
+      formLogin.submit();
+    }
   });
 }
 
 function checkLogin() {
   const emailValue = emailLogin.value.trim();
   const passValue = passLogin.value.trim();
+  var isValid = true;
 
   if (emailValue === "") {
     setErrorFor(emailLogin, "Email cannot be blank");
+    isValid = false;
   } else if (!isEmail(emailValue)) {
     setErrorFor(emailLogin, "Email is not valid");
+    isValid = false;
   } else {
     setSuccessFor(emailLogin);
     removeErrorFor(emailLogin);
@@ -364,12 +461,16 @@ function checkLogin() {
   
   if (passValue === "") {
     setErrorFor(passLogin, "Password number is empty");
+    isValid = false;
   } else if (!isPassValid(passValue)) {
     setErrorFor(passLogin, "Invalid password number");
+    isValid = false;
   } else {
     setSuccessFor(passLogin);
     removeErrorFor(passLogin);
   }
+
+  return isValid;
 }
 
 function setErrorFor(input, message) {
@@ -410,7 +511,10 @@ const repassSignup = document.getElementById("repass-signup");
 if (formSignup) {
   formSignup.addEventListener("submit", (e) => {
     e.preventDefault();
-    checkSignup();
+    const isValid = checkSignup();
+    if (isValid) {
+      formSignup.submit();
+    }
   });
 }
 
@@ -420,9 +524,11 @@ function checkSignup() {
   const phoneValue = phoneSignup.value.trim();
   const passValue = passSignup.value.trim();
   const repassValue = repassSignup.value.trim();
+  var isValid = true;
 
   if (nameValue === "") {
     setErrorFor(nameSignup, "Name cannot be blank");
+    isValid = false;
   } else {
     setSuccessFor(nameSignup);
     removeErrorFor(nameSignup);
@@ -430,12 +536,14 @@ function checkSignup() {
 
   if (!isEmail(emailValue)) {
     setErrorFor(emailSignup, "Email is not valid");
+    isValid = false;
   } else {
     setSuccessFor(emailSignup);
     removeErrorFor(emailSignup);
   }
    if (!isPhoneValid(phoneValue)) {
      setErrorFor(phoneSignup, "Invalid password number");
+     isValid = false;
    } else {
      setSuccessFor(phoneSignup);
      removeErrorFor(phoneSignup);
@@ -443,19 +551,23 @@ function checkSignup() {
   
   if (!isPassValid(passValue)) {
     setErrorFor(passSignup, "Invalid password number");
+    isValid = false;
   } else {
     setSuccessFor(passSignup);
     removeErrorFor(passSignup);
   }
   if (repassValue !== passValue){
       setErrorFor(repassSignup, "Invalid password");
+      isValid = false;
   }else if (!isPassValid(repassValue)) {
     setErrorFor(repassSignup, "Invalid password number");
+    isValid = false;
   } else {
     setSuccessFor(repassSignup);
     removeErrorFor(repassSignup);
   }
 
+  return isValid;
 
 }
 
@@ -491,16 +603,19 @@ function isPhoneValid(phone) {
 
 // validate repass
 const formRepass = document.getElementById("formForgotPass");
-const nameRepass = document.getElementById("name-signup");
-const emailRepass = document.getElementById("email-signup");
-const phoneRepass = document.getElementById("phone-signup");
-const passRepass = document.getElementById("pass-signup");
-const repassRepass = document.getElementById("repass-signup");
+const nameRepass = document.getElementById("name-repass");
+const emailRepass = document.getElementById("email-repass");
+const phoneRepass = document.getElementById("phone-repass");
+const passRepass = document.getElementById("pass-repass");
+const repassRepass = document.getElementById("repass-repass");
 
 if (formRepass) {
   formRepass.addEventListener("submit", (e) => {
     e.preventDefault();
-    checkRePass();
+    const isValid = checkRePass();
+    if (isValid) {
+      formRepass.submit();
+    }
   });
 }
 
@@ -508,11 +623,13 @@ function checkRePass() {
   const nameValue = nameRepass.value.trim();
   const emailValue = emailRepass.value.trim();
   const phoneValue = phoneRepass.value.trim();
-  const passValue = emailRepass.value.trim();
-  const repassValue = phoneRepass.value.trim();
+  const passValue = passRepass.value.trim();
+  const repassValue = repassRepass.value.trim();
+  var isValid = true;
 
   if (nameValue === "") {
     setErrorFor(nameRepass, "Name cannot be blank");
+    isValid = false;
   } else {
     setSuccessFor(nameRepass);
     removeErrorFor(nameRepass);
@@ -520,16 +637,20 @@ function checkRePass() {
 
 if (emailValue === "") {
     setErrorFor(emailRepass, "Email cannot be blank");
+    isValid = false;
   } else if (!isEmail(emailValue)) {
     setErrorFor(emailRepass, "Email is not valid");
+    isValid = false;
   } else {
     setSuccessFor(emailRepass);
     removeErrorFor(emailRepass);
   }
   if (phoneValue === "") {
     setErrorFor(phoneRepass, "Password number is empty");
-  } else if (!isPhoneValid(passValue)) {
+    isValid = false;
+  } else if (!isPhoneValid(phoneValue)) {
     setErrorFor(phoneRepass, "Invalid password number");
+    isValid = false;
   } else {
     setSuccessFor(phoneRepass);
     removeErrorFor(phoneRepass);
@@ -537,22 +658,29 @@ if (emailValue === "") {
 
   if (passValue === "") {
     setErrorFor(passRepass, "Password number is empty");
+    isValid = false;
   } else if (!isPassValid(passValue)) {
     setErrorFor(passRepass, "Invalid password number");
+    isValid = false;
   } else {
     setSuccessFor(passRepass);
     removeErrorFor(passRepass);
   }
   if (repassValue === "") {
     setErrorFor(repassRepass, "Password number is empty");
+    isValid = false;
   } else if (repassValue != passValue) {
     setErrorFor(repassRepass, "Invalid password");
-  } else if (!isPassValid(passValue)) {
+    isValid = false;
+  } else if (!isPassValid(repassValue)) {
     setErrorFor(repassRepass, "Invalid password number");
+    isValid = false;
   } else {
     setSuccessFor(repassRepass);
     removeErrorFor(repassRepass);
   }
+
+  return isValid;
 }
 
 function setErrorFor(input, message) {
@@ -593,18 +721,24 @@ const repassforgot = document.getElementById("repass-forgot");
 if (formforgot) {
   formforgot.addEventListener("submit", (e) => {
     e.preventDefault();
-    checkForgotPass();
+    const isValid = checkForgotPass();
+    if (isValid) {
+      formforgot.submit();
+    }
   });
 }
 
 function checkForgotPass() {
   const passValue = passforgot.value.trim();
   const repassValue = repassforgot.value.trim();
+  var isValid = true;
 
   if (passValue === "") {
     setErrorFor(passforgot, "Password number is empty");
+    isValid = false;
   } else if (!isPassValid(passValue)) {
     setErrorFor(passforgot, "Invalid password number");
+    isValid = false;
   } else {
     setSuccessFor(passforgot);
     removeErrorFor(passforgot);
@@ -612,14 +746,19 @@ function checkForgotPass() {
 
     if (repassValue === "") {
       setErrorFor(repassforgot, "Password number is empty");
+      isValid = false;
     } else if (repassValue != passValue) {
       setErrorFor(repassforgot, "Invalid password");
+      isValid = false;
     } else if (!isPassValid(repassValue)) {
       setErrorFor(repassforgot, "Invalid password number");
+      isValid = false;
     } else {
       setSuccessFor(repassforgot);
       removeErrorFor(repassforgot);
     }
+
+    return isValid;
 }
 
 function setErrorFor(input, message) {
@@ -652,23 +791,29 @@ const emailCheck = document.getElementById("check-mail");
 
 if (formCheckmail) {
   formCheckmail.addEventListener("submit", (e) => {
-    console.log(1);
     e.preventDefault();
-    checkMail();
+    const isValid = checkMail();
+    if (isValid) {
+      formCheckmail.submit();
+    }
   });
 }
 
 function checkMail() {
   const emailValue = emailCheck.value.trim();
-
+  var isValid = true;
   if (emailValue === "") {
     setErrorFor(emailCheck, "Email cannot be blank");
+    isValid = false;
   } else if (!isEmail(emailValue)) {
     setErrorFor(emailCheck, "Email is not valid");
+    isValid = false;
   } else {
     setSuccessFor(emailCheck);
     removeErrorFor(emailCheck);
   }
+
+  return isValid;
 }
 
 function setErrorFor(input, message) {
@@ -701,23 +846,28 @@ const token = document.getElementById("token");
 
 if (formToken) {
   formToken.addEventListener("submit", (e) => {
-    console.log(1);
     e.preventDefault();
-    checkToken();
+    const isValid = checkToken();
+    if (isValid) {
+      formToken.submit();
+    }
   });
 }
 
 function checkToken() {
   const tokenValue = token.value.trim();
- 
+  var isValid = true;
   if (tokenValue === "") {
     setErrorFor(token, "Token is empty");
+    isValid = false;
   } else if (tokenValue.length < 6) {
     setErrorFor(token, "Token is not correct");
+    isValid = false;
   } else {
     setSuccessFor(token);
     removeErrorFor(token);
   }
+  return isValid;
 }
 
 function setErrorFor(input, message) {
@@ -750,7 +900,10 @@ const emailMokup = document.getElementById("email-mokup");
 if (formMokup) {
   formMokup.addEventListener("submit", (e) => {
     e.preventDefault();
-    checkMokup();
+    const isValid = checkMokup();
+    if (isValid) {
+      formMokup.submit();
+    }
   });
 }
 
@@ -758,30 +911,36 @@ function checkMokup() {
   const nameValue = nameMokup.value.trim();
   const phoneValue = phoneMokup.value.trim();
   const emailValue = emailMokup.value.trim();
-
+  var isValid = true;
   if (nameValue === "") {
     setErrorFor(nameMokup, "Name cannot be blank");
+    isValid = false;
   } else {
     setSuccessFor(nameMokup);
     removeErrorFor(nameMokup);
   }
   if (phoneValue === "") {
     setErrorFor(phoneMokup, "Password number is empty");
+    isValid = false;
   } else if (!isPhoneValid(phoneValue)) {
     setErrorFor(phoneMokup, "Invalid password number");
+    isValid = false;
   } else {
     setSuccessFor(phoneMokup);
     removeErrorFor(phoneMokup);
   }
   if (emailValue === "") {
     setErrorFor(emailMokup, "Email cannot be blank");
+    isValid = false;
   } else if (!isEmail(emailValue)) {
     setErrorFor(emailMokup, "Email is not valid");
+    isValid = false;
   } else {
     setSuccessFor(emailMokup);
     removeErrorFor(emailMokup);
   }
 
+  return isValid;
   
 }
 
@@ -827,7 +986,10 @@ const submitButton = document.getElementById("btn-edit-image-submit");
 if (formEditUser) {
   formEditUser.addEventListener("submit", (e) => {
     e.preventDefault();
-    checkEditUser();
+    const isValid = checkEditUser();
+    if (isValid) {
+      formEditUser.submit();
+    }
   });
 }
 
@@ -837,65 +999,80 @@ function checkEditUser() {
   const phoneValue = phoneInput.value.trim();
   const imageValue = imageInput.value.trim();
   const oldPasswordValue = oldPasswordInput.value.trim();
-  const newPasswordValue = emailInput.value.trim();
+  const newPasswordValue = newPasswordInput.value.trim();
   const repassValue = confirmPasswordInput.value.trim();
   const addressValue = addressInput.value.trim();
+  var isValid = true;
   if (nameValue === "") {
     setErrorFor(nameInput, "Name cannot be blank");
+    isValid = false;
   } else {
     setSuccessFor(nameInput);
     removeErrorFor(nameInput);
   }
   if (addressValue === "") {
     setErrorFor(addressInput, "Name cannot be blank");
+    isValid = false;
   } else {
     setSuccessFor(addressInput);
     removeErrorFor(addressInput);
   }
   if (!isImage(imageValue)) {
     setErrorFor(imageInput, "Image is not JPG, JPEG, PNG or GIF");
+    isValid = false;
   } else {
     setSuccessFor(imageInput);
     removeErrorFor(imageInput);
   }
   if (emailValue === "") {
     setErrorFor(emailInput, "Email cannot be blank");
+    isValid = false;
   } else if (!isEmail(emailValue)) {
     setErrorFor(emailInput, "Email is not valid");
+    isValid = false;
   } else {
     setSuccessFor(emailInput);
     removeErrorFor(emailInput);
   }
   if (phoneValue === "") {
     setErrorFor(phoneInput, "Password number is empty");
-  } else if (!isPhoneValid(passValue)) {
+    isValid = false;
+  } else if (!isPhoneValid(phoneValue)) {
     setErrorFor(phoneInput, "Invalid password number");
+    isValid = false;
   } else {
     setSuccessFor(phoneInput);
     removeErrorFor(phoneInput);
   }
    if (oldPasswordValue === "") {
      setErrorFor(oldPasswordInput, "Password number is empty");
+     isValid = false;
    } else {
      setSuccessFor(oldPasswordInput);
      removeErrorFor(oldPasswordInput);
    }
   if (newPasswordValue === "") {
     setErrorFor(newPasswordInput, "Password number is empty");
+    isValid = false;
   } else if (!isPassValid(newPasswordValue)) {
     setErrorFor(newPasswordInput, "Invalid password number");
+    isValid = false;
   } else {
     setSuccessFor(newPasswordInput);
     removeErrorFor(newPasswordInput);
   }
   if (repassValue === "") {
     setErrorFor(confirmPasswordInput, "Password number is empty");
+    isValid = false;
   } else if (repassValue != repassValue) {
     setErrorFor(confirmPasswordInput, "Invalid password");
+    isValid = false;
   } else {
     setSuccessFor(confirmPasswordInput);
     removeErrorFor(confirmPasswordInput);
   }
+  
+  return isValid;
 }
 
 function setErrorFor(input, message) {

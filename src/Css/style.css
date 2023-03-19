@@ -1635,13 +1635,13 @@ main .blog p {
 }
 
 /* comment  */
-.form-comment .item input {
+.form-comment input[type="text"] {
   width: 100%;
   height: 40px;
   outline: none;
   padding-left: 10px;
 }
-.form-comment .item textarea {
+.form-comment textarea {
   width: 100%;
   outline: none;
   padding: 10px 0 0 10px;
@@ -1774,10 +1774,13 @@ main .contact p {
 
 /* form */
 
-.make-appointment-contact .form-right-make-appointment .item input {
+.make-appointment-contact .form-right-make-appointment  input {
   width: 100%;
   height: 40px;
   outline: none;
+}
+.make-appointment-contact small{
+  padding: 10px 0 !important;
 }
 .make-appointment-contact .title-text-make-appointment .text a {
   color: #f9f8f8;
@@ -1790,7 +1793,7 @@ main .contact p {
   background-color: #c59233;
   border-radius: 50%;
 }
-.make-appointment-contact .form-right-make-appointment .item textarea {
+.make-appointment-contact .form-right-make-appointment  textarea {
   width: 100%;
   outline: none;
 }
