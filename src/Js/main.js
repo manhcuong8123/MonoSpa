@@ -418,8 +418,8 @@ function checkSignup() {
   const nameValue = nameSignup.value.trim();
   const emailValue = emailSignup.value.trim();
   const phoneValue = phoneSignup.value.trim();
-  const passValue = emailSignup.value.trim();
-  const repassValue = phoneSignup.value.trim();
+  const passValue = passSignup.value.trim();
+  const repassValue = repassSignup.value.trim();
 
   if (nameValue === "") {
     setErrorFor(nameSignup, "Name cannot be blank");
@@ -428,36 +428,28 @@ function checkSignup() {
     removeErrorFor(nameSignup);
   }
 
-  if (emailValue === "") {
-    setErrorFor(emailSignup, "Email cannot be blank");
-  } else if (!isEmail(emailValue)) {
+  if (!isEmail(emailValue)) {
     setErrorFor(emailSignup, "Email is not valid");
   } else {
     setSuccessFor(emailSignup);
     removeErrorFor(emailSignup);
   }
-   if (phoneValue === "") {
-     setErrorFor(phoneSignup, "Password number is empty");
-   } else if (!isPhoneValid(passValue)) {
+   if (!isPhoneValid(phoneValue)) {
      setErrorFor(phoneSignup, "Invalid password number");
    } else {
      setSuccessFor(phoneSignup);
      removeErrorFor(phoneSignup);
    }
   
-  if (passValue === "") {
-    setErrorFor(passSignup, "Password number is empty");
-  } else if (!isPassValid(passValue)) {
+  if (!isPassValid(passValue)) {
     setErrorFor(passSignup, "Invalid password number");
   } else {
     setSuccessFor(passSignup);
     removeErrorFor(passSignup);
   }
-  if (repassValue === "") {
-    setErrorFor(repassSignup, "Password number is empty");
-  } else if (repassValue != passValue){
+  if (repassValue !== passValue){
       setErrorFor(repassSignup, "Invalid password");
-  }else if (!isPassValid(passValue)) {
+  }else if (!isPassValid(repassValue)) {
     setErrorFor(repassSignup, "Invalid password number");
   } else {
     setSuccessFor(repassSignup);
@@ -490,8 +482,8 @@ function setSuccessFor(input) {
 function isEmail(email) {
   return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
 }
-function isPassValid(phone) {
-  return /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$/.test(phone);
+function isPassValid(pass) {
+  return /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$/.test(pass);
 }
 function isPhoneValid(phone) {
   return /^\d{10}$/.test(phone);
@@ -622,7 +614,7 @@ function checkForgotPass() {
       setErrorFor(repassforgot, "Password number is empty");
     } else if (repassValue != passValue) {
       setErrorFor(repassforgot, "Invalid password");
-    } else if (!isPassValid(passValue)) {
+    } else if (!isPassValid(repassValue)) {
       setErrorFor(repassforgot, "Invalid password number");
     } else {
       setSuccessFor(repassforgot);
