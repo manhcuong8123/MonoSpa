@@ -23,7 +23,7 @@
   
   <body>
     <div class="box-main">
-       <header>
+      <header>
         <div class="header-menutop-banner">
           <div
             class="logo-menu-oppenTime d-flex justify-content-between align-items-center container position-relative"
@@ -38,23 +38,23 @@
             <div class="menu-oppentime d-flex gap-5">
               <div class="menu">
                 <ul class="d-flex gap-3">
-                  <li><a href="headerHomePage.html">HOME</a></li>
-                  <li><a href="About.html">ABOUT US</a></li>
-                  <li><a href="ourService.html">SERVICES</a></li>
+                  <li><a href="headerHomePage.html">Trang Chủ</a></li>
+                  <li><a href="About.html">Về Chúng Tôi</a></li>
+                  <li><a href="ourService.html">Dịch Vụ</a></li>
                   <li class="menu-sub-page">
                     <span class="d-flex align-items-center"
-                      >PAGE <i class="bx bx-chevron-down"></i
+                      >Trang <i class="bx bx-chevron-down"></i
                     ></span>
                      <ul class="menu-mini">
-                      <li><a href="ourTeamPage.html">Our Team</a></li>
-                      <li><a href="FaqPage.html">FAQ</a></li>
-                      <li><a href="Booking.html">Booking</a></li>
+                      <li><a href="ourTeamPage.html">Đội ngũ</a></li>
+                      <li><a href="FaqPage.html">Câu hỏi thường gặp</a></li>
+                      <li><a href="Booking.html">Lịch hẹn</a></li>
                       <li><a href="">404 Page</a></li>
-                      <li><a href="blog.html">Blog</a></li>
-                      <li><a href="single-blog.html">Single Blog</a></li>
+                      <li><a href="blog.html">Tin tức</a></li>
+                      <li><a href="single-blog.html">Tin tức chi tiết </a></li>
                     </ul>
                   </li>
-                  <li><a href="contact.html">CONTACT US</a></li>
+                  <li><a href="contact.html">Liên hệ</a></li>
                 </ul>
               </div>
               <div class="oppentime-icon">
@@ -91,7 +91,7 @@
           </div>
         </div>
       </header>
-
+      
 
 
 
@@ -200,36 +200,37 @@
               <!-- comment -->
               <hr class="py-4 ">
               <div class="conmment-single-blog-page">
-                <h1>Leave a Reply</h1>
-                <p class="text-muted">Your email address will not be published. Required fields are marked *
+                <h1>Hãy để lại phản hồi</h1>
+                <p class="text-muted">Email của bạn sẽ không công khai. Tuy nhiên vui lòng điền hết nội dung dưới đây *
                 </p>
-  
+                
                 <form action="" class="form-comment py-2" id="form-comment">
                   <div class="item py-2">
-                    <label for="comment">Comment *</label> <br>
-                    <textarea name="comment" id="comment" cols="110" rows="10" class="border"></textarea>
-                 <small class="error-message"></small>
+                    <label for="comment">Bình luận *</label> <br>
+                    <textarea name="comment" id="comment" cols="110" rows="10" ></textarea>
+                    <span class="text-danger" id="comment-error"></span>
                   </div>
                   <div class="item py-2">
-                    <label for="name-comment">Name *</label> <br>
-                    <input type="text" id="name-comment" class="border">
-                   <small class="error-message"></small>
+                    <label for="name-comment">Họ và Tên *</label> <br>
+                    
+                    <input type="text" id="name-comment" >
+                    <span class="text-danger" id="nameComment-error"></span>
                   </div>
                   <div class="item py-2">
                     <label for="email-comment">Email *</label> <br>
-                    <input type="text" id="email-comment" class="border">
-                <small class="error-message"></small>
+                    <input type="text" id="email-comment" >
+                    <span class="text-danger" id="emailComment-error"></span>
                   </div>
                   <div class="item py-2">
                     <label for="website-comment">Website </label> <br>
-                    <input type="text" id="website-comment" class="border">
-                   <small class="error-message"></small>
+                    <input type="text" id="website-comment" >
+                    <span class="text-danger" id="website-error"></span>
                   </div>
                   <div class="item-checkbox py-2">
                     <input type="checkbox" name="save-info" id="save-info"> 
-                    <label for="save-info">Save my name, email, and website in this browser for the next time I comment.</label>
+                    <label for="save-info">Ghi nhớ tên, email và trang web của tôi ở đây cho lần tôi bình luận tiếp theo.</label>
                   </div>
-                  <button type="submit">Post Comment</button>
+                  <button type="submit">Đăng bình luận</button>
                 </form>
                 
               </div>
@@ -237,7 +238,7 @@
             <div class="col-md-4 box-right">
               <!-- popular -->
               <div class="popular-new-posts border p-5">
-                <h3>Popular News Posts</h3>
+                <h3>Bài viết tin tức phổ biến</h3>
                 <!-- popular item -->
                 <div class="box-popular-new py-3">
                   <div class="box-popular-new-item d-flex align-items-center py-3">
@@ -270,7 +271,7 @@
               <!-- end popular -->
               <div class="py-5">
                 <div class="categories border p-5">
-                  <h3>Categories</h3>
+                  <h3>Danh Mục</h3>
                   <div class="box-popular-new pt-3">
                     <ul class="categories-list list-unstyled">
                       <li><a href="#"><span><i class='bx bx-minus'></i></span>Nails</a></li>
@@ -287,15 +288,15 @@
                
                   <div class="have-any-question-box border p-5">
 
-                    <h3>Have any question?</h3>
+                    <h3>Câu hỏi cho chúng tôi ?</h3>
                     <div class="box-question-new py-2">
                       <ul class="box-question-list list-unstyled">
-                        <li><a href="#">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod</a></li>
+                        <li><a href="#">Những thắc mắc hoặc câu hỏi chưa được giải đáp, hãy liên hệ theo:</a></li>
                         <li><a href="#"><span><i class='bx bxs-phone' ></i></span>(+62)81 234 567</a></li>
                         <li><a href="#"><span><i class='bx bxl-gmail' ></i></span>naylish@domain.com</a></li>
                         
                     </ul>
-                    </div>
+                    </div> 
                   </div>
                   
                 
@@ -314,66 +315,66 @@
 
 
 
-     <footer>
-      <div class=" background-image-footer position-absolute w-100 " ></div>
-      <div class="container text  ">
-        <div class="row pt-4 row-footer" >
-          
-          <div class="col" >
-              <img src="../src/Image/photo_2023-03-10_10-33-00.png" alt="" >
-            <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-            <div class="link-icon">
-              <ul class="list-unstyled d-flex">
-                  <li><a href=""><i class='bx bxl-facebook'></i></a></li>
-                  <li><a href=""><i class='bx bxl-instagram' ></i></a></li>
-                  <li><a href=""><i class='bx bxl-twitter' ></i></a></li>
-                  <li><a href=""><i class='bx bxl-pinterest-alt'></i></a></li>
-              </ul>
-            </div>
-          </div>
-          <div class="col"  >
-              <h4  class="pb-3">Support</h4>
-              <div class="list-support">
-                  <ul class="list-unstyled">
-                      <li><a href="">FAQ's</a></li>
-                      <li><a href="">Privacy Policy</a></li>
-                      <li><a href="">Term & Conditions</a></li>
-                      <li><a href="">Contact</a></li>
-                  </ul>
+      <footer>
+        <div class=" background-image-footer position-absolute w-100 " ></div>
+        <div class="container text  ">
+          <div class="row pt-4 row-footer" >
+            
+            <div class="col" >
+                <img src="../src/Image/photo_2023-03-10_10-33-00.png" alt="" >
+              <p> Mono Bovis luôn đồng hành <br>cùng vẻ đẹp của bạn</p>
+              <div class="link-icon">
+                <ul class="list-unstyled d-flex">
+                    <li><a href=""><i class='bx bxl-facebook'></i></a></li>
+                    <li><a href=""><i class='bx bxl-instagram' ></i></a></li>
+                    <li><a href=""><i class='bx bxl-twitter' ></i></a></li>
+                    <li><a href=""><i class='bx bxl-pinterest-alt'></i></a></li>
+                </ul>
               </div>
             </div>
-            <div class="col contact"  >
-              <h4 class="pb-3">Kết nối</h4>
-              <p>Can lộc hà tĩnh</p>
-              <p>Phone : (+62)81 234 567</p>
+            <div class="col"  >
+                <h4  class="pb-3">Hỗ trợ</h4>
+                <div class="list-support">
+                    <ul class="list-unstyled">
+                        <li><a href="">Hỏi đáp</a></li>
+                        <li><a href="">Chính sách bảo mật</a></li>
+                        <li><a href="">Điều khoản & Điều kiện</a></li>
+                        <li><a href="">Liên hệ</a></li>
+                    </ul>
+                </div>
+              </div>
+              <div class="col contact"  >
+                <h4 class="pb-3">Liên hệ</h4>
+                <p>Trịnh Văn Bô - Nam Từ Liêm - Hà nội</p>
+                <p>Phone : (+62)81 234 567</p>
+                
+              </div>
+            <div class="col" >
+                <!-- form subcribe -->
+                <form action="">
+                    <h4  class="pb-3">Theo dõi tin tức mới nhất</h4>
+                    <div class="box-input-email d-flex">
+                        <input type="text" placeholder="Your email"><button>Subscribe</button>
+                    </div>
+                </form>
               
+                
             </div>
-          <div class="col" >
-              <!-- form subcribe -->
-              <form action="">
-                  <h4  class="pb-3">Subscribe Newsletter</h4>
-                  <div class="box-input-email d-flex">
-                      <input type="text" placeholder="Your email"><button>Subscribe</button>
-                  </div>
-              </form>
-            
-              
           </div>
+          <hr style="color: aliceblue;">
+          
         </div>
-        <hr style="color: aliceblue;">
-        
-      </div>
-      <div class="coppyright   container" >
-          <div class="text-left">
-              <p>Nail Salon Template Kit By Jegtheme.
-              </p>
+        <div class="coppyright   container" >
+            <div class="text-left">
+                <p>Thư giãn tuyệt đỉnh cùng dịch vụ Spa chất lượng cao
+                </p>
+            </div>
+            <div class="text-right">
+                <p> &copy; Bản quyền thuộc đội ngũ coder F6 </p>
+            </div>
+             
           </div>
-          <div class="text-right">
-              <p> &copy; Bản quyền thuộc facebook anh em code mòn đít  </p>
-          </div>
-           
-        </div>
-    </footer>
+      </footer>
     </div>
     <div class="oppenTime-box">
       <div class="information-oppenTime">
@@ -447,40 +448,40 @@
         <div class="logo ps-3">
             <img src="../src/Image/photo_2023-03-10_10-33-00.png" alt="">
         </div>
-           <div class="menu menu-responsive">
-                <ul>
-                  <li><a href="headerHomePage.html">HOME</a></li>
-                  <li><a href="About.html">ABOUT US</a></li>
-                  <li><a href="ourService.html">SERVICES</a></li>
-                  <li class="menu-sub-page-respon">
-                    <span class="d-flex align-items-center justify-content-between pe-1 mb-1"
-                      >PAGE <i class="bx bx-chevron-down"></i
-                    ></span>
-                    <ul class="menu-mini-respon">
-                        <li><a href="ourTeamPage.html">Our Team</a></li>
-                      <li><a href="FaqPage.html">FAQ</a></li>
-                      <li><a href="Booking.html">Booking</a></li>
-                      <li><a href="">404 Page</a></li>
-                      <li><a href="blog.html">Blog</a></li>
-                      <li><a href="single-blog.html">Single Blog</a></li>
-                    </ul>
-                  </li>
-                  <li><a href="contact.html">CONTACT US</a></li>
-                  <li class="pe-3">  <button type="button" onclick="" class="user-login-responsive w-100">
-                  <a href="login.html" class="text-white border-0 d-flex align-items-center gap-3 p-2"><i class='bx bx-user-circle'></i> Đăng Nhập</a>
-                </button></li>
-                  <li class="user-account pe-3">
-                <button class="box-account-responsive border-0 d-flex align-items-center gap-3 p-2 w-100">
-                    <img src="https://images.unsplash.com/photo-1503023345310-bd7c1de61c7d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8aHVtYW58ZW58MHx8MHx8&w=1000&q=80" alt=""> 
-                  <span class="fs-5">Lê Sỹ Hải</span>
-                </button>
-                    <ul class="box-fs-account-responsive">
-                      <li><a href="">Xem thông tin</a></li>
-                      <li><a href="">Sửa thông tin</a></li>
-                      <li><a href="">Đăng Xuất</a></li>
-                    </ul></li>
-                </ul>
-              </div>
+        <div class="menu menu-responsive">
+          <ul>
+            <li><a href="headerHomePage.html">Trang Chủ</a></li>
+            <li><a href="About.html">Về Chúng Tôi</a></li>
+            <li><a href="ourService.html">Dịch Vụ</a></li>
+            <li class="menu-sub-page-respon">
+              <span class="d-flex align-items-center justify-content-between pe-1 mb-1"
+                >Trang <i class="bx bx-chevron-down"></i
+              ></span>
+              <ul class="menu-mini-respon">
+                  <li><a href="ourTeamPage.html">Đội ngũ</a></li>
+                <li><a href="FaqPage.html">Câu hỏi thường gặp</a></li>
+                <li><a href="Booking.html">Lịch hẹn</a></li>
+                <li><a href="">404 Page</a></li>
+                <li><a href="blog.html">Tin tức</a></li>
+                <li><a href="single-blog.html">Tin tức chi tiết</a></li>
+              </ul>
+            </li>
+            <li><a href="contact.html">Liên Hệ</a></li>
+            <li class="pe-3">  <button type="button" onclick="" class="user-login-responsive w-100">
+            <a href="login.html" class="text-white border-0 d-flex align-items-center gap-3 p-2"><i class='bx bx-user-circle'></i> Đăng Nhập</a>
+          </button></li>
+            <li class="user-account pe-3">
+          <button class="box-account-responsive border-0 d-flex align-items-center gap-3 p-2 w-100">
+              <img src="https://images.unsplash.com/photo-1503023345310-bd7c1de61c7d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8aHVtYW58ZW58MHx8MHx8&w=1000&q=80" alt=""> 
+            <span class="fs-5">Lê Sỹ Hải</span>
+          </button>
+              <ul class="box-fs-account-responsive">
+                <li><a href="">Xem thông tin</a></li>
+                <li><a href="">Sửa thông tin</a></li>
+                <li><a href="">Đăng Xuất</a></li>
+              </ul></li>
+          </ul>
+        </div>
     </div>
     <script src="../src/Js/main.js"></script>
     <script
