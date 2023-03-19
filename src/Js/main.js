@@ -111,9 +111,9 @@ if (form) {
   form.addEventListener("submit", (e) => {
     e.preventDefault();
     const isValid = checkInputs();
-    if (isValid) {
-      form.submit();
-    }
+     if (isValid) {
+       form.submit();
+     }
   });
 }
 
@@ -129,18 +129,15 @@ function checkInputs() {
   var isValid = true;
 
   if (nameValue === "") {
-    setErrorFor(namef, "Name cannot be blank");
+    setErrorFor(namef, "Tên không được để trống ");
     isValid = false;
   } else {
     setSuccessFor(namef);
     removeErrorFor(namef);
   }
 
-  if (emailValue === "") {
-    setErrorFor(email, "Email cannot be blank");
-    isValid = false;
-  } else if (!isEmail(emailValue)) {
-    setErrorFor(email, "Email is not valid");
+  if (!isEmail(emailValue)) {
+    setErrorFor(email, "Email sai định dạng");
     isValid = false;
   } else {
     setSuccessFor(email);
@@ -148,29 +145,25 @@ function checkInputs() {
   }
 
   if (selectValue === "0") {
-    setErrorFor(select, "Please select a service");
+    setErrorFor(select, "Bạn phải chọn 1 trong  các mục");
     isValid = false;
   } else {
     setSuccessFor(select);
     removeErrorFor(select);
   }
 
-  if (telValue === "") {
-    setErrorFor(tel, "Phone number is empty");
-    isValid = false;
-  } else if (!isPhoneValid(telValue)) {
-    setErrorFor(tel, "Invalid phone number");
+  if (!isPhoneValid(telValue)) {
+    setErrorFor(tel, "Số điện thoại sai định dạng");
     isValid = false;
   } else {
     setSuccessFor(tel);
     removeErrorFor(tel);
   }
-
-  if (dateValue === "") {
-    setErrorFor(date, "Please select a date");
+  if (dateValue == "") {
+    setErrorFor(date, "Ngày không được để tróng");
     isValid = false;
   } else if (selectedDate < today) {
-    setErrorFor(date, "Please select a date here");
+    setErrorFor(date, "Ngày sai định dạng");
     isValid = false;
   } else {
     setSuccessFor(date);
@@ -178,7 +171,7 @@ function checkInputs() {
   }
 
   if (textareaValue === "") {
-    setErrorFor(textarea, "Message cannot be blank");
+    setErrorFor(textarea, "Bạn phải nhập nội dung");
     isValid = false;
   } else {
     setSuccessFor(textarea);
@@ -258,7 +251,7 @@ function checkContact() {
   var isValid = true;
 
    if (nameValue === "") {
-     setErrorFor(nameContact, "Email cannot be blank");
+     setErrorFor(nameContact, "Email không được để trống");
      isValid = false;
    } else {
      setSuccessFor(nameContact);
@@ -266,28 +259,25 @@ function checkContact() {
    }
 
   if (emailValue === "") {
-    setErrorFor(emailContact, "Email cannot be blank");
+    setErrorFor(emailContact, "Email không được để trống");
     isValid = false;
   } else if (!isEmail(emailValue)) {
-    setErrorFor(emailContact, "Email is not valid");
+    setErrorFor(emailContact, "Email không đúng định dạng");
     isValid = false;
   } else {
     setSuccessFor(emailContact);
     removeErrorFor(emailContact);
   }
 
-  if (websiteValue === "") {
-    setErrorFor(websiteContact, "Url number is empty");
-    isValid = false;
-  } else if (!isUrl(websiteValue)) {
-    setErrorFor(websiteContact, "Invalid url number");
+  if (websiteValue == "") {
+    setErrorFor(websiteContact, "Subject không được để trống");
     isValid = false;
   } else {
     setSuccessFor(websiteContact);
     removeErrorFor(websiteContact);
   }
    if (ContactValue === "") {
-     setErrorFor(inputContact, "Contact number is empty");
+     setErrorFor(inputContact, "Bạn phải nhập nội dung");
      isValid = false;
    } else {
      setSuccessFor(inputContact);
@@ -357,7 +347,7 @@ function checkComment() {
   var isValid = true;
 
    if (nameValue === "") {
-     setErrorFor(nameComment, "Email cannot be blank");
+     setErrorFor(nameComment, "Email không được để trống");
      isValid = false;
    } else {
      setSuccessFor(nameComment);
@@ -365,28 +355,25 @@ function checkComment() {
    }
 
   if (emailValue === "") {
-    setErrorFor(emailComment, "Email cannot be blank");
+    setErrorFor(emailComment, "Email không được để trống");
     isValid = false;
   } else if (!isEmail(emailValue)) {
-    setErrorFor(emailComment, "Email is not valid");
+    setErrorFor(emailComment, "Email không đúng định dạng");
     isValid = false;
   } else {
     setSuccessFor(emailComment);
     removeErrorFor(emailComment);
   }
 
-  if (websiteValue === "") {
-    setErrorFor(websiteComment, "Url number is empty");
-    isValid = false;
-  } else if (!isUrl(websiteValue)) {
-    setErrorFor(websiteComment, "Invalid url number");
+  if (!isUrl(websiteValue)) {
+    setErrorFor(websiteComment, "Url không đúng định dạng");
     isValid = false;
   } else {
     setSuccessFor(websiteComment);
     removeErrorFor(websiteComment);
   }
    if (CommentValue === "") {
-     setErrorFor(inputComment, "Comment number is empty");
+     setErrorFor(inputComment, "Bạn phải nhập phần này");
      isValid = false;
    } else {
      setSuccessFor(inputComment);
@@ -437,9 +424,9 @@ if (formLogin) {
   formLogin.addEventListener("submit", (e) => {
     e.preventDefault();
     const isValid = checkLogin();
-    if (isValid) {
-      formLogin.submit();
-    }
+     if (isValid) {
+       formLogin.submit();
+     }
   });
 }
 
@@ -449,21 +436,18 @@ function checkLogin() {
   var isValid = true;
 
   if (emailValue === "") {
-    setErrorFor(emailLogin, "Email cannot be blank");
+    setErrorFor(emailLogin, "Email không được để trống");
     isValid = false;
   } else if (!isEmail(emailValue)) {
-    setErrorFor(emailLogin, "Email is not valid");
+    setErrorFor(emailLogin, "Email không đúng định dạng");
     isValid = false;
   } else {
     setSuccessFor(emailLogin);
     removeErrorFor(emailLogin);
   }
   
-  if (passValue === "") {
-    setErrorFor(passLogin, "Password number is empty");
-    isValid = false;
-  } else if (!isPassValid(passValue)) {
-    setErrorFor(passLogin, "Invalid password number");
+  if (!isPassValid(passValue)) {
+    setErrorFor(passLogin, "Mật khẩu sai định dạng");
     isValid = false;
   } else {
     setSuccessFor(passLogin);
@@ -527,7 +511,7 @@ function checkSignup() {
   var isValid = true;
 
   if (nameValue === "") {
-    setErrorFor(nameSignup, "Name cannot be blank");
+    setErrorFor(nameSignup, "Tên không được để trống ");
     isValid = false;
   } else {
     setSuccessFor(nameSignup);
@@ -535,14 +519,14 @@ function checkSignup() {
   }
 
   if (!isEmail(emailValue)) {
-    setErrorFor(emailSignup, "Email is not valid");
+    setErrorFor(emailSignup, "Email không đúng định dạng");
     isValid = false;
   } else {
     setSuccessFor(emailSignup);
     removeErrorFor(emailSignup);
   }
    if (!isPhoneValid(phoneValue)) {
-     setErrorFor(phoneSignup, "Invalid password number");
+     setErrorFor(phoneSignup, "Số điện thoại sai định dạng");
      isValid = false;
    } else {
      setSuccessFor(phoneSignup);
@@ -550,17 +534,17 @@ function checkSignup() {
    }
   
   if (!isPassValid(passValue)) {
-    setErrorFor(passSignup, "Invalid password number");
+    setErrorFor(passSignup, "Mật khẩu sai định dạng");
     isValid = false;
   } else {
     setSuccessFor(passSignup);
     removeErrorFor(passSignup);
   }
   if (repassValue !== passValue){
-      setErrorFor(repassSignup, "Invalid password");
+      setErrorFor(repassSignup, "Mật khẩu không khớp");
       isValid = false;
   }else if (!isPassValid(repassValue)) {
-    setErrorFor(repassSignup, "Invalid password number");
+    setErrorFor(repassSignup, "Mật khẩu sai định dạng");
     isValid = false;
   } else {
     setSuccessFor(repassSignup);
@@ -613,9 +597,9 @@ if (formRepass) {
   formRepass.addEventListener("submit", (e) => {
     e.preventDefault();
     const isValid = checkRePass();
-    if (isValid) {
-      formRepass.submit();
-    }
+   if (isValid) {
+     formRepass.submit();
+   }
   });
 }
 
@@ -628,7 +612,7 @@ function checkRePass() {
   var isValid = true;
 
   if (nameValue === "") {
-    setErrorFor(nameRepass, "Name cannot be blank");
+    setErrorFor(nameRepass, "Tên không được để trống ");
     isValid = false;
   } else {
     setSuccessFor(nameRepass);
@@ -636,44 +620,35 @@ function checkRePass() {
   }
 
 if (emailValue === "") {
-    setErrorFor(emailRepass, "Email cannot be blank");
+    setErrorFor(emailRepass, "Email không được để trống");
     isValid = false;
   } else if (!isEmail(emailValue)) {
-    setErrorFor(emailRepass, "Email is not valid");
+    setErrorFor(emailRepass, "Email không đúng định dạng");
     isValid = false;
   } else {
     setSuccessFor(emailRepass);
     removeErrorFor(emailRepass);
   }
-  if (phoneValue === "") {
-    setErrorFor(phoneRepass, "Password number is empty");
-    isValid = false;
-  } else if (!isPhoneValid(phoneValue)) {
-    setErrorFor(phoneRepass, "Invalid password number");
+  if (!isPhoneValid(phoneValue)) {
+    setErrorFor(phoneRepass, "Số điện thoại sai định dạng");
     isValid = false;
   } else {
     setSuccessFor(phoneRepass);
     removeErrorFor(phoneRepass);
   }
 
-  if (passValue === "") {
-    setErrorFor(passRepass, "Password number is empty");
-    isValid = false;
-  } else if (!isPassValid(passValue)) {
-    setErrorFor(passRepass, "Invalid password number");
+  if (!isPassValid(passValue)) {
+    setErrorFor(passRepass, "Mật khẩu sai định dạng");
     isValid = false;
   } else {
     setSuccessFor(passRepass);
     removeErrorFor(passRepass);
   }
-  if (repassValue === "") {
-    setErrorFor(repassRepass, "Password number is empty");
-    isValid = false;
-  } else if (repassValue != passValue) {
+  if (repassValue != passValue) {
     setErrorFor(repassRepass, "Invalid password");
     isValid = false;
   } else if (!isPassValid(repassValue)) {
-    setErrorFor(repassRepass, "Invalid password number");
+    setErrorFor(repassRepass, "Mật khẩu sai định dạng");
     isValid = false;
   } else {
     setSuccessFor(repassRepass);
@@ -722,9 +697,9 @@ if (formforgot) {
   formforgot.addEventListener("submit", (e) => {
     e.preventDefault();
     const isValid = checkForgotPass();
-    if (isValid) {
-      formforgot.submit();
-    }
+     if (isValid) {
+       formforgot.submit();
+     }
   });
 }
 
@@ -733,25 +708,19 @@ function checkForgotPass() {
   const repassValue = repassforgot.value.trim();
   var isValid = true;
 
-  if (passValue === "") {
-    setErrorFor(passforgot, "Password number is empty");
-    isValid = false;
-  } else if (!isPassValid(passValue)) {
-    setErrorFor(passforgot, "Invalid password number");
+  if (!isPassValid(passValue)) {
+    setErrorFor(passforgot, "Mật khẩu sai định dạng");
     isValid = false;
   } else {
     setSuccessFor(passforgot);
     removeErrorFor(passforgot);
   }
 
-    if (repassValue === "") {
-      setErrorFor(repassforgot, "Password number is empty");
-      isValid = false;
-    } else if (repassValue != passValue) {
-      setErrorFor(repassforgot, "Invalid password");
+    if (repassValue != passValue) {
+      setErrorFor(repassforgot, "Mật khẩu không khớp");
       isValid = false;
     } else if (!isPassValid(repassValue)) {
-      setErrorFor(repassforgot, "Invalid password number");
+      setErrorFor(repassforgot, "Mật khẩu sai định dạng");
       isValid = false;
     } else {
       setSuccessFor(repassforgot);
@@ -802,11 +771,8 @@ if (formCheckmail) {
 function checkMail() {
   const emailValue = emailCheck.value.trim();
   var isValid = true;
-  if (emailValue === "") {
-    setErrorFor(emailCheck, "Email cannot be blank");
-    isValid = false;
-  } else if (!isEmail(emailValue)) {
-    setErrorFor(emailCheck, "Email is not valid");
+   if (!isEmail(emailValue)) {
+    setErrorFor(emailCheck, "Email không đúng định dạng");
     isValid = false;
   } else {
     setSuccessFor(emailCheck);
@@ -857,11 +823,8 @@ if (formToken) {
 function checkToken() {
   const tokenValue = token.value.trim();
   var isValid = true;
-  if (tokenValue === "") {
-    setErrorFor(token, "Token is empty");
-    isValid = false;
-  } else if (tokenValue.length < 6) {
-    setErrorFor(token, "Token is not correct");
+ if (tokenValue.length < 6) {
+    setErrorFor(token, "Mã sai định dạng");
     isValid = false;
   } else {
     setSuccessFor(token);
@@ -913,27 +876,21 @@ function checkMokup() {
   const emailValue = emailMokup.value.trim();
   var isValid = true;
   if (nameValue === "") {
-    setErrorFor(nameMokup, "Name cannot be blank");
+    setErrorFor(nameMokup, "Tên không được để trống ");
     isValid = false;
   } else {
     setSuccessFor(nameMokup);
     removeErrorFor(nameMokup);
   }
-  if (phoneValue === "") {
-    setErrorFor(phoneMokup, "Password number is empty");
-    isValid = false;
-  } else if (!isPhoneValid(phoneValue)) {
-    setErrorFor(phoneMokup, "Invalid password number");
+  if (!isPhoneValid(phoneValue)) {
+    setErrorFor(phoneMokup, "Số điện thoại sai định dạng");
     isValid = false;
   } else {
     setSuccessFor(phoneMokup);
     removeErrorFor(phoneMokup);
   }
-  if (emailValue === "") {
-    setErrorFor(emailMokup, "Email cannot be blank");
-    isValid = false;
-  } else if (!isEmail(emailValue)) {
-    setErrorFor(emailMokup, "Email is not valid");
+ if (!isEmail(emailValue)) {
+    setErrorFor(emailMokup, "Email không đúng định dạng");
     isValid = false;
   } else {
     setSuccessFor(emailMokup);
@@ -1004,68 +961,59 @@ function checkEditUser() {
   const addressValue = addressInput.value.trim();
   var isValid = true;
   if (nameValue === "") {
-    setErrorFor(nameInput, "Name cannot be blank");
+    setErrorFor(nameInput, "Tên không được để trống ");
     isValid = false;
   } else {
     setSuccessFor(nameInput);
     removeErrorFor(nameInput);
   }
   if (addressValue === "") {
-    setErrorFor(addressInput, "Name cannot be blank");
+    setErrorFor(addressInput, "Địa chỉ không được để trống ");
     isValid = false;
   } else {
     setSuccessFor(addressInput);
     removeErrorFor(addressInput);
   }
   if (!isImage(imageValue)) {
-    setErrorFor(imageInput, "Image is not JPG, JPEG, PNG or GIF");
+    setErrorFor(imageInput, "Ảnh sai định dạng");
     isValid = false;
   } else {
     setSuccessFor(imageInput);
     removeErrorFor(imageInput);
   }
   if (emailValue === "") {
-    setErrorFor(emailInput, "Email cannot be blank");
+    setErrorFor(emailInput, "Email không được để trống");
     isValid = false;
   } else if (!isEmail(emailValue)) {
-    setErrorFor(emailInput, "Email is not valid");
+    setErrorFor(emailInput, "Email không đúng định dạng");
     isValid = false;
   } else {
     setSuccessFor(emailInput);
     removeErrorFor(emailInput);
   }
-  if (phoneValue === "") {
-    setErrorFor(phoneInput, "Password number is empty");
-    isValid = false;
-  } else if (!isPhoneValid(phoneValue)) {
-    setErrorFor(phoneInput, "Invalid password number");
+ if (!isPhoneValid(phoneValue)) {
+    setErrorFor(phoneInput, "Mật khẩu sai định dạng");
     isValid = false;
   } else {
     setSuccessFor(phoneInput);
     removeErrorFor(phoneInput);
   }
    if (oldPasswordValue === "") {
-     setErrorFor(oldPasswordInput, "Password number is empty");
+     setErrorFor(oldPasswordInput, "Mật khẩu không được để trống");
      isValid = false;
    } else {
      setSuccessFor(oldPasswordInput);
      removeErrorFor(oldPasswordInput);
    }
-  if (newPasswordValue === "") {
-    setErrorFor(newPasswordInput, "Password number is empty");
-    isValid = false;
-  } else if (!isPassValid(newPasswordValue)) {
-    setErrorFor(newPasswordInput, "Invalid password number");
+  if (!isPassValid(newPasswordValue)) {
+    setErrorFor(newPasswordInput, "Mật khẩu sai định dạng");
     isValid = false;
   } else {
     setSuccessFor(newPasswordInput);
     removeErrorFor(newPasswordInput);
   }
-  if (repassValue === "") {
-    setErrorFor(confirmPasswordInput, "Password number is empty");
-    isValid = false;
-  } else if (repassValue != repassValue) {
-    setErrorFor(confirmPasswordInput, "Invalid password");
+   if (repassValue != repassValue) {
+    setErrorFor(confirmPasswordInput, "Mật khẩu không khớp");
     isValid = false;
   } else {
     setSuccessFor(confirmPasswordInput);
