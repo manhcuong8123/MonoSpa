@@ -231,6 +231,9 @@
 .left-banner-Homepage{
   padding: 20px;
 }
+.left-banner-Homepage>p{
+  width: 70%;
+}
 .h2-text-banner-header {
   font-size: 58px;
   color: #053543;
@@ -977,11 +980,26 @@ footer .box-input-email button{
 .image1-banner-homePage {
   display: flex;
   justify-content: flex-end;
+  /* overflow: hidden; */
+  height: 650px;
+  width: 500px;
+}
+.image1-banner-homePage img{
+  width: 100%;
+  height: 100%;
+  object-fit:cover;
 }
 .image2-banner-HomePage {
   position: absolute;
-  bottom: 80px;
-  left: -80px;
+  bottom: -67px;
+  left: -171px;
+  width: 435px;
+  height: 240px;
+}
+.image2-banner-HomePage img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 /* ==========about-us============== */
 .About-Us {
@@ -1308,6 +1326,11 @@ font-family: 'Pacifico', cursive;
   overflow: -moz-scrollbars-none;
   -ms-overflow-style: none;
   padding: 10px 20px;
+}
+@media only screen and (max-width: 600px) {
+  .item-modal-mockup   {
+  width: 95%;
+  }
 }
 
 .img-modal{
