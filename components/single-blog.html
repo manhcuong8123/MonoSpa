@@ -260,6 +260,25 @@
                 <form action="" class="form-comment py-2" id="form-comment">
                   <div class="item py-2">
                     <label for="comment">Comment *</label> <br>
+
+                    <textarea name="comment" id="comment" cols="110" rows="10" class="border"></textarea>
+                 <small class="error-message"></small>
+                  </div>
+                  <div class="item py-2">
+                    <label for="name-comment">Name *</label> <br>
+                    <input type="text" id="name-comment" class="border">
+                   <small class="error-message"></small>
+                  </div>
+                  <div class="item py-2">
+                    <label for="email-comment">Email *</label> <br>
+                    <input type="text" id="email-comment" class="border">
+                <small class="error-message"></small>
+                  </div>
+                  <div class="item py-2">
+                    <label for="website-comment">Website </label> <br>
+                    <input type="text" id="website-comment" class="border">
+                   <small class="error-message"></small>
+
                     <textarea name="comment" id="comment" cols="110" rows="10" ></textarea>
                     <span class="text-danger" id="comment-error"></span>
                   </div>
@@ -278,6 +297,7 @@
                     <label for="website-comment">Website </label> <br>
                     <input type="text" id="website-comment" >
                     <span class="text-danger" id="website-error"></span>
+
                   </div>
                   <div class="item-checkbox py-2">
                     <input type="checkbox" name="save-info" id="save-info"> 
