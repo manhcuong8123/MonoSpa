@@ -628,7 +628,7 @@
         <div class="content-modal-mockup">
             <div class="oidoioi">
                 <div class="item-modal-mockup">
-                    <div class="row">
+                    <div class="row row-mokup">
                         <div class="col-sm-6 col-md-12">
                             <img src="../src/Image/photo_2023-03-10_10-33-00.png" width="100px" alt="">
                             <h5 class="h5-item-modal-mockup">"Mono Bovis Spa - Chạm đến làn da không tuổi"</h5>
@@ -644,20 +644,23 @@
                             </p>
                             <div class="form-modal text-center">
 
-                                <form>
-                                    <div class="value-form-modal">
-                                        <label>Họ và tên </label>
-                                        : <input type="text" name="name" placeholder="Nhập tên anh/chị">
+                                <form id="form-modal-t">
+                                    <div class="value-form-modal mb-2">
+                                        <label class="label-model">Họ và tên </label>
+                                        : <input type="text" name="name" placeholder="Nhập tên anh/chị" class="input-model" id="name-mokup">
+                                       <small class="error-message m-auto pt-3"></small>
                                     </div>
                                     <div class="value-form-modal">
-                                        <label>Số điện thoại :</label>
-                                        <input type="text" name="phone" placeholder="Nhập SĐT anh/chị">
+                                        <label class="label-model">Số điện thoại :</label>
+                                        <input type="text" name="phone" placeholder="Nhập SĐT anh/chị" class="input-model" id="phone-mokup">
+                                     <small class="error-message m-auto pt-3"></small>
                                     </div>
                                     <div class="value-form-modal">
-                                        <label>Email</label>
-                                        : <input type="email" placeholder="Nhập email anh/chị">
+                                        <label class="label-model">Email</label>
+                                        : <input type="text" placeholder="Nhập email anh/chị" class="input-model" id="email-mokup">
+                                    <small class="error-message m-auto pt-3"></small>
                                     </div>
-                                    <a href=""><button class="btn submit-form-modal">GỬI THÔNG TIN</button></a>
+                                    <button class="btn submit-form-modal">GỬI THÔNG TIN</button>
                                 </form>
 
                             </div>
