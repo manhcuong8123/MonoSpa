@@ -1,9 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Cardo&display=swap');
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-family: "Roboto Slab", serif;
+  /* font-family: "Roboto Slab", serif; */
+  font-family: 'Cardo', serif;
 }
 
 /* Menu sub reposive  */
@@ -438,7 +440,7 @@
   opacity: 0;
 }
 .box-professional-team .contact-icon i {
-  background-color: #043542;
+  background-color: #A47B60;
   padding: 5px;
   border-radius: 50%;
 }
@@ -617,7 +619,7 @@
   transition: 0.5s;
 }
 .add-background-question {
-  background-color: #043542;
+  background-color: #A47B60;
   color: white;
 }
 
@@ -1119,7 +1121,7 @@ footer .box-input-email button {
   transition: 0.2s linear;
 }
 .text-item-image-service:hover {
-  background-color: #053543;
+  background-color: #A47B60;
   transition: 0.2s linear;
   color: #fff;
   cursor: pointer;
@@ -1641,22 +1643,31 @@ main .blog p {
   font-family: "Amiri", sans-serif;
   color: #2a3c80;
 }
-.content-single-blog-page .content .link-icon i {
-  border: 1px solid #2a3c80;
-  background-color: #0a299b;
-  color: aliceblue;
-  border-radius: 40px;
-  padding: 10px;
-  margin: 0px 5px;
+.content-single-blog-page .content .link-icon i { 
+  border: none; 
+  background-color: #a47b60; 
+  color: aliceblue; 
+  border-radius: 40px; 
+  padding: 10px; 
+  margin: 0px 5px; 
+  transition: 1s; 
+} 
+.content-single-blog-page .content .link-icon i:hover { 
+  background-color: #be977d; 
+  transition: 1s; 
 }
 
 /* comment  */
 .form-comment .item input {
   width: 100%;
   height: 40px;
+  outline: none;
+  padding-left: 10px;
 }
 .form-comment .item textarea {
   width: 100%;
+  outline: none;
+  padding: 10px 0 0 10px;
 }
 .form-comment label {
   font-weight: bold;
@@ -2069,7 +2080,7 @@ footer .coppyright {
   margin: 0 auto 5% auto;
 }
 .btn-edit-image {
-  background-color: #043542 !important;
+  background-color: #A47B60 !important;
   transition: 0.3s;
   color: white;
 }
@@ -2102,6 +2113,10 @@ footer .coppyright {
   box-shadow: none;
   outline: none;
 }
+.btn-lock-out{
+  background-color: #ddae8e;
+  color: white;
+}
 input[type="file"] {
   display: none;
 }
@@ -2111,7 +2126,7 @@ input[type="file"] {
   cursor: pointer;
   font-size: 14px;
   color: #fff;
-  background-color: #043542;
+  background-color: #A47B60;
   border: none;
   padding: 10px 15px;
   transition: 0.3s;
@@ -2120,6 +2135,7 @@ input[type="file"] {
 .custom-file-upload-label:hover {
   transform: scale(0.9s);
   transition: 0.3s;
+  background-color: #85644e;
 }
 
 .form-group label {

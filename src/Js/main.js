@@ -203,8 +203,11 @@ function isPhoneValid(phone) {
 
 //    pocup===============
 function test() {
+  const contentModalMokup =  document.querySelector(".modal-mockup");
   // document.querySelector('.content-modal-mockup').style.display = 'none';
-  document.querySelector(".modal-mockup").style.display = 'block';
+  if (contentModalMokup){
+    contentModalMokup.style.display = "block";
+  }
 }
 const modal = setTimeout(test, 1000);
 function myStopFunction() {
