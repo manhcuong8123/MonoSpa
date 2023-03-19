@@ -1677,6 +1677,7 @@ footer .box-input-email button {
 .blog-page, .single-blog-page, .contact-information{
   margin-top: 10% !important;
 } */
+
 .blog-page h3 {
   font-family: "Amiri", sans-serif;
 }
@@ -1684,6 +1685,7 @@ footer .box-input-email button {
 .blog-page p {
   font-family: "Amiri", sans-serif;
 }
+
 
 .blog-page .col-md-6 {
   padding: 1.5rem;
@@ -1711,7 +1713,6 @@ footer .box-input-email button {
   font-weight: bold;
   bottom: 0;
   padding: 5px 10px;
-  font-family: "Amiri", sans-serif;
 }
 
 .blog-page .box-image {
@@ -1798,6 +1799,7 @@ span {
   font-family: "Amiri", sans-serif;
 }
 
+
 .box-right .box-popular-new-item-title a {
   text-decoration: none;
   color: #304693;
@@ -1822,14 +1824,12 @@ span {
   color: rgb(11, 18, 72);
   font-weight: bold;
   font-size: 20px;
-  font-family: "Amiri", sans-serif;
 }
 
 .box-right .categories-list span i {
   color: rgb(188, 120, 30);
   margin: 0px 10px;
   font-size: 19px;
-  font-family: "Amiri", sans-serif;
 }
 
 .box-right .categories-list li {
@@ -1852,13 +1852,11 @@ span {
 
 .box-right .have-any-question-box h3 {
   color: #fdf5e6;
-  font-family: "Amiri", sans-serif;
 }
 
 .box-right .box-question-list a {
   text-decoration: none;
   color: #fff;
-  font-family: "Amiri", sans-serif;
 }
 
 .box-right .box-question-list span i {
@@ -1887,6 +1885,7 @@ main .single-blog {
 }
 
 /*  single blog-item */
+
 main .single-blog h1,
 main .blog p {
   font-family: "Amiri", sans-serif;
@@ -1900,6 +1899,7 @@ main .blog p {
   font-family: "Amiri", sans-serif;
 }
 
+
 /* content  */
 .content-single-blog-page img {
   width: 99%;
@@ -1907,7 +1907,7 @@ main .blog p {
 
 .content-single-blog-page .content p {
   color: #918b8a;
-  font-family: "Palanquin", sans-serif;
+
 }
 
 .content-single-blog-page .content i {
@@ -1916,7 +1916,6 @@ main .blog p {
 }
 
 .content-single-blog-page .content h2 {
-  font-family: "Amiri", sans-serif;
   color: #2a3c80;
 }
 
@@ -1951,7 +1950,7 @@ main .blog p {
 
 .form-comment label {
   font-weight: bold;
-  font-family: "Palanquin", sans-serif;
+  
 }
 
 .form-comment button {
@@ -1959,7 +1958,15 @@ main .blog p {
   padding: 15px;
   background-color: #a47b60;
   color: #fdf5e6;
-  font-family: "Amiri", sans-serif;
+  transition: 0.5s;
+  
+}
+.form-comment button:hover {
+  border: none;
+  transition: 0.5s;
+  background-color: #b8947c;
+  
+  
 }
 
 /* responsive  */
@@ -2002,10 +2009,7 @@ main .contact {
 }
 
 /* contact */
-main .contact h1,
-main .contact p {
-  font-family: "Amiri", sans-serif;
-}
+
 
 .contact-information-text {
   background-color: #fdf5e6;
@@ -2020,7 +2024,6 @@ main .contact p {
 
 .contact-information-text h3 {
   color: #36364e;
-  font-family: "Amiri", sans-serif;
 }
 
 .make-appointment-contact {
@@ -2056,7 +2059,7 @@ main .contact p {
   font-size: 60px;
   color: #043542;
   font-weight: 400;
-  font-family: "amiri", serif;
+  
 }
 
 .make-appointment-contact .form-right-make-appointment {
@@ -2161,8 +2164,14 @@ main .contact p {
   border: none;
   background-color: #a47b60;
   color: white;
+  transition: 0.5s;
 }
-
+.make-appointment-contact .form-right-make-appointment form button:hover {
+  transition: 0.5s;
+  border: none;
+  background-color: #af9888;
+  color: white;
+}
 .make-appointment-contact .text-question-click-left button {
   width: 20%;
   height: 70px;
