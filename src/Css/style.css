@@ -28,9 +28,7 @@
   font-size: 23px;
 }
 
-.user-login {
-  display: none !important;
-}
+
 
 .user-login-responsive {
   background-color: #a47b60;
@@ -1013,7 +1011,7 @@ hr.dotted {
 
 @media (max-width: 765px) {
   .box-question-text-booking {
-    margin-top: 25%;
+    margin-top: 55%;
   }
 }
 
@@ -2389,13 +2387,15 @@ footer .coppyright {
 }
 
 .box-mxauto {
-  width: 140px;
-  height: 140px;
+  width: 160px;
+  height: 160px;
   background-color: black;
   border-radius: 5px;
   overflow: hidden;
 }
-
+.box-mxauto .small-text{
+  font-size: 25px;
+}
 .box-mxauto img {
   width: 100%;
   height: 100%;
@@ -2480,4 +2480,33 @@ right: 20px;
   100% {
     transform: rotate(-20deg);
   }
+}
+ /* policy and privacy page  */
+ .box-policy-and-privacy{
+    background-image: url(https://templatekit.jegtheme.com/naylish/wp-content/uploads/sites/221/2022/01/bg-3.png) !important;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+ }
+.policy-and-privacy{
+  position: unset !important;
+  margin-top: 20%;
+}
+.img-policy {
+  width: 60%;
+  margin: 0 auto;
+}
+.policy-and-privacy .box-text-policy .text-box-policy{
+  margin: 30px 0;
+}
+.policy-and-privacy h3{
+  font-weight: bold;
+}
+.policy-and-privacy p{
+  font-size: 20px;
+}
+.text-box-policy ul li {
+  margin: 20px 0;
 }
