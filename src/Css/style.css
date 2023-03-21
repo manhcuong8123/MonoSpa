@@ -1,5 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
+
 @import url("https://fonts.googleapis.com/css2?family=Cardo&display=swap");
+
+/* @import url('https://fonts.googleapis.com/css2?family=Cardo&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Philosopher&display=swap');
+
 
 @import url('https://fonts.googleapis.com/css2?family=Philosopher&display=swap');
 * {
@@ -189,11 +194,13 @@
 
 .menu-sub-responsive .menu ul .menu-sub-page-respon span i {
   font-size: 20px;
+  font-family: 'Philosopher', sans-serif;
 }
 
 .menu-sub-responsive .menu ul li a {
   text-decoration: none;
   color: #043542;
+  font-family: 'Philosopher', sans-serif;
 }
 
 .menu-sub-responsive .menu-responsive {
@@ -249,6 +256,7 @@
 .menu-oppentime .menu ul li a {
   text-decoration: none;
   color: #262626;
+  font-family: 'Philosopher', sans-serif;
 }
 
 .logo-menu-oppenTime .logo img {
@@ -309,6 +317,7 @@
   width: 40%;
   margin: 0 auto;
 }
+
 .span-text-center-banner{
  font-style: italic;
   font-family: 'Philosopher', sans-serif;
@@ -320,9 +329,16 @@
   color: #a47b60;
   font-weight: 600;
 }
+
+/* PAGE */
+
 .menu-sub-page {
   position: relative;
+  
 }
+.menu-sub-page span{
+  font-family: 'Philosopher', sans-serif;
+} 
 
 .menu-sub-page .menu-mini {
   display: none;
@@ -1289,7 +1305,7 @@ footer .box-input-email button {
 }
 
 .text-title-HomePage {
-  font-size: 58px;
+  font-size: 40px;
   color: #043542;
   font-weight: 400;
   font-family: "Roboto Slab", serif;
@@ -1733,13 +1749,13 @@ footer .box-input-email button {
   margin-top: 10% !important;
 } */
 
-.blog-page h3 {
+/* .blog-page h3 {
   font-family: "Amiri", sans-serif;
 }
 
 .blog-page p {
   font-family: "Amiri", sans-serif;
-}
+} */
 
 .blog-page .col-md-6 {
   padding: 1.5rem;
@@ -1848,10 +1864,10 @@ footer .box-input-email button {
   width: 100px;
 }
 
-.box-right .popular-new-posts h3,
+/* .box-right .popular-new-posts h3,
 span {
   font-family: "Amiri", sans-serif;
-}
+} */
 
 .box-right .box-popular-new-item-title a {
   text-decoration: none;
@@ -1939,7 +1955,7 @@ main .single-blog {
 
 /*  single blog-item */
 
-main .single-blog h1,
+/* main .single-blog h1,
 main .blog p {
   font-family: "Amiri", sans-serif;
 }
@@ -1950,7 +1966,7 @@ main .blog p {
 
 .single-blog-page p {
   font-family: "Amiri", sans-serif;
-}
+} */
 
 /* content  */
 .content-single-blog-page img {
@@ -2448,6 +2464,9 @@ footer .coppyright {
   background-size: cover;
   background-color: #fcf5e7;
   font-family: "Palanquin", sans-serif;
+}
+.box-mxauto .small-text{
+  font-size: 25px;
 }
 
 .box-mxauto {
