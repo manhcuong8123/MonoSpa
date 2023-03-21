@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
 @import url('https://fonts.googleapis.com/css2?family=Cardo&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Philosopher&display=swap');
 * {
   padding: 0;
   margin: 0;
@@ -308,7 +309,16 @@
   width: 40%;
   margin: 0 auto;
 }
-
+.span-text-center-banner{
+ font-style: italic;
+  font-family: 'Philosopher', sans-serif;
+  color: #070323;
+  margin-top: 40px;
+}
+.span-text-center-banner>span{
+  color: #a47b60;
+  font-weight: 600;
+}
 .menu-sub-page {
   position: relative;
 }
@@ -1190,10 +1200,18 @@ footer .box-input-email button {
 }
 
 /* ==========about-us============== */
-.About-Us {
+.About-Us{
   margin-top: 20%;
 }
-
+.grid-terms-service{
+  margin: 20% 0 10% 0;
+  margin-bottom: 10%;
+}
+@media (max-width:890px) {
+  .grid-terms-service{
+    margin: 30% 0;
+  }
+}
 .experience-about-us {
   margin: 60px 0;
 }
@@ -2469,4 +2487,48 @@ right: 20px;
   100% {
     transform: rotate(-20deg);
   }
+}
+/* ==============terms========= */
+.left-grid-terms{
+  border: 1px solid #cdcdcd;
+  padding: 10px 0px;
+  height: max-content;
+}
+.left-grid-terms h3{
+  text-align: center;
+  padding: 10px 0;
+  border-bottom: 3px solid #070323;
+}
+.list-menu-left-terms ul {
+  padding: 0 ;
+}
+.list-menu-left-terms ul li{
+  list-style: none;
+  padding: 10px 20px;
+  border-bottom: 1px solid #cdcdcd73;
+  transition: .2s linear;
+}
+.list-menu-left-terms li:hover {
+  background-color: #f0ebe08f;
+  transition: .2s linear;
+}
+.list-menu-left-terms li:hover a{
+  color: #6a4605;
+}
+.list-menu-left-terms a{
+  text-decoration: none;
+  color: #000000;
+  font-size: 1.2rem;
+}
+.img-left-grid-terms {
+  margin-top: 100px;
+}
+.left-grid-terms h3,.right-grid-terms h2,.text-content-terms h5{
+  font-weight: 600;
+}
+.right-grid-terms,.left-grid-terms{
+  margin-top: 2rem;
+}
+.text-content-terms p{
+  font-size: 1rem;
 }
