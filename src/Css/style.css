@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Cardo&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Cardo&display=swap");
 
 @import url('https://fonts.googleapis.com/css2?family=Philosopher&display=swap');
 * {
@@ -7,7 +7,7 @@
   margin: 0;
   box-sizing: border-box;
   /* font-family: "Roboto Slab", serif; */
-  font-family: 'Cardo', serif;
+  font-family: "Cardo", serif;
 }
 
 /* Menu sub reposive  */
@@ -27,10 +27,6 @@
 
 .icon-menu-sub-responsive button {
   font-size: 23px;
-}
-
-.user-login {
-  display: none !important;
 }
 
 .user-login-responsive {
@@ -53,8 +49,8 @@
   padding: 0 !important;
 }
 
-.user-account>img,
-.user-account button>img {
+.user-account > img,
+.user-account button > img {
   width: 30px;
   height: 30px;
   border-radius: 50%;
@@ -210,7 +206,11 @@
   transition: 0.3s;
 }
 
-.menu-sub-responsive .menu-responsive .menu-sub-page-respon .menu-mini-respon li {
+.menu-sub-responsive
+  .menu-responsive
+  .menu-sub-page-respon
+  .menu-mini-respon
+  li {
   padding: 10px 0px 10px 10px;
   transition: 0.4s;
 }
@@ -241,7 +241,7 @@
   transition: 0.3s;
 }
 
-.menu-oppentime .menu>ul>li:hover {
+.menu-oppentime .menu > ul > li:hover {
   border-bottom: 1px solid #262626;
   transition: 0.3s;
 }
@@ -257,25 +257,24 @@
 
 .banner-page {
   z-index: -1;
-}
-
-.banner-page {
-  height: 400px;
+  height: 45%;
   overflow: hidden;
   width: 100%;
   opacity: 0.3;
   background-color: #fdf5e6;
   background-image: url(https://templatekit.jegtheme.com/naylish/wp-content/uploads/sites/221/2022/01/woman-coming-to-nail-artist-for-manicure.jpg);
-  background-position: 0px 73%;
+  /* background-position: 0px 73%; */
   background-repeat: no-repeat;
   background-size: cover;
+  position: absolute;
+  top: 0;
 }
 
 .left-banner-Homepage {
   padding: 20px;
 }
 
-.left-banner-Homepage>p {
+.left-banner-Homepage > p {
   width: 70%;
 }
 
@@ -284,6 +283,7 @@
   color: #053543;
   font-weight: 400;
   font-family: "Roboto Slab", serif;
+  height: 00px;
 }
 
 .p-title-banner-header {
@@ -313,7 +313,8 @@
  font-style: italic;
   font-family: 'Philosopher', sans-serif;
   color: #070323;
-  margin-top: 40px;
+  margin-top: 25px;
+  text-align: center;
 }
 .span-text-center-banner>span{
   color: #a47b60;
@@ -354,14 +355,23 @@
 }
 
 .menu-mini li:hover,
-.menu-sub-responsive .menu-responsive .menu-sub-page-respon .menu-mini-respon li:hover {
+.menu-sub-responsive
+  .menu-responsive
+  .menu-sub-page-respon
+  .menu-mini-respon
+  li:hover {
   transition: 0.4s;
   background-color: #a47b60 !important;
   color: white;
 }
 
-.menu-mini li:hover>a,
-.menu-sub-responsive .menu-responsive .menu-sub-page-respon .menu-mini-respon li:hover>a {
+.menu-mini li:hover > a,
+.menu-sub-responsive
+  .menu-responsive
+  .menu-sub-page-respon
+  .menu-mini-respon
+  li:hover
+  > a {
   transition: 0.4s;
   color: white !important;
 }
@@ -390,6 +400,12 @@
   width: 0%;
   cursor: pointer;
   z-index: 10;
+}
+.box-oppentime {
+  height: 100%;
+  overflow: scroll;
+  overflow: -moz-scrollbars-none;
+  -ms-overflow-style: none;
 }
 
 .oppenTime-box .information-oppenTime {
@@ -443,7 +459,7 @@
 
 /* main our team page  */
 .professional-team {
-  margin-top: 300px;
+  margin-top: 30%;
 }
 
 .professional-team .title-professional-team {
@@ -522,7 +538,7 @@
 }
 
 .box-professional-team .contact-icon i {
-  background-color: #A47B60;
+  background-color: #a47b60;
   padding: 5px;
   border-radius: 50%;
 }
@@ -531,19 +547,20 @@
   bottom: 50px;
   opacity: 1;
 }
-
-.box-professional-team .location {
+.box-professional-team > .location {
   position: absolute;
-  top: 50px;
-  right: -40px;
+  top: 40%;
+  right: -200px;
   font-size: 15px;
   transition: 0.5s;
   color: white;
   transform: rotate(90deg);
+  padding: 0;
+  margin: 0;
+  width: 300px;
 }
-
-.box-professional-team:hover .location {
-  right: 5px;
+.box-professional-team:hover > .location {
+  right: -100px !important;
 }
 
 .working-hour {
@@ -730,12 +747,15 @@
 }
 
 .show-question {
-  height: 120px !important;
+  height: 140px !important;
+  overflow: scroll !important;
+  overflow: -moz-scrollbars-none !important;
+  -ms-overflow-style: none !important;
   transition: 0.5s;
 }
 
 .add-background-question {
-  background-color: #A47B60;
+  background-color: #a47b60;
   color: white;
 }
 
@@ -862,13 +882,17 @@ hr.dotted {
   width: 40%;
 }
 
-.form-right-make-appointment form>input {
+.form-right-make-appointment form > input {
   width: 100%;
   height: 52px;
   padding: 10px;
 }
 
-.form-right-make-appointment form .box-form-grid-2 .box-form input[type="text"] {
+.form-right-make-appointment
+  form
+  .box-form-grid-2
+  .box-form
+  input[type="text"] {
   width: 100%;
   height: 52px;
   padding: 10px;
@@ -880,13 +904,21 @@ hr.dotted {
   padding: 10px;
 }
 
-.form-right-make-appointment form .box-form-grid-2 .box-form input[type="date"] {
+.form-right-make-appointment
+  form
+  .box-form-grid-2
+  .box-form
+  input[type="date"] {
   width: 100%;
   height: 52px;
   padding: 10px;
 }
 
-.form-right-make-appointment form .box-form-grid-2 .box-form input[type="email"] {
+.form-right-make-appointment
+  form
+  .box-form-grid-2
+  .box-form
+  input[type="email"] {
   width: 100%;
   height: 52px;
   padding: 10px;
@@ -1012,7 +1044,7 @@ hr.dotted {
 
 @media (max-width: 765px) {
   .box-question-text-booking {
-    margin-top: 25%;
+    margin-top: 55%;
   }
 }
 
@@ -1204,12 +1236,17 @@ footer .box-input-email button {
   margin-top: 20%;
 }
 .grid-terms-service{
-  margin: 20% 0 10% 0;
+  margin: 10%  0;
   margin-bottom: 10%;
 }
 @media (max-width:890px) {
   .grid-terms-service{
-    margin: 30% 0;
+    margin: 45% 0;
+  }
+}
+@media (max-width:780px) {
+  .grid-terms-service{
+    margin: 28% 0;
   }
 }
 .experience-about-us {
@@ -1328,7 +1365,7 @@ footer .box-input-email button {
 }
 
 .text-item-image-service:hover {
-  background-color: #A47B60;
+  background-color: #a47b60;
   transition: 0.2s linear;
   color: #fff;
   cursor: pointer;
@@ -1373,7 +1410,7 @@ footer .box-input-email button {
   height: 1px;
 }
 
-.title-lefy-streatment>p {
+.title-lefy-streatment > p {
   color: #909497;
 }
 
@@ -1704,7 +1741,6 @@ footer .box-input-email button {
   font-family: "Amiri", sans-serif;
 }
 
-
 .blog-page .col-md-6 {
   padding: 1.5rem;
 }
@@ -1749,7 +1785,8 @@ footer .box-input-email button {
 }
 
 /* responsive  */
-@media (max-width: 2410px) {}
+@media (max-width: 2410px) {
+}
 
 @media (max-width: 1200px) {
   .blog-page .box-image img {
@@ -1759,7 +1796,6 @@ footer .box-input-email button {
 }
 
 @media (max-width: 1000px) {
-
   /*  BLOG  */
   .blog-page .box-image {
     width: 90%;
@@ -1816,7 +1852,6 @@ footer .box-input-email button {
 span {
   font-family: "Amiri", sans-serif;
 }
-
 
 .box-right .box-popular-new-item-title a {
   text-decoration: none;
@@ -1917,7 +1952,6 @@ main .blog p {
   font-family: "Amiri", sans-serif;
 }
 
-
 /* content  */
 .content-single-blog-page img {
   width: 99%;
@@ -1925,7 +1959,6 @@ main .blog p {
 
 .content-single-blog-page .content p {
   color: #918b8a;
-
 }
 
 .content-single-blog-page .content i {
@@ -1968,7 +2001,6 @@ main .blog p {
 
 .form-comment label {
   font-weight: bold;
-  
 }
 
 .form-comment button {
@@ -1977,20 +2009,19 @@ main .blog p {
   background-color: #a47b60;
   color: #fdf5e6;
   transition: 0.5s;
-  
 }
 .form-comment button:hover {
   border: none;
   transition: 0.5s;
   background-color: #b8947c;
-  
-  
 }
 
 /* responsive  */
-@media (max-width: 2410px) {}
+@media (max-width: 2410px) {
+}
 
-@media (max-width: 1200px) {}
+@media (max-width: 1200px) {
+}
 
 @media (max-width: 1000px) {
   .blog-page .box-right .p-5 {
@@ -2027,7 +2058,6 @@ main .contact {
 }
 
 /* contact */
-
 
 .contact-information-text {
   background-color: #fdf5e6;
@@ -2077,7 +2107,6 @@ main .contact {
   font-size: 60px;
   color: #043542;
   font-weight: 400;
-  
 }
 
 .make-appointment-contact .form-right-make-appointment {
@@ -2134,37 +2163,62 @@ main .contact {
   width: 40%;
 }
 
-.make-appointment-contact .form-right-make-appointment form>input {
+.make-appointment-contact .form-right-make-appointment form > input {
   width: 100%;
   height: 52px;
   padding: 10px;
 }
 
-.make-appointment-contact .form-right-make-appointment form .box-form-grid-2 .box-form input[type="text"] {
+.make-appointment-contact
+  .form-right-make-appointment
+  form
+  .box-form-grid-2
+  .box-form
+  input[type="text"] {
   width: 100%;
   height: 52px;
   padding: 10px;
 }
 
-.make-appointment-contact .form-right-make-appointment form .box-form-grid-2 .box-form select {
+.make-appointment-contact
+  .form-right-make-appointment
+  form
+  .box-form-grid-2
+  .box-form
+  select {
   width: 100%;
   height: 52px;
   padding: 10px;
 }
 
-.make-appointment-contact .form-right-make-appointment form .box-form-grid-2 .box-form input[type="date"] {
+.make-appointment-contact
+  .form-right-make-appointment
+  form
+  .box-form-grid-2
+  .box-form
+  input[type="date"] {
   width: 100%;
   height: 52px;
   padding: 10px;
 }
 
-.make-appointment-contact .form-right-make-appointment form .box-form-grid-2 .box-form input[type="email"] {
+.make-appointment-contact
+  .form-right-make-appointment
+  form
+  .box-form-grid-2
+  .box-form
+  input[type="email"] {
   width: 100%;
   height: 52px;
   padding: 10px;
 }
 
-.make-appointment-contact .form-right-make-appointment form .box-form-grid-2 .box-form input[type="tel"] {
+.make-appointment-contact
+  .form-right-make-appointment
+  form
+  .box-form-grid-2
+  .box-form
+  input[type="tel"] {
   width: 100%;
   height: 52px;
   padding: 10px;
@@ -2309,7 +2363,8 @@ footer .coppyright {
   }
 }
 
-@media (max-width: 1200px) {}
+@media (max-width: 1200px) {
+}
 
 @media (max-width: 1000px) {
   .logo-menu-oppenTime .menu-oppentime {
@@ -2375,7 +2430,7 @@ footer .coppyright {
 }
 
 .btn-edit-image {
-  background-color: #A47B60 !important;
+  background-color: #a47b60 !important;
   transition: 0.3s;
   color: white;
 }
@@ -2396,13 +2451,15 @@ footer .coppyright {
 }
 
 .box-mxauto {
-  width: 140px;
-  height: 140px;
+  width: 160px;
+  height: 160px;
   background-color: black;
   border-radius: 5px;
   overflow: hidden;
 }
-
+.box-mxauto .small-text {
+  font-size: 25px;
+}
 .box-mxauto img {
   width: 100%;
   height: 100%;
@@ -2429,7 +2486,7 @@ input[type="file"] {
   cursor: pointer;
   font-size: 14px;
   color: #fff;
-  background-color: #A47B60;
+  background-color: #a47b60;
   border: none;
   padding: 10px 15px;
   transition: 0.3s;
@@ -2456,7 +2513,7 @@ main {
 .icon-contact {
   position: fixed;
   bottom: 50px;
-right: 20px;
+  right: 20px;
 }
 
 .icon-call {
@@ -2471,7 +2528,7 @@ right: 20px;
 .instagram-icon-contact img,
 .bxs-phone-call {
   width: 50px;
-  animation: icon .5s infinite;
+  animation: icon 0.5s infinite;
   cursor: pointer;
 }
 
@@ -2488,6 +2545,7 @@ right: 20px;
     transform: rotate(-20deg);
   }
 }
+
 /* ==============terms========= */
 .left-grid-terms{
   border: 1px solid #cdcdcd;
@@ -2532,3 +2590,68 @@ right: 20px;
 .text-content-terms p{
   font-size: 1rem;
 }
+
+/* policy and privacy page  */
+.box-policy-and-privacy {
+  background-image: url(https://templatekit.jegtheme.com/naylish/wp-content/uploads/sites/221/2022/01/bg-3.png) !important;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+}
+.policy-and-privacy {
+  position: unset !important;
+  margin-top: 20%;
+}
+.img-policy {
+  width: 60%;
+  margin: 0 auto;
+}
+.policy-and-privacy .box-text-policy .text-box-policy {
+  margin: 30px 0;
+}
+.policy-and-privacy h3 {
+  font-weight: bold;
+}
+.policy-and-privacy p {
+  font-size: 20px;
+}
+.text-box-policy ul li {
+  margin: 20px 0;
+}
+@media (max-width: 950px) {
+  .policy-and-privacy {
+    margin-top: 60%;
+  }
+  .service-menu .title-service-menu{
+    margin-top: 40%;
+  }
+    .box-professional-team > .location {
+  display: none !important;
+}
+.professional-team {
+  margin-top: 50%;
+}
+}
+@media(min-width: 350px) and (max-width: 850px) {
+  .service-menu .title-service-menu{
+    margin-top: 60%;
+  }
+  .professional-team {
+  margin-top: 70%;
+}
+}
+@media (max-width: 350px) {
+  .banner-page {
+  height: 60%;
+  }
+  .service-menu .title-service-menu{
+    margin-top: 60%;
+    
+  }
+    .box-professional-team > .location {
+  display: none !important;
+}
+}
+
