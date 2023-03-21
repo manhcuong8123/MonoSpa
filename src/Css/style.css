@@ -381,6 +381,12 @@
   cursor: pointer;
   z-index: 10;
 }
+.box-oppentime{
+  height: 100%;
+  overflow: scroll;
+  overflow: -moz-scrollbars-none;
+  -ms-overflow-style: none;
+}
 
 .oppenTime-box .information-oppenTime {
   position: absolute;
@@ -521,19 +527,21 @@
   bottom: 50px;
   opacity: 1;
 }
+.box-professional-team > .location {
 
-.box-professional-team .location {
   position: absolute;
-  top: 50px;
-  right: -40px;
+  top: 40%;
+  right: -50%;
   font-size: 15px;
   transition: 0.5s;
   color: white;
   transform: rotate(90deg);
+  padding: 0;
+  margin: 0;
+  width: 300px;
 }
-
-.box-professional-team:hover .location {
-  right: 5px;
+.box-professional-team:hover > .location{
+  right:  -25% !important;
 }
 
 .working-hour {
@@ -720,7 +728,10 @@
 }
 
 .show-question {
-  height: 120px !important;
+  height: 140px !important;
+  overflow: scroll !important;
+  overflow: -moz-scrollbars-none !important;
+  -ms-overflow-style: none !important;
   transition: 0.5s;
 }
 
