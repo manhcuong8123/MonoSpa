@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="../src/Image/photo_2023-03-10_10-33-00.png" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="../src/Css/style.css" />
+    <title>Our Team</title>
+</head>
+
+<body>
+    <div class="box-main">
+        <header>
+            <div class="header-menutop-banner">
+                <div
+                    class="logo-menu-oppenTime d-flex justify-content-between align-items-center container position-relative">
+                    <div class="logo">
+                        <img src="../src/Image/photo_2023-03-10_10-33-00.png" alt="" />
+                    </div>
+                    <div class="icon-menu-sub-responsive">
+                        <button type="button" onclick="iconOpenMenuSubClick()">
+                            <i class='bx bx-menu'></i>
+                    </div>
+                    <div class="menu-oppentime d-flex gap-5">
+                        <div class="menu">
+                            <ul class="d-flex gap-3">
+                                <li><a href="headerHomePage.html">Trang Chủ</a></li>
+                                <li><a href="About.html">Về Chúng Tôi</a></li>
+                                <li><a href="ourService.html">Dịch Vụ</a></li>
+                                <li class="menu-sub-page">
+                                    <span class="d-flex align-items-center">Trang <i
+                                            class="bx bx-chevron-down"></i></span>
+                                    <ul class="menu-mini">
+                                        <li><a href="ourTeamPage.html">Đội ngũ</a></li>
+                                        <li><a href="FaqPage.html">Câu hỏi thường gặp</a></li>
+                                        <li><a href="Booking.html">Lịch hẹn</a></li>
+                                        <li><a href="">404 Page</a></li>
+                                        <li><a href="blog.html">Tin tức</a></li>
+                                        <li><a href="single-blog.html">Tin tức chi tiết </a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="contact.html">Liên hệ</a></li>
+                            </ul>
+                        </div>
+                        <div class="oppentime-icon">
+                            <i class="bx bxl-facebook"></i>
+                            <i class="bx bxl-instagram"></i>
+                            <button type="button" onclick="iconOpenBoxClick()">
+                                <i class="bx bx-align-right open-Time"></i>
+                            </button>
+                            <button type="button" onclick="" class="user-login">
+                                <a href="login.html" class="text-black"><i class='bx bx-user-circle'></i></a>
+                            </button>
+                            <button type="button" onclick="" class="user-account position-relative"
+                                onclick="iconOpenBoxClick()">
+                                <img src="https://images.unsplash.com/photo-1503023345310-bd7c1de61c7d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8aHVtYW58ZW58MHx8MHx8&w=1000&q=80"
+                                    alt="">
+
+                            </button>
+                            <div class="box-fs-account position-absolute">
+                                <ul>
+                                    <li><a href="">Xem thông tin</a></li>
+                                    <li><a href="">Sửa thông tin</a></li>
+                                    <li><a href="">Đăng Xuất</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="banner-text-page">
+                    <div class="banner-page position-absolute top-0">
+                    </div>
+                    <div class="text-center-banner">
+                        <h1>Điều Khoản Dịch Vụ</h1>
+                       <p class="span-text-center-banner"> <span>MONO BOVIS SPA</span> Hân hạnh được phục vụ</p>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <main>
+            <div class="container">
+                <div class="grid-terms-service row">
+                    <div class="col-md-4">
+                        <div class="left-grid-terms">
+                            <h3>DANH MỤC TRANG</h3>
+                            <div class="list-menu-left-terms">
+                                <ul>
+                                    <li><a href="#infor">Giới thiệu</a></li>
+                                    <li><a href="#instruc">Hướng dẫn sử dụng web</a></li>
+                                    <li><a href="#paypal">Thanh toán an toàn và tiện lợi</a></li>
+                                    <li><a href="#">Điều khoản dịch vụ</a></li>
+                                    <li><a href="">Chính sách bảo mật</a></li>
+                                </ul>
+                            </div>
+                            
+                        </div>
+                        <div class="img-left-grid-terms text-center">
+                            <img src="../src/Image/about-us1.jpg" width="100%" alt="">
+                        </div>
+                    </div>
+                    <div class="right-grid-terms col-md-8">
+                        <h2>ĐIỀU KHOẢN DỊCH VỤ</h2>
+                        <div class="infor text-content-terms" id="infor">
+                            <h5> 1. Giới thiệu</h5>
+                            <p> Chào mừng quý khách hàng đến với website chúng tôi.
+
+                                Khi quý khách hàng truy cập vào trang website của chúng tôi có nghĩa là quý khách đồng ý
+                                với các
+                                điều khoản này. Trang web có quyền thay đổi, chỉnh sửa, thêm hoặc lược bỏ bất kỳ phần
+                                nào trong
+                                Điều khoản mua bán hàng hóa này, vào bất cứ lúc nào. Các thay đổi có hiệu lực ngay khi
+                                được đăng
+                                trên trang web mà không cần thông báo trước. Và khi quý khách tiếp tục sử dụng trang
+                                web, sau
+                                khi các thay đổi về Điều khoản này được đăng tải, có nghĩa là quý khách chấp nhận với
+                                những thay
+                                đổi đó.
+
+                                Quý khách hàng vui lòng kiểm tra thường xuyên để cập nhật những thay đổi của chúng tôi.
+                            </p>
+                        </div>
+
+
+
+                        <div class="instruc text-content-terms" id="instruc">
+                            <h5> 2. Hướng dẫn sử dụng website</h5>
+                            <p>
+                                Khi vào web của chúng tôi, khách hàng phải đảm bảo đủ 18 tuổi, hoặc truy cập dưới sự
+                                giám sát
+                                của cha mẹ hay người giám hộ hợp pháp. Khách hàng đảm bảo có đầy đủ hành vi dân sự để
+                                thực hiện
+                                các giao dịch mua bán hàng hóa theo quy định hiện hành của pháp luật Việt Nam.
+
+                                Trong suốt quá trình đăng ký, quý khách đồng ý nhận email quảng cáo từ website. Nếu
+                                không muốn
+                                tiếp tục nhận mail, quý khách có thể từ chối bằng cách nhấp vào đường link ở dưới cùng
+                                trong mọi
+                                email quảng cáo.</p>
+
+                        </div>
+
+
+                       <div class="paypal text-content-terms" id="paypal">
+                     <h5>   3. Thanh toán an toàn và tiện lợi</h5>
+
+                      <p>  Người mua có thể tham khảo các phương thức thanh toán sau đây và lựa chọn áp dụng phương thức
+                        phù hợp:
+
+                        Cách 1: Thanh toán trực tiếp (người mua nhận hàng tại địa chỉ người bán)
+                        Cách 2: Thanh toán sau (COD – giao hàng và thu tiền tận nơi)
+                        Cách 3: Thanh toán online qua thẻ tín dụng, chuyển khoản</p>
+                       </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <div class=" background-image-footer position-absolute w-100 "></div>
+            <div class="container text  ">
+                <div class="row pt-4 row-footer">
+
+                    <div class="col">
+                        <img src="../src/Image/photo_2023-03-10_10-33-00.png" alt="">
+                        <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        <div class="link-icon">
+                            <ul class="list-unstyled d-flex">
+                                <li><a href=""><i class='bx bxl-facebook'></i></a></li>
+                                <li><a href=""><i class='bx bxl-instagram'></i></a></li>
+                                <li><a href=""><i class='bx bxl-twitter'></i></a></li>
+                                <li><a href=""><i class='bx bxl-pinterest-alt'></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <h4 class="pb-3">Support</h4>
+                        <div class="list-support">
+                            <ul class="list-unstyled">
+                                <li><a href="">FAQ's</a></li>
+                                <li><a href="">Privacy Policy</a></li>
+                                <li><a href="">Term & Conditions</a></li>
+                                <li><a href="">Contact</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col contact">
+                        <h4 class="pb-3">Kết nối</h4>
+                        <p>Can lộc hà tĩnh</p>
+                        <p>Phone : (+62)81 234 567</p>
+
+                    </div>
+                    <div class="col">
+                        <!-- form subcribe -->
+                        <form action="">
+                            <h4 class="pb-3">Subscribe Newsletter</h4>
+                            <div class="box-input-email d-flex">
+                                <input type="text" placeholder="Your email"><button>Subscribe</button>
+                            </div>
+                        </form>
+
+
+                    </div>
+                </div>
+                <hr style="color: aliceblue;">
+
+            </div>
+            <div class="coppyright   container">
+                <div class="text-left">
+                    <p>Nail Salon Template Kit By Jegtheme.
+                    </p>
+                </div>
+                <div class="text-right">
+                    <p> &copy; Bản quyền thuộc facebook anh em code mòn đít </p>
+                </div>
+
+            </div>
+        </footer>
+    </div>
+    <div class="oppenTime-box">
+        <div class="information-oppenTime">
+            <div class="close-information-oppenTime fs-2">
+                <button type="button" onclick="iconOpenBoxClick()">
+                    <i class="bx bx-x"></i>
+                </button>
+            </div>
+            <div class="logo container text-center">
+                <img src="../src/Image/photo_2023-03-10_10-33-00.png" alt="" />
+            </div>
+            <div class="text text-center">
+                <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam vel
+                    risus imperdiet, gravida justo eu.</span>
+            </div>
+            <hr />
+            <div class="map-phone-email container">
+                <div class="icon d-flex align-items-center justify-content-center gap-1 mb-3">
+                    <i class="bx bxs-map"></i>
+                    <div class="span">Jl. Pantai Batu Mejan, Canggu, Bali</div>
+                </div>
+                <div class="icon d-flex align-items-center justify-content-center gap-1 mb-3">
+                    <i class="bx bxs-phone"></i>
+                    <div class="span">(+62)81 234 567</div>
+                </div>
+                <div class="icon d-flex align-items-center justify-content-center gap-1 mb-3">
+                    <i class="bx bxs-envelope"></i>
+                    <div class="span">naylish@domain.com</div>
+                </div>
+            </div>
+            <hr />
+            <div class="opening-hours d-flex align-items-center gap-3 container justify-content-center">
+                <div class="day container">
+                    <p>Monday - Friday :</p>
+                    <p>Saturday :</p>
+                    <p>Sunday :</p>
+                </div>
+                <div class="time container text-center">
+                    <p>09:00 AM - 19:00 PM</p>
+                    <p>09:00 AM - 19:00 PM</p>
+                    <p>09:00 AM - 19:00 PM</p>
+                </div>
+            </div>
+            <hr />
+            <div class="social-network d-flex align-items-center gap-2 container justify-content-center">
+                <i class="bx bxl-facebook"></i>
+                <i class="bx bxl-twitter"></i>
+                <i class="bx bxl-instagram"></i>
+                <i class="bx bxl-pinterest-alt"></i>
+            </div>
+        </div>
+    </div>
+    <div class="menu-sub-responsive position-fixed top-0">
+        <div class="close-menu-sub-reponsive">
+            <button type="button" class="float-end me-2 mt-2 fs-3" onclick="iconOpenMenuSubClick()">
+                <i class="bx bx-x"></i>
+            </button>
+        </div>
+        <div class="logo ps-3">
+            <img src="../src/Image/photo_2023-03-10_10-33-00.png" alt="">
+        </div>
+        <div class="menu menu-responsive">
+            <ul>
+                <li><a href="headerHomePage.html">HOME</a></li>
+                <li><a href="About.html">ABOUT US</a></li>
+                <li><a href="ourService.html">SERVICES</a></li>
+                <li class="menu-sub-page-respon">
+                    <span class="d-flex align-items-center justify-content-between pe-1 mb-1">PAGE <i
+                            class="bx bx-chevron-down"></i></span>
+                    <ul class="menu-mini-respon">
+                        <li><a href="ourTeamPage.html">Our Team</a></li>
+                        <li><a href="FaqPage.html">FAQ</a></li>
+                        <li><a href="Booking.html">Booking</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="single-blog.html">Single Blog</a></li>
+                    </ul>
+                </li>
+                <li><a href="contact.html">CONTACT US</a></li>
+                <li class="pe-3"> <button type="button" onclick="" class="user-login-responsive w-100">
+                        <a href="login.html" class="text-white border-0 d-flex align-items-center gap-3 p-2"><i
+                                class='bx bx-user-circle'></i> Đăng Nhập</a>
+                    </button></li>
+                <li class="user-account pe-3">
+                    <button class="box-account-responsive border-0 d-flex align-items-center gap-3 p-2 w-100">
+                        <img src="https://images.unsplash.com/photo-1503023345310-bd7c1de61c7d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8aHVtYW58ZW58MHx8MHx8&w=1000&q=80"
+                            alt="">
+                        <span class="fs-5">Lê Sỹ Hải</span>
+                    </button>
+                    <ul class="box-fs-account-responsive">
+                        <li><a href="">Xem thông tin</a></li>
+                        <li><a href="">Sửa thông tin</a></li>
+                        <li><a href="">Đăng Xuất</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <script src="../src/Js/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+
+</html>

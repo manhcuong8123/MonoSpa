@@ -7,19 +7,19 @@ const closeBoxOPpenTime = document.querySelector(
 );
 
 // Click show open time spa
-const iconOpenBox = document.querySelector(".open-Time");
-const iconOpenBoxClick = () => {
-  if (
-    openTimeBox.classList.contains("oppenTime-box-Click") &&
-    informationTimeBox.classList.contains("information-oppenTime-Click")
-  ) {
-    openTimeBox.classList.remove("oppenTime-box-Click");
-    informationTimeBox.classList.remove("information-oppenTime-Click");
-  } else {
-    openTimeBox.classList.add("oppenTime-box-Click");
-    informationTimeBox.classList.add("information-oppenTime-Click");
-  }
-};
+const iconOpenBox = document.querySelector(".btn-openTimeBox");
+  const iconOpenBoxClick = () => {
+    if (
+      openTimeBox.classList.contains("oppenTime-box-Click") &&
+      informationTimeBox.classList.contains("information-oppenTime-Click")
+    ) {
+      openTimeBox.classList.remove("oppenTime-box-Click");
+      informationTimeBox.classList.remove("information-oppenTime-Click");
+    } else {
+      openTimeBox.classList.add("oppenTime-box-Click");
+      informationTimeBox.classList.add("information-oppenTime-Click");
+    }
+  };
 // click show menu mini responsive in Page
 
 const menuMiniPage = document.querySelector(".menu-sub-page-respon");
