@@ -236,13 +236,21 @@
 /* End Menu sub reposive  */
 
 /* Menu Home Pc  */
-
+.box-navbar-top{
+  background-color: white;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 5;
+}
 .menu-oppentime .menu ul {
   list-style: none;
 }
 
 .menu-oppentime .menu ul li {
   transition: 0.3s;
+  height: 30px;
 }
 
 .menu-oppentime .menu>ul>li:hover {
@@ -255,7 +263,9 @@
   color: #262626;
   font-family: 'Philosopher', sans-serif;
 }
-
+.menu-oppentime{
+  height: 40px;
+}
 .logo-menu-oppenTime .logo img {
   width: 120px;
 }
@@ -1725,6 +1735,7 @@ footer .box-input-email button {
 .modal-mockup {
   position: relative;
   display: none;
+  z-index: 6;
 }
 
 .content-modal-mockup {
@@ -2486,7 +2497,7 @@ footer .coppyright {
 @media (max-width: 1200px) {}
 
 @media (max-width: 1000px) {
-  .logo-menu-oppenTime .menu-oppentime {
+   .menu-oppentime {
     display: none !important;
   }
 
