@@ -7,6 +7,7 @@
 
 
 @import url('https://fonts.googleapis.com/css2?family=Philosopher&display=swap');
+
 * {
   padding: 0;
   margin: 0;
@@ -54,8 +55,8 @@
   padding: 0 !important;
 }
 
-.user-account > img,
-.user-account button > img {
+.user-account>img,
+.user-account button>img {
   width: 30px;
   height: 30px;
   border-radius: 50%;
@@ -213,11 +214,7 @@
   transition: 0.3s;
 }
 
-.menu-sub-responsive
-  .menu-responsive
-  .menu-sub-page-respon
-  .menu-mini-respon
-  li {
+.menu-sub-responsive .menu-responsive .menu-sub-page-respon .menu-mini-respon li {
   padding: 10px 0px 10px 10px;
   transition: 0.4s;
 }
@@ -248,7 +245,7 @@
   transition: 0.3s;
 }
 
-.menu-oppentime .menu > ul > li:hover {
+.menu-oppentime .menu>ul>li:hover {
   border-bottom: 1px solid #262626;
   transition: 0.3s;
 }
@@ -270,7 +267,7 @@
   width: 100%;
   opacity: 0.3;
   background-color: #fdf5e6;
-  background-image: url(https://templatekit.jegtheme.com/naylish/wp-content/uploads/sites/221/2022/01/woman-coming-to-nail-artist-for-manicure.jpg);
+  background-image: url(../Image/banner-homepage2.jpg);
   /* background-position: 0px 73%; */
   background-repeat: no-repeat;
   background-size: cover;
@@ -282,7 +279,7 @@
   padding: 20px;
 }
 
-.left-banner-Homepage > p {
+.left-banner-Homepage>p {
   width: 70%;
 }
 
@@ -301,7 +298,7 @@
 }
 
 .header-homePage {
-  padding: 0px 0 130px;
+  padding: 0px;
   overflow: hidden;
   width: 100%;
   background-color: #fdf5e6;
@@ -309,6 +306,7 @@
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
+
   transition: background 0.3s, border-radius 0.3s, opacity 0.5s;
 }
 
@@ -318,14 +316,15 @@
   margin: 0 auto;
 }
 
-.span-text-center-banner{
- font-style: italic;
+.span-text-center-banner {
+  font-style: italic;
   font-family: 'Philosopher', sans-serif;
   color: #070323;
   margin-top: 25px;
   text-align: center;
 }
-.span-text-center-banner>span{
+
+.span-text-center-banner>span {
   color: #a47b60;
   font-weight: 600;
 }
@@ -334,11 +333,12 @@
 
 .menu-sub-page {
   position: relative;
-  
+
 }
-.menu-sub-page span{
+
+.menu-sub-page span {
   font-family: 'Philosopher', sans-serif;
-} 
+}
 
 .menu-sub-page .menu-mini {
   display: none;
@@ -371,23 +371,14 @@
 }
 
 .menu-mini li:hover,
-.menu-sub-responsive
-  .menu-responsive
-  .menu-sub-page-respon
-  .menu-mini-respon
-  li:hover {
+.menu-sub-responsive .menu-responsive .menu-sub-page-respon .menu-mini-respon li:hover {
   transition: 0.4s;
   background-color: #a47b60 !important;
   color: white;
 }
 
-.menu-mini li:hover > a,
-.menu-sub-responsive
-  .menu-responsive
-  .menu-sub-page-respon
-  .menu-mini-respon
-  li:hover
-  > a {
+.menu-mini li:hover>a,
+.menu-sub-responsive .menu-responsive .menu-sub-page-respon .menu-mini-respon li:hover>a {
   transition: 0.4s;
   color: white !important;
 }
@@ -417,6 +408,7 @@
   cursor: pointer;
   z-index: 10;
 }
+
 .box-oppentime {
   height: 100%;
   overflow: scroll;
@@ -477,7 +469,46 @@
 .professional-team {
   margin-top: 30%;
 }
+.h4-ourteam{
+  font-family: "Roboto Slab", serif;
+  margin: 50px 0;
+  font-weight: 600;
+}
+.ceo-our-team{
+  background-image: url(https://templatekit.jegtheme.com/naylish/wp-content/uploads/sites/221/2022/01/bg-3.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.img-user-of-team{
+  width:100% ;
+  height: 65%;
+  padding: 15px;
+}
+.user-of-team{
+  margin-top: 50px;
+}
+.h4-doctor-our-team{
+  margin: 20px 0;
+  font-weight: 600;
 
+}
+.img-user-of-team img{
+  width:100%;
+  height: 100%;
+  object-fit: cover;
+}
+.h4-ceo-ourteam{
+  text-align: center;
+  margin: 20px 0;
+  font-family: "Roboto Slab", serif;
+  font-weight: 600;
+}
+.p-ceo-ourteam{
+  text-align: center;
+  font-weight: 600;
+  font-size: 1.3rem;
+}
 .professional-team .title-professional-team {
   margin: 0 auto;
   width: 50%;
@@ -563,7 +594,8 @@
   bottom: 50px;
   opacity: 1;
 }
-.box-professional-team > .location {
+
+.box-professional-team>.location {
   position: absolute;
   top: 40%;
   right: -200px;
@@ -575,7 +607,8 @@
   margin: 0;
   width: 300px;
 }
-.box-professional-team:hover > .location {
+
+.box-professional-team:hover>.location {
   right: -100px !important;
 }
 
@@ -898,17 +931,13 @@ hr.dotted {
   width: 40%;
 }
 
-.form-right-make-appointment form > input {
+.form-right-make-appointment form>input {
   width: 100%;
   height: 52px;
   padding: 10px;
 }
 
-.form-right-make-appointment
-  form
-  .box-form-grid-2
-  .box-form
-  input[type="text"] {
+.form-right-make-appointment form .box-form-grid-2 .box-form input[type="text"] {
   width: 100%;
   height: 52px;
   padding: 10px;
@@ -920,21 +949,13 @@ hr.dotted {
   padding: 10px;
 }
 
-.form-right-make-appointment
-  form
-  .box-form-grid-2
-  .box-form
-  input[type="date"] {
+.form-right-make-appointment form .box-form-grid-2 .box-form input[type="date"] {
   width: 100%;
   height: 52px;
   padding: 10px;
 }
 
-.form-right-make-appointment
-  form
-  .box-form-grid-2
-  .box-form
-  input[type="email"] {
+.form-right-make-appointment form .box-form-grid-2 .box-form input[type="email"] {
   width: 100%;
   height: 52px;
   padding: 10px;
@@ -1170,7 +1191,7 @@ footer .box-input-email button {
 
 .left-banner-Homepage h2 {
   font-size: 90px;
-  color: #043542;
+  color: #a47b60;
   font-weight: 400;
   font-family: "Roboto Slab", serif;
   margin: 20px 0;
@@ -1248,22 +1269,37 @@ footer .box-input-email button {
 }
 
 /* ==========about-us============== */
-.About-Us{
+.story-about {
   margin-top: 20%;
 }
-.grid-terms-service{
-  margin: 10%  0;
+.h5-story-about{
+  margin: 50px 0;
+}
+.grid-terms-service {
+  margin: 10% 0;
   margin-bottom: 10%;
 }
+.text-in-img-story p{
+  font-style: italic;
+  margin-top: -30px;
+}
+.h4-story{
+  margin: 50px 0 30px;
+}
 @media (max-width:890px) {
-  .grid-terms-service{
+  .grid-terms-service {
     margin: 45% 0;
   }
 }
+
 @media (max-width:780px) {
-  .grid-terms-service{
+  .grid-terms-service {
     margin: 28% 0;
   }
+}
+.doi-ngu-bac-si{
+  width: 80%;
+  margin: 100px auto; 
 }
 .experience-about-us {
   margin: 60px 0;
@@ -1292,6 +1328,7 @@ footer .box-input-email button {
   color: #262626;
   font-weight: 600;
   position: relative;
+  font-family: "Roboto Slab", serif;
 }
 
 .text-under-h4-HomePage::after {
@@ -1306,7 +1343,7 @@ footer .box-input-email button {
 
 .text-title-HomePage {
   font-size: 40px;
-  color: #043542;
+  color: #a47b60;
   font-weight: 400;
   font-family: "Roboto Slab", serif;
   margin-top: 50px;
@@ -1358,6 +1395,44 @@ footer .box-input-email button {
 .our-service {
   margin-top: 180px;
 }
+.form-service{
+  margin: 150px auto;
+}
+.left-row-form-service{
+  padding: 0px 20px;
+}
+.left-row-form-service a{
+  font-style: italic;
+  text-decoration: none;
+}
+.left-row-form-service p:nth-child(2){
+  font-size: 1.3rem;
+}
+.right-row-form-service table th,td{
+    padding: 10px 0;
+}
+.right-row-form-service table {
+  width: 60%;
+  margin: 0 auto;
+}
+.right-row-form-service input{
+  outline: none;
+  width:100%;
+  /* padding: 10px 0; */
+  border: none;
+  border-bottom: 1px solid #dd9002;
+  border-bottom-right-radius:10px ;
+}
+.text-read-more {
+  margin-top: 100px;
+  font-family: "Roboto Slab", serif;
+
+}
+
+.text-read-more a {
+  text-decoration: none;
+  color: #a47b60;
+}
 
 .item-image-service {
   margin-top: 100px;
@@ -1390,6 +1465,59 @@ footer .box-input-email button {
 
 .text-item-image-service:hover button {
   color: #fff;
+}
+
+/* ===========lý do nên chọn bọn dở hơi này================// */
+.reason {
+  margin-top: 100px;
+  background-image: url(../Image/beautiful-hand-of-woman-with-white-manicure--e1643347008496.jpg);
+  padding: 50px 0;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.text-p-Homepage {
+  margin-top: 20px;
+  text-align: center;
+  font-style: italic;
+}
+.h4-reason,.p-reason{
+  margin: 0px auto !important;
+  color: #f9f9f9;
+}
+.p-reason{
+  margin: 50px auto !important;
+}
+.item-option-reason {
+  padding:15px 10px;
+  background-color: #fcf6e9a7;
+  text-align: center;
+  margin: 10px 0;
+  border: 1px solid #855a0a;
+  border-radius: 20px;
+  box-shadow: 0 0 10px 0px #855a0a;
+}
+.h4-item-reason{
+  margin: 10px 0;
+}
+.p-item-reason {
+  width: 80%;
+  margin: 10px auto;
+  height: 200px;
+  overflow: hidden;
+  object-fit: cover;
+}
+.img-item-reason{
+  width: 180px;
+  height: 180px;
+  margin: 10px auto;
+}
+.img-item-reason img{
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
 }
 
 /* ===========treatment-price========== */
@@ -1426,7 +1554,7 @@ footer .box-input-email button {
   height: 1px;
 }
 
-.title-lefy-streatment > p {
+.title-lefy-streatment>p {
   color: #909497;
 }
 
@@ -1616,8 +1744,8 @@ footer .box-input-email button {
 
 .h5-item-modal-mockup {
   /* font-family: 'Lobster', cursive; */
-  font-family: "Pacifico", cursive;
-  /* font-family: 'Roboto', sans-serif; */
+  /* font-family: "Pacifico", cursive; */
+  font-family: 'Roboto', sans-serif;
   /* font-family: 'Roboto Slab', serif; */
 }
 
@@ -1637,11 +1765,11 @@ footer .box-input-email button {
 .item-modal-mockup {
   right: 0;
   left: 0;
-  width: 70%;
+  width: 40%;
   margin: 0 auto;
-  top: 5%;
+  top: 15%;
   bottom: 5%;
-  height: 90%;
+  height: 60%;
   position: absolute;
   text-align: center;
   background-color: #fff;
@@ -1801,8 +1929,7 @@ footer .box-input-email button {
 }
 
 /* responsive  */
-@media (max-width: 2410px) {
-}
+@media (max-width: 2410px) {}
 
 @media (max-width: 1200px) {
   .blog-page .box-image img {
@@ -1812,6 +1939,7 @@ footer .box-input-email button {
 }
 
 @media (max-width: 1000px) {
+
   /*  BLOG  */
   .blog-page .box-image {
     width: 90%;
@@ -2026,6 +2154,7 @@ main .blog p {
   color: #fdf5e6;
   transition: 0.5s;
 }
+
 .form-comment button:hover {
   border: none;
   transition: 0.5s;
@@ -2033,11 +2162,9 @@ main .blog p {
 }
 
 /* responsive  */
-@media (max-width: 2410px) {
-}
+@media (max-width: 2410px) {}
 
-@media (max-width: 1200px) {
-}
+@media (max-width: 1200px) {}
 
 @media (max-width: 1000px) {
   .blog-page .box-right .p-5 {
@@ -2179,62 +2306,37 @@ main .contact {
   width: 40%;
 }
 
-.make-appointment-contact .form-right-make-appointment form > input {
+.make-appointment-contact .form-right-make-appointment form>input {
   width: 100%;
   height: 52px;
   padding: 10px;
 }
 
-.make-appointment-contact
-  .form-right-make-appointment
-  form
-  .box-form-grid-2
-  .box-form
-  input[type="text"] {
+.make-appointment-contact .form-right-make-appointment form .box-form-grid-2 .box-form input[type="text"] {
   width: 100%;
   height: 52px;
   padding: 10px;
 }
 
-.make-appointment-contact
-  .form-right-make-appointment
-  form
-  .box-form-grid-2
-  .box-form
-  select {
+.make-appointment-contact .form-right-make-appointment form .box-form-grid-2 .box-form select {
   width: 100%;
   height: 52px;
   padding: 10px;
 }
 
-.make-appointment-contact
-  .form-right-make-appointment
-  form
-  .box-form-grid-2
-  .box-form
-  input[type="date"] {
+.make-appointment-contact .form-right-make-appointment form .box-form-grid-2 .box-form input[type="date"] {
   width: 100%;
   height: 52px;
   padding: 10px;
 }
 
-.make-appointment-contact
-  .form-right-make-appointment
-  form
-  .box-form-grid-2
-  .box-form
-  input[type="email"] {
+.make-appointment-contact .form-right-make-appointment form .box-form-grid-2 .box-form input[type="email"] {
   width: 100%;
   height: 52px;
   padding: 10px;
 }
 
-.make-appointment-contact
-  .form-right-make-appointment
-  form
-  .box-form-grid-2
-  .box-form
-  input[type="tel"] {
+.make-appointment-contact .form-right-make-appointment form .box-form-grid-2 .box-form input[type="tel"] {
   width: 100%;
   height: 52px;
   padding: 10px;
@@ -2254,12 +2356,14 @@ main .contact {
   color: white;
   transition: 0.5s;
 }
+
 .make-appointment-contact .form-right-make-appointment form button:hover {
   transition: 0.5s;
   border: none;
   background-color: #af9888;
   color: white;
 }
+
 .make-appointment-contact .text-question-click-left button {
   width: 20%;
   height: 70px;
@@ -2379,8 +2483,7 @@ footer .coppyright {
   }
 }
 
-@media (max-width: 1200px) {
-}
+@media (max-width: 1200px) {}
 
 @media (max-width: 1000px) {
   .logo-menu-oppenTime .menu-oppentime {
@@ -2465,7 +2568,8 @@ footer .coppyright {
   background-color: #fcf5e7;
   font-family: "Palanquin", sans-serif;
 }
-.box-mxauto .small-text{
+
+.box-mxauto .small-text {
   font-size: 25px;
 }
 
@@ -2476,9 +2580,11 @@ footer .coppyright {
   border-radius: 5px;
   overflow: hidden;
 }
+
 .box-mxauto .small-text {
   font-size: 25px;
 }
+
 .box-mxauto img {
   width: 100%;
   height: 100%;
@@ -2566,47 +2672,60 @@ main {
 }
 
 /* ==============terms========= */
-.left-grid-terms{
+.left-grid-terms {
   border: 1px solid #cdcdcd;
   padding: 10px 0px;
   height: max-content;
 }
-.left-grid-terms h3{
+
+.left-grid-terms h3 {
   text-align: center;
   padding: 10px 0;
   border-bottom: 3px solid #070323;
 }
+
 .list-menu-left-terms ul {
-  padding: 0 ;
+  padding: 0;
 }
-.list-menu-left-terms ul li{
+
+.list-menu-left-terms ul li {
   list-style: none;
   padding: 10px 20px;
   border-bottom: 1px solid #cdcdcd73;
   transition: .2s linear;
 }
+
 .list-menu-left-terms li:hover {
   background-color: #f0ebe08f;
   transition: .2s linear;
 }
-.list-menu-left-terms li:hover a{
+
+.list-menu-left-terms li:hover a {
   color: #6a4605;
 }
-.list-menu-left-terms a{
+
+.list-menu-left-terms a {
   text-decoration: none;
   color: #000000;
   font-size: 1.2rem;
 }
+
 .img-left-grid-terms {
   margin-top: 100px;
 }
-.left-grid-terms h3,.right-grid-terms h2,.text-content-terms h5{
+
+.left-grid-terms h3,
+.right-grid-terms h2,
+.text-content-terms h5 {
   font-weight: 600;
 }
-.right-grid-terms,.left-grid-terms{
+
+.right-grid-terms,
+.left-grid-terms {
   margin-top: 2rem;
 }
-.text-content-terms p{
+
+.text-content-terms p {
   font-size: 1rem;
 }
 
@@ -2619,58 +2738,72 @@ main {
   height: 100%;
   width: 100%;
 }
+
 .policy-and-privacy {
   position: unset !important;
   margin-top: 20%;
 }
+
 .img-policy {
   width: 60%;
   margin: 0 auto;
 }
+
 .policy-and-privacy .box-text-policy .text-box-policy {
   margin: 30px 0;
 }
+
 .policy-and-privacy h3 {
   font-weight: bold;
 }
+
 .policy-and-privacy p {
   font-size: 20px;
 }
+
 .text-box-policy ul li {
   margin: 20px 0;
 }
+
 @media (max-width: 950px) {
   .policy-and-privacy {
     margin-top: 60%;
   }
-  .service-menu .title-service-menu{
+
+  .service-menu .title-service-menu {
     margin-top: 40%;
   }
-    .box-professional-team > .location {
-  display: none !important;
-}
-.professional-team {
-  margin-top: 50%;
-}
-}
-@media(min-width: 350px) and (max-width: 850px) {
-  .service-menu .title-service-menu{
-    margin-top: 60%;
+
+  .box-professional-team>.location {
+    display: none !important;
   }
+
   .professional-team {
-  margin-top: 70%;
-}
-}
-@media (max-width: 350px) {
-  .banner-page {
-  height: 60%;
+    margin-top: 50%;
   }
-  .service-menu .title-service-menu{
-    margin-top: 60%;
-    
-  }
-    .box-professional-team > .location {
-  display: none !important;
-}
 }
 
+@media(min-width: 350px) and (max-width: 850px) {
+  .service-menu .title-service-menu {
+    margin-top: 60%;
+  }
+
+  .professional-team {
+    margin-top: 70%;
+  }
+}
+
+@media (max-width: 350px) {
+  .banner-page {
+    height: 60%;
+  }
+
+  .service-menu .title-service-menu {
+    margin-top: 60%;
+
+  }
+
+  .box-professional-team>.location {
+    display: none !important;
+  }
+}
