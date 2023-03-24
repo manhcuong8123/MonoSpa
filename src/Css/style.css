@@ -65,7 +65,7 @@
 }
 
 .box-fs-account {
-  right: 1%;
+  left: 0;
   top: 70%;
   overflow: hidden;
   height: 0;
@@ -1766,14 +1766,22 @@ footer .box-input-email button {
   border-bottom: 1px solid #fff;
 }
 
-.btn-book {
+.btn-book ,.btn-ourSerVice{
   padding: 15px 25px;
   background-color: #053543;
   color: #fff;
   margin-top: 60px;
   transition: 0.2s linear;
 }
-
+.btn-ourSerVice{
+background-color: #a47b60 !important;
+transition: .3s;
+}
+.btn-ourSerVice:hover{
+background-color: #8b6952 !important;
+color: white !important;
+transition: .3s;
+}
 .btn-book:hover {
   background-color: #043542;
   transform: scale(0.9);
