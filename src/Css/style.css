@@ -1096,7 +1096,7 @@ footer .link-icon li {
 
 footer .link-icon a {
   font-size: 20px;
-  color: aliceblue;
+  color: #a47b60;
   transition: 1s;
 }
 
@@ -1107,7 +1107,7 @@ footer .link-icon a:hover {
 
 footer .text a {
   text-decoration: none;
-  color: #f7f5f2;
+  color: #a47b60;
 }
 
 footer .text p {
@@ -1116,7 +1116,7 @@ footer .text p {
 
 footer h4 {
   font-size: 26px;
-  font-family: "Amiri", serif;
+
 }
 
 footer .box-input-email input {
@@ -1124,7 +1124,7 @@ footer .box-input-email input {
   background-color: #043542;
   outline: none;
   border-radius: 1px;
-  color: #ffffff;
+  color: #a47b60;
   padding-left: 10px !important;
   height: 40px;
   transition: 1s;
@@ -2288,8 +2288,9 @@ footer .background-image-footer {
   background-position: 0 77%;
   background-repeat: no-repeat;
   background-size: cover;
-  background-color: #333333;
+  background-color: #f2dfbc ;
   z-index: -1000;
+  opacity: 0.3;
 }
 
 footer .text {
@@ -2297,7 +2298,7 @@ footer .text {
 }
 
 footer .text .row-footer .col {
-  color: white !important;
+  color: #876148  !important;
 }
 
 footer .text .row-footer .col img {
@@ -2305,7 +2306,7 @@ footer .text .row-footer .col img {
 }
 
 footer .text .row-footer .col h4 {
-  color: white;
+  color: #876148;
 }
 
 footer .list-support li {
@@ -2318,7 +2319,7 @@ footer .link-icon li {
 
 footer .link-icon a {
   font-size: 20px;
-  color: white;
+  color: #876148;
   transition: 1s;
 }
 
@@ -2329,7 +2330,7 @@ footer .link-icon a:hover {
 
 footer .text a {
   text-decoration: none;
-  color: white;
+  color: #876148;
 }
 
 footer .text p {
@@ -2345,7 +2346,7 @@ footer .box-input-email input {
   background-color: transparent;
   outline: none;
   border-radius: 1px;
-  color: #043542;
+  color: #876148;
 
   padding: 3px;
   height: 40px;
@@ -2362,12 +2363,12 @@ footer .box-input-email button {
   border: none;
   height: 40px;
   padding: 5px;
-  color: #fff;
+  color: #ffffff;
   border: 2px solid #a47b60;
 }
 
 footer .coppyright {
-  color: aliceblue;
+  color: #876148;
   display: flex;
   justify-content: space-between;
 }
