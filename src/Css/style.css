@@ -25,6 +25,7 @@
   left: -500px;
   transition: 0.4s;
   display: none;
+  z-index: 6;
 }
 
 .icon-menu-sub-responsive {
@@ -219,8 +220,8 @@
   transition: 0.4s;
 }
 
-.click-menu-responsive-page {
-  height: 350px !important;
+.click-menu-responsive-dv {
+  height: 300px !important;
   transition: 0.3s;
 }
 
@@ -236,13 +237,111 @@
 /* End Menu sub reposive  */
 
 /* Menu Home Pc  */
+.box-navbar-top{
+  background-color: white;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 5;
+  
+}
+.user-login{
+  border: none;
+  background-color: #b69077;
+}
+.email-sdt div p{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.ul-box-categories-service{
+  width: 700px;
+  top: 33px;
+  left: -300px;
+  height: 0 !important;
+  transition: .3s;
+  border: none;
+}
+.categosies-dv:hover .ul-box-categories-service{
+  height: 500px !important;
+  transition: .3s;
+  border: 1px solid #b69077;
 
+}
+.ul-box-categories-service{
+  background-color: white;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  height: 500px;
+  overflow: scroll;
+  overflow: -moz-scrollbars-none;
+  -ms-overflow-style: none;
+}
+.box-ul .text-title-li span,.box-ul .text-title-li span a{
+  padding: 5px;
+  transition: .3s;
+  color: #b69077 !important;
+  font-weight: bold;
+}
+.box-ul .text-title-li:hover span{
+  background-color: #a47b60;
+  color: white !important;
+  transition: .3s;
+}
+.box-ul .text-title-li:hover span a{
+  color: white !important;
+}
+.box-ul  li{
+  height: auto !important;
+  padding: 10px 0 !important;
+}
+.box-ul  li  ul  li {
+  padding: 10px 0 !important;
+}
+.box-ul  li  ul  li a{
+  font-size: 15px !important;
+  transition: .3s;
+}
+.box-ul  li  ul  li a:hover{
+  color: #a47b60;
+  transition: .3s;
+}
+.ul-box-categories-service-respon{
+  height: 0 ;
+  overflow: hidden;
+  transition: .3s;
+  margin-left: -20px;
+  padding-right: 10px;
+    overflow: scroll;
+  overflow: -moz-scrollbars-none;
+  -ms-overflow-style: none;
+   transition: .3s;
+}
+.box-ul-respon  li {
+  padding: 10px;
+  cursor: pointer;
+}
+.box-ul-respon  li  ul{
+  height: 0;
+   overflow: scroll;
+  overflow: -moz-scrollbars-none;
+  -ms-overflow-style: none;
+  transition: .3s;
+}
+.box-ul-respon  li  ul  li a{
+   color: black !important;
+   margin-right: 10px !important;
+}
 .menu-oppentime .menu ul {
   list-style: none;
 }
-
+.showcate-list{
+  height: 200px !important;
+  transition: .3s;
+}
 .menu-oppentime .menu ul li {
   transition: 0.3s;
+  height: 30px;
 }
 
 .menu-oppentime .menu>ul>li:hover {
@@ -255,11 +354,15 @@
   color: #262626;
   font-family: 'Philosopher', sans-serif;
 }
-
+.menu-oppentime{
+  height: 40px;
+}
 .logo-menu-oppenTime .logo img {
   width: 120px;
 }
-
+.img-banner-homePage{
+  margin-top: 120px;
+}
 .banner-page {
   z-index: -1;
   height: 45%;
@@ -865,7 +968,9 @@ hr.dotted {
 .service-menu .title-service-menu span {
   font-size: 20px;
 }
-
+h1,h2,h3{
+color: #a47b60 !important;
+}
 .select-booking,
 .email-booking,
 .phone-booking,
@@ -1072,10 +1177,16 @@ hr.dotted {
   .text-question-click-left button {
     width: 30%;
   }
-
+.user-login-responsive
   .box-question-text-booking {
     margin-top: 10%;
     width: 100%;
+  }
+  .email-sdt{
+    display: none !important;
+  }
+  .user-login{
+    display: none !important;
   }
 }
 
@@ -1180,6 +1291,9 @@ footer .box-input-email button {
 
   .oppenTime-box {
     display: none;
+  }
+  .box-navbar-top{
+   box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
   }
 }
 
@@ -1736,6 +1850,7 @@ footer .box-input-email button {
 .modal-mockup {
   position: relative;
   display: none;
+  z-index: 6;
 }
 
 .content-modal-mockup {
@@ -2477,7 +2592,7 @@ footer .coppyright {
 @media (max-width: 1200px) {}
 
 @media (max-width: 1000px) {
-  .logo-menu-oppenTime .menu-oppentime {
+   .menu-oppentime {
     display: none !important;
   }
 

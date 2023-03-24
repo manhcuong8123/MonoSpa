@@ -22,18 +22,37 @@ const iconOpenBox = document.querySelector(".btn-openTimeBox");
   };
 // click show menu mini responsive in Page
 
-const menuMiniPage = document.querySelector(".menu-sub-page-respon");
+const menuMiniPage = document.querySelector(".onCl-categosies-dv-respon");
 if (menuMiniPage) {
-  const menuMiniResponsive = document.querySelector(".menu-mini-respon");
+  const menuMiniResponsive = document.querySelector(
+    ".ul-box-categories-service-respon"
+  );
 
   menuMiniPage.addEventListener("click", () => {
-    if (menuMiniResponsive.classList.contains("click-menu-responsive-page")) {
-      menuMiniResponsive.classList.remove("click-menu-responsive-page");
+    console.log(1);
+    if (menuMiniResponsive.classList.contains("click-menu-responsive-dv")) {
+      menuMiniResponsive.classList.remove("click-menu-responsive-dv");
     } else {
-      menuMiniResponsive.classList.add("click-menu-responsive-page");
+      menuMiniResponsive.classList.add("click-menu-responsive-dv");
     }
   });
 }
+
+// click show dv
+
+const categoriesdv = document.querySelectorAll(".text-title-li-span");
+  categoriesdv.forEach((clickCates) => {
+    clickCates.addEventListener("click", () => {
+      console.log(1);
+      const accordionCates = clickCates.parentElement;
+      const ulBoxMiniDv = accordionCates.querySelector(".ul-li-cates");
+      if (ulBoxMiniDv.classList.contains("showcate-list")) {
+        ulBoxMiniDv.classList.remove("showcate-list");
+      } else {
+        ulBoxMiniDv.classList.add("showcate-list");
+      }
+    });
+  });
 
 // click show menu sub responsive
 
