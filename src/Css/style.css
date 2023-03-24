@@ -1196,7 +1196,7 @@ footer .link-icon li {
 
 footer .link-icon a {
   font-size: 20px;
-  color: aliceblue;
+  color: #653a1d;
   transition: 1s;
 }
 
@@ -1207,7 +1207,8 @@ footer .link-icon a:hover {
 
 footer .text a {
   text-decoration: none;
-  color: #f7f5f2;
+  color: #321807;
+  
 }
 
 footer .text p {
@@ -1216,7 +1217,7 @@ footer .text p {
 
 footer h4 {
   font-size: 26px;
-  font-family: "Amiri", serif;
+
 }
 
 footer .box-input-email input {
@@ -1224,7 +1225,7 @@ footer .box-input-email input {
   background-color: #043542;
   outline: none;
   border-radius: 1px;
-  color: #ffffff;
+  color: #653a1d;
   padding-left: 10px !important;
   height: 40px;
   transition: 1s;
@@ -1477,6 +1478,10 @@ footer .box-input-email button {
 .form-service{
   margin: 150px auto;
 }
+/*  blog */
+.form-service-blog{
+  margin-top: 0px;
+}
 .left-row-form-service{
   padding: 0px 20px;
 }
@@ -1493,6 +1498,12 @@ footer .box-input-email button {
 .right-row-form-service table {
   width: 60%;
   margin: 0 auto;
+}
+/* reposnive blog  */
+@media(max-width:768px){
+    .table-blog{
+      width: auto !important;
+    }
 }
 .right-row-form-service input{
   outline: none;
@@ -2113,45 +2124,39 @@ span {
   margin: 10px 0px;
 }
 
-/* questions */
-.box-right .have-any-question {
-  background-image: url("../src/Image/set-of-manicure-pedicure-tools-and-accessories-stone-concrete-background-e1643215490787.jpg");
-  background-position: 0 77%;
-  background-repeat: no-repeat;
-  background-size: cover;
+/* them */
+.box-right .categories-title:hover{
+  color: brown;
+  cursor: pointer;
+}
+.box-right .categories-list li {
+  margin-top: 10px;
+}
+.box-right .categories-list a:hover {
+  color: brown;
+}
+.categories-list {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s ease-out;
+} 
 
-  z-index: -100;
+.categories-two:hover .categories-list {
+  max-height: 200px; 
+  transition: max-height 0.5s ease-in;
+  animation: fadeIn 0.5s;
 }
 
-.box-right .have-any-question-box {
-  background-color: rgba(35, 75, 88, 0.878);
-}
-
-.box-right .have-any-question-box h3 {
-  color: #fdf5e6;
-}
-
-.box-right .box-question-list a {
-  text-decoration: none;
-  color: #fff;
-}
-
-.box-right .box-question-list span i {
-  color: #fdf5e6;
-  margin: 0px 10px;
-  font-size: 19px;
-}
-
-.box-right .box-question-list li {
-  margin: 10px 0px;
-}
-
-@media (max-width: 768px) {
-  .box-right .have-any-question-box {
-    background-color: rgba(35, 75, 88, 0.878);
+ @keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
   }
 }
 
+/*  them */
 /*-------------SINGLE BLOG*/
 
 main .single-blog {
@@ -2160,21 +2165,6 @@ main .single-blog {
   width: 80%;
   height: 300px;
 }
-
-/*  single blog-item */
-
-/* main .single-blog h1,
-main .blog p {
-  font-family: "Amiri", sans-serif;
-}
-
-.single-blog-page h3 {
-  font-family: "Amiri", sans-serif;
-}
-
-.single-blog-page p {
-  font-family: "Amiri", sans-serif;
-} */
 
 /* content  */
 .content-single-blog-page img {
@@ -2472,8 +2462,9 @@ footer .background-image-footer {
   background-position: 0 77%;
   background-repeat: no-repeat;
   background-size: cover;
-  background-color: #333333;
+  background-color: #f2dfbc ;
   z-index: -1000;
+  opacity: 0.3;
 }
 
 footer .text {
@@ -2481,7 +2472,7 @@ footer .text {
 }
 
 footer .text .row-footer .col {
-  color: white !important;
+  color: #653a1d  !important;
 }
 
 footer .text .row-footer .col img {
@@ -2489,7 +2480,7 @@ footer .text .row-footer .col img {
 }
 
 footer .text .row-footer .col h4 {
-  color: white;
+  color: #653a1d;
 }
 
 footer .list-support li {
@@ -2502,7 +2493,7 @@ footer .link-icon li {
 
 footer .link-icon a {
   font-size: 20px;
-  color: white;
+  color: #653a1d;
   transition: 1s;
 }
 
@@ -2513,7 +2504,7 @@ footer .link-icon a:hover {
 
 footer .text a {
   text-decoration: none;
-  color: white;
+  color: #653a1d;
 }
 
 footer .text p {
@@ -2529,7 +2520,7 @@ footer .box-input-email input {
   background-color: transparent;
   outline: none;
   border-radius: 1px;
-  color: #043542;
+  color: #653a1d;
 
   padding: 3px;
   height: 40px;
@@ -2546,12 +2537,12 @@ footer .box-input-email button {
   border: none;
   height: 40px;
   padding: 5px;
-  color: #fff;
+  color: #ffffff;
   border: 2px solid #a47b60;
 }
 
 footer .coppyright {
-  color: aliceblue;
+  color: #653a1d;
   display: flex;
   justify-content: space-between;
 }
@@ -2870,6 +2861,9 @@ main {
 
   .professional-team {
     margin-top: 70%;
+  }
+  .banner-page {
+    height: 60%;
   }
 }
 
