@@ -220,8 +220,8 @@
   transition: 0.4s;
 }
 
-.click-menu-responsive-page {
-  height: 350px !important;
+.click-menu-responsive-dv {
+  height: 300px !important;
   transition: 0.3s;
 }
 
@@ -244,6 +244,7 @@
   right: 0;
   left: 0;
   z-index: 5;
+  
 }
 .user-login{
   border: none;
@@ -305,10 +306,39 @@
   color: #a47b60;
   transition: .3s;
 }
+.ul-box-categories-service-respon{
+  height: 0 ;
+  overflow: hidden;
+  transition: .3s;
+  margin-left: -20px;
+  padding-right: 10px;
+    overflow: scroll;
+  overflow: -moz-scrollbars-none;
+  -ms-overflow-style: none;
+   transition: .3s;
+}
+.box-ul-respon  li {
+  padding: 10px;
+  cursor: pointer;
+}
+.box-ul-respon  li  ul{
+  height: 0;
+   overflow: scroll;
+  overflow: -moz-scrollbars-none;
+  -ms-overflow-style: none;
+  transition: .3s;
+}
+.box-ul-respon  li  ul  li a{
+   color: black !important;
+   margin-right: 10px !important;
+}
 .menu-oppentime .menu ul {
   list-style: none;
 }
-
+.showcate-list{
+  height: 200px !important;
+  transition: .3s;
+}
 .menu-oppentime .menu ul li {
   transition: 0.3s;
   height: 30px;
@@ -938,7 +968,9 @@ hr.dotted {
 .service-menu .title-service-menu span {
   font-size: 20px;
 }
-
+h1,h2,h3{
+color: #a47b60 !important;
+}
 .select-booking,
 .email-booking,
 .phone-booking,
@@ -1259,6 +1291,9 @@ footer .box-input-email button {
 
   .oppenTime-box {
     display: none;
+  }
+  .box-navbar-top{
+   box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
   }
 }
 
