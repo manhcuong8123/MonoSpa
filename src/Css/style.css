@@ -257,14 +257,15 @@
 }
 .ul-box-categories-service{
   width: 700px;
-  top: 33px;
+  top: 30px;
+  right: 0;
   left: -300px;
-  height: 0 !important;
+  display: none;
   transition: .3s;
   border: none;
 }
 .categosies-dv:hover .ul-box-categories-service{
-  height: 500px !important;
+  display: block;
   transition: .3s;
   border: 1px solid #b69077;
 
@@ -860,7 +861,9 @@
   height: 3px;
   margin: 5px auto;
 }
-
+.hr-hst{
+  width: 350px !important;
+}
 /* end main our team page  */
 
 /* working hour */
@@ -1799,7 +1802,10 @@ transition: .3s;
   font-size: 32px;
   margin: 50px 0;
 }
-
+.item-lastest-blog-hst{
+  width: 350px;
+  margin: 0 auto;
+}
 .item-lastest-blog h3:hover {
   color: #08a7d8;
   cursor: pointer;
