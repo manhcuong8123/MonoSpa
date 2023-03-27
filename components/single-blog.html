@@ -21,74 +21,117 @@
   
   <body>
     <div class="box-main">
-      <header>
-        <div class="header-menutop-banner">
-          <div
-            class="logo-menu-oppenTime d-flex justify-content-between align-items-center container position-relative"
-          >
-            <div class="logo">
-              <img src="../src/Image/photo_2023-03-10_10-33-00.png" alt="" />
-            </div>
-            <div class="icon-menu-sub-responsive">
-                 <button type="button" onclick="iconOpenMenuSubClick()">
-             <i class='bx bx-menu'></i>
-            </div>
-            <div class="menu-oppentime d-flex gap-5">
-              <div class="menu">
-                <ul class="d-flex gap-3">
-                  <li><a href="headerHomePage.html">Trang Chủ</a></li>
-                  <li><a href="About.html ">Về Chúng Tôi</a></li>
-                  <li><a href="ourService.html"  >Dịch Vụ</a></li>
-                  <li class="menu-sub-page">
-                    <span class="d-flex align-items-center"
-                      >Trang <i class="bx bx-chevron-down"></i
-                    ></span>
-                     <ul class="menu-mini">
-                      <li><a href="ourTeamPage.html">Đội ngũ</a></li>
-                      <li><a href="FaqPage.html">Câu hỏi thường gặp</a></li>
-                      <li><a href="Booking.html">Lịch hẹn</a></li>
-                      <li><a href="">404 Page</a></li>
-                      <li><a href="blog.html">Tin tức</a></li>
-                      <li><a href="single-blog.html">Tin tức chi tiết </a></li>
-                    </ul>
-                  </li>
-                  <li><a href="contact.html">Liên hệ</a></li>
-                </ul>
-              </div>
-              <div class="oppentime-icon">
-                <i class="bx bxl-facebook"></i>
-                <i class="bx bxl-instagram"></i>
-                <button type="button" onclick="iconOpenBoxClick()">
-                  <i class="bx bx-align-right open-Time"></i>
-                </button>
-                 <button type="button" onclick="" class="user-login">
-                  <a href="login.html" class="text-black"><i class='bx bx-user-circle'></i></a>
-                </button>
-                 <button type="button" onclick="" class="user-account position-relative" onclick="iconOpenBoxClick()">
-                  <img src="https://images.unsplash.com/photo-1503023345310-bd7c1de61c7d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8aHVtYW58ZW58MHx8MHx8&w=1000&q=80" alt="">
+      <header class="header-homePage container-fluid">
+            <div class="box-header-form">
+                <div class="box-navbar-top">
 
-                </button>
-                  <div class="box-fs-account position-absolute">
-                    <ul >
-                      <li><a href="">Xem thông tin</a></li>
-                      <li><a href="">Sửa thông tin</a></li>
-                      <li><a href="">Đăng Xuất</a></li>
-                    </ul>
+                <div class="header-menutop-banner">
+                    <div
+                class="logo-menu-oppenTime d-flex justify-content-between align-items-center container position-relative"
+              >
+                   <div class="oppentime-icon">
+                     <button type="button" class="user-login p-2">
+                      <a href="login.html" class="text-white text-decoration-none d-flex align-items-center gap-2"><i class='bx bx-user-circle'></i>Đăng Nhập</a>
+                    </button>
+                     <button type="button" onclick="" class="user-account position-relative d-none" >
+                      <img src="https://www.thisiscolossal.com/wp-content/uploads/2019/02/moon_crop.jpg" alt="">
+                    </button>
+                      <div class="box-fs-account box-fs-account-home position-absolute">
+                        <ul >
+                          <li><a href="">Xem thông tin</a></li>
+                          <li><a href="editUser.html">Sửa thông tin</a></li>
+                          <li><a href="">Đăng Xuất</a></li>
+                        </ul>
+                      </div>
                   </div>
+                <div class="logo">
+                  <img src="../src/Image/photo_2023-03-10_10-33-00.png" alt="" />
+                </div>
+                <div class="email-sdt">
+                    <div class="email">
+                        <p><i class='bx bxs-envelope' ></i>Email: monobovis@gmail.com</p>
+                    </div>
+                    <div class="sdt">
+                        <p><i class='bx bxs-phone'></i>Host line: 090.220.8216</p>
+                    </div>
+                </div>
+                <div class="icon-menu-sub-responsive">
+                     <button type="button" onclick="iconOpenMenuSubClick()">
+                 <i class='bx bx-menu'></i>
+                </div>
               </div>
+                </div>
+                <div class="menu-oppentime ">
+                           <div class="menu container pb-3">
+                             <ul class="d-flex gap-2 d-flex gap-3 align-items-center justify-content-around ">
+                               <li><a href="headerHomePage.html">Trang Chủ</a></li>
+                               <li><a href="About.html">Về Chúng Tôi</a></li>
+                               <li class="categosies-dv position-relative"><span>Dịch Vụ</span>
+                                <ul class="position-absolute ul-box-categories-service row">
+                                       <div class="box-ul col">                
+                                        <li class="text-title-li" ><span class="d-flex align-items-center gap-2"><i class='bx bxs-checkbox'></i><a href="">Điều Trị Mụn</a></span>
+                                               <ul>
+                                                 <li><a href="">Trị Mụn E2X – Đông Trùng Hạ Thảo</a></li>
+                                                <li><a href="">Trị Mụn Chuyên Sâu</a></li>
+                                                <li><a href="">Trị Mụn Y Khoa</a></li>
+                                                <li><a href="">Điều Trị Mụn Lưng</a></li>
+                                                <li><a href="">Trị Mụn Doctor Laser Spectra ACNE – ĐTHT</a></li>
+                                                <li><a href="">Điều Trị Thâm Mụn</a></li>
+                                                <li><a href="">Phi kim vacxin mụn – ĐTHTT</a></li>
+                                               </ul>
+                                               </li>
+                                        <li class="text-title-li"><span class="d-flex align-items-center gap-2"><i class='bx bxs-checkbox'></i><a href="">Điều Trị Nám</a></span>
+                                                    <ul>
+                                                         <li><a href="">Điều Trị Nám Da E-light</a></li>
+                                                <li><a href="">Điều Trị Nám Da Mặt</a></li>
+                                                    </ul>
+                                                </li>
+                                               
+                                        </div>
+                                       <div class="box-ul col">                
+                                        <li class="text-title-li" ><span class="d-flex align-items-center gap-2"><i class='bx bxs-checkbox'></i><a href="">Điều Trị Thâm</a></span>
+                                               <ul>
+                                                 <li><a href="">Điều Trị Thâm Mụn</a></li>
+                                                <li><a href="">Trị Thâm Vi Kim Tảo Biển – ĐTHT</a></li>
+                                                <li><a href="">Trị Thâm Elight</a></li>
+                                                <li><a href="">Trị Thâm Vitamin C Kép</a></li>
+                                                <li><a href="">Laser Trị Thâm Nách</a></li>
+                                                <li><a href="">Laser Trị Thâm Chân</a></li>
+                                                <li><a href="">Laser Trị Thâm Gối</a></li>
+                                                <li><a href="">Laser Trị Thâm Bẹn</a></li>
+                                                <li><a href="">Laser Trị Thâm Mắt Cá Chân</a></li>
+                                                <li><a href="">Doctor Laser Trị Thâm Bikini</a></li>
+                                               </ul>
+                                               </li>
+                                        <li class="text-title-li"><span class="d-flex align-items-center gap-2"><i class='bx bxs-checkbox'></i><a href="">Điều Trị Sẹo Rỗ</a></span>
+                                                    <ul>
+                                                         <li><a href="">Trị Sẹo Rỗ</a></li>
+                                                <li><a href="">Trị Sẹo Rỗ 4.0</a></li>
+                                                <li><a href="">DR. Seoul Trị Sẹo Rỗ SEL 5.0</a></li>
+                                                    </ul>
+                                                </li>
+                                               
+                                        </div>
+                                   
+                                </ul>
+                            </li>
+                               <li class="menu-sub-page">Cẩm nang bổ ích</li>
+                               <li><a href="contact.html">Trải Nghiệm khách hàng</a></li>
+                               <li><a href="contact.html">Chính sách</a></li>
+                               <li><a href="contact.html">Liên Hệ</a></li>
+                             </ul>
+                           </div>
+                      
+                         </div>
             </div>
-          </div>
-          <div class="banner-text-page">
-            <div class="banner-page position-absolute top-0">
             </div>
-            <div class="text-center-banner">
-              <h1>Essential Manicure And Pedicure Tools At Home</h1>
-              <span><i class='bx bx-user'></i> Jane Doe </span> <span><i class='bx bx-calendar'></i> 
-                January 26, 2022</span> <span><i class='bx bx-folder-open'></i>Nail Tips</span>
+
+            <div class="">
+                <div class="img-banner-homePage">
+                    <img src="../src/Image/banner-Hompage-new.png" width="100%" alt="">
+                </div>
             </div>
-          </div>
-        </div>
-      </header>
+        </header>
       
 
 
@@ -201,33 +244,13 @@
                 <h1>Hãy để lại phản hồi</h1>
                 <p class="text-muted">Email của bạn sẽ không công khai. Tuy nhiên vui lòng điền hết nội dung dưới đây *
                 </p>
-
-
-                
                 <form action="" class="form-comment py-2" id="form-comment">
                   <div class="item pb-2">
                     <label for="comment">Bình luận *</label> <br>
                     <textarea name="comment" id="comment" cols="110" rows="10" ></textarea>
                     <span class="text-danger" id="comment-error"></span>
-
-
-          
-                <form action="" class="form-comment py-2" id="form-comment">
-                  <div class="item py-2">
-                    <label for="comment">Comment *</label> <br>
-
-                    <textarea name="comment" id="comment" cols="110" rows="10" class="border"></textarea>
-                 <small class="error-message"></small>
-
-                  </div>
-                  <div class="item py-2">
-
                   </div>
                   <div class="item pb-2">
-
-                  </div>
-                  <div class="item pb-2">
-
                     <label for="name-comment">Họ và Tên *</label> <br>
                     
                     <input type="text" id="name-comment" >
@@ -238,47 +261,10 @@
                     <input type="text" id="email-comment" >
                     <span class="text-danger" id="emailComment-error"></span>
                   </div>
-
-                  <div class="item py-2">
-                    <label for="website-comment">Website </label> <br>
-
-                    <input type="text" id="website-comment" >
-                    <span class="text-danger" id="website-error"></span>
-
-                    <input type="text" id="website-comment" class="border">
-                   <small class="error-message"></small>
-
-                    <textarea name="comment" id="comment" cols="110" rows="10" ></textarea>
-                    <span class="text-danger" id="comment-error"></span>
-                  </div>
-                  <div class="item py-2">
-                    <label for="name-comment">Name *</label> <br>
-                    
-                    <input type="text" id="name-comment" >
-                    <span class="text-danger" id="nameComment-error"></span>
-                  </div>
-                  <div class="item py-2">
-                    <label for="email-comment">Email *</label> <br>
-                    <input type="text" id="email-comment" >
-                    <span class="text-danger" id="emailComment-error"></span>
-                  </div>
-                  <div class="item py-2">
-                    <label for="website-comment">Website </label> <br>
-                    <input type="text" id="website-comment" >
-                    <span class="text-danger" id="website-error"></span>
-
-
-
                   <div class="item pb-2">
                     <label for="website-comment">Website </label> <br>
                     <input type="text" id="website-comment" >
                     <span class="text-danger" id="website-error"></span>
-
-                  <div class="item pb-2">
-                    <label for="website-comment">Website </label> <br>
-                    <input type="text" id="website-comment" >
-                    <span class="text-danger" id="website-error"></span>
-
                   </div>
                   <div class="item-checkbox py-2">
                     <input type="checkbox" name="save-info" id="save-info"> 
@@ -326,38 +312,21 @@
               <!-- end popular -->
               <div class="py-5">
                 <div class="categories border p-5">
-                  <h3>Danh Mục</h3>
-                  <div class="box-popular-new pt-3">
-                    <ul class="categories-list list-unstyled">
-                      <li><a href="#"><span><i class='bx bx-minus'></i></span>Nails</a></li>
-                      <li><a href="#"><span><i class='bx bx-minus'></i></span>Pedicure</a></li>
-                      <li><a href="#"><span><i class='bx bx-minus'></i></span>Manicure</a></li>
-                      
-                  </ul>
+                  <div class="categories-two w-100">
+                    <h3 class="categories-title">Danh Mục</h3>
+                    <div class="box-popular-new ">
+                      <ul class="categories-list list-unstyled">
+                        <li><a href="#"><span><i class='bx bx-minus'></i></span>Nails</a></li>
+                        <li><a href="#"><span><i class='bx bx-minus'></i></span>Pedicure</a></li>
+                        <li><a href="#"><span><i class='bx bx-minus'></i></span>Manicure</a></li>
+                      </ul>
+                    </div>
                   </div>
                 </div>
               </div>
               
               
-              <div class="have-any-question ">
-               
-                  <div class="have-any-question-box border p-5">
-
-                    <h3>Câu hỏi cho chúng tôi ?</h3>
-                    <div class="box-question-new py-2">
-                      <ul class="box-question-list list-unstyled">
-                        <li><a href="#">Những thắc mắc hoặc câu hỏi chưa được giải đáp, hãy liên hệ theo:</a></li>
-                        <li><a href="#"><span><i class='bx bxs-phone' ></i></span>(+62)81 234 567</a></li>
-                        <li><a href="#"><span><i class='bx bxl-gmail' ></i></span>naylish@domain.com</a></li>
-                        
-                    </ul>
-                    </div> 
-                  </div>
-                  
-                
-                
-                
-              </div>
+              
             </div>
           </div>
         </div>
@@ -493,49 +462,87 @@
         </div>
       </div>
     </div>
-     <div class="menu-sub-responsive position-fixed top-0">
+    <div class="menu-sub-responsive position-fixed top-0">
         <div class="close-menu-sub-reponsive">
-             <button type="button" class="float-end me-2 mt-2 fs-3" onclick="iconOpenMenuSubClick()">
-            <i class="bx bx-x"></i>
-          </button>
+            <button type="button" class="float-end me-2 mt-2 fs-3" onclick="iconOpenMenuSubClick()">
+                <i class="bx bx-x"></i>
+            </button>
         </div>
         <div class="logo ps-3">
             <img src="../src/Image/photo_2023-03-10_10-33-00.png" alt="">
         </div>
         <div class="menu menu-responsive">
-          <ul>
-            <li><a href="headerHomePage.html">Trang Chủ</a></li>
-            <li><a href="About.html">Về Chúng Tôi</a></li>
-            <li><a href="ourService.html">Dịch Vụ</a></li>
-            <li class="menu-sub-page-respon">
-              <span class="d-flex align-items-center justify-content-between pe-1 mb-1"
-                >Trang <i class="bx bx-chevron-down"></i
-              ></span>
-              <ul class="menu-mini-respon">
-                  <li><a href="ourTeamPage.html">Đội ngũ</a></li>
-                <li><a href="FaqPage.html">Câu hỏi thường gặp</a></li>
-                <li><a href="Booking.html">Lịch hẹn</a></li>
-                <li><a href="">404 Page</a></li>
-                <li><a href="blog.html">Tin tức</a></li>
-                <li><a href="single-blog.html">Tin tức chi tiết</a></li>
-              </ul>
-            </li>
-            <li><a href="contact.html">Liên Hệ</a></li>
-            <li class="pe-3">  <button type="button" onclick="" class="user-login-responsive w-100">
-            <a href="login.html" class="text-white border-0 d-flex align-items-center gap-3 p-2"><i class='bx bx-user-circle'></i> Đăng Nhập</a>
-          </button></li>
-            <li class="user-account pe-3">
-          <button class="box-account-responsive border-0 d-flex align-items-center gap-3 p-2 w-100">
-              <img src="https://images.unsplash.com/photo-1503023345310-bd7c1de61c7d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8aHVtYW58ZW58MHx8MHx8&w=1000&q=80" alt=""> 
-            <span class="fs-5">Lê Sỹ Hải</span>
-          </button>
-              <ul class="box-fs-account-responsive">
-                <li><a href="">Xem thông tin</a></li>
-                <li><a href="">Sửa thông tin</a></li>
-                <li><a href="">Đăng Xuất</a></li>
-              </ul></li>
-          </ul>
-        </div>
+            <ul>
+               <li><a href="headerHomePage.html">Trang Chủ</a></li>
+                               <li><a href="About.html">Về Chúng Tôi</a></li>
+                               <li class="categosies-dv-respon"><button class="onCl-categosies-dv-respon border-0 bg-transparent">Dịch Vụ</button>
+                                <ul class="ul-box-categories-service-respon ">
+                                       <div class="box-ul-respon ">                
+                                        <li class="text-title-li text-title-li-respon" ><span class="d-flex align-items-center justify-content-between text-title-li-span">Điều Trị Mục <i class='bx bx-chevron-right'></i></span>
+                                               <ul class="ul-li-cates">
+                                                 <li><a class="text-black" href="">Trị Mụn E2X – Đông Trùng Hạ Thảo</a></li>
+                                                <li><a class="text-black" href="">Trị Mụn Chuyên Sâu</a></li>
+                                                <li><a class="text-black" href="">Trị Mụn Y Khoa</a></li>
+                                                <li><a class="text-black" href="">Điều Trị Mụn Lưng</a></li>
+                                                <li><a class="text-black" href="">Trị Mụn Doctor Laser Spectra ACNE – ĐTHT</a></li>
+                                                <li><a class="text-black" href="">Điều Trị Thâm Mụn</a></li>
+                                                <li><a class="text-black" href="">Phi kim vacxin mụn – ĐTHTT</a></li>
+                                               </ul>
+                                               </li>
+                                        <li class="text-title-li text-title-li-respon"><span class="d-flex align-items-center justify-content-between text-title-li-span">Điều Trị Nám <i class='bx bx-chevron-right'></i></span>
+                                                    <ul class="ul-li-cates">
+                                                         <li><a href="">Điều Trị Nám Da E-light</a></li>
+                                                <li><a href="">Điều Trị Nám Da Mặt</a></li>
+                                                    </ul>
+                                                </li>
+                                               
+                                        </div>
+                                       <div class="box-ul-respon ">                
+                                        <li class="text-title-li text-title-li-respon" ><span class="d-flex align-items-center justify-content-between text-title-li-span">Điều Trị Thâm<i class='bx bx-chevron-right'></i></span>
+                                               <ul class="ul-li-cates">
+                                                 <li><a href="">Điều Trị Thâm Mụn</a></li>
+                                                <li><a href="">Trị Thâm Vi Kim Tảo Biển – ĐTHT</a></li>
+                                                <li><a href="">Trị Thâm Elight</a></li>
+                                                <li><a href="">Trị Thâm Vitamin C Kép</a></li>
+                                                <li><a href="">Laser Trị Thâm Nách</a></li>
+                                                <li><a href="">Laser Trị Thâm Chân</a></li>
+                                                <li><a href="">Laser Trị Thâm Gối</a></li>
+                                                <li><a href="">Laser Trị Thâm Bẹn</a></li>
+                                                <li><a href="">Laser Trị Thâm Mắt Cá Chân</a></li>
+                                                <li><a href="">Doctor Laser Trị Thâm Bikini</a></li>
+                                               </ul>
+                                               </li>
+                                        <li class="text-title-li text-title-li-respon"><span class="d-flex align-items-center justify-content-between text-title-li-span">Điều Trị Sẹo Rỗ<i class='bx bx-chevron-right'></i></span>
+                                                    <ul class="ul-li-cates">
+                                                         <li><a href="">Trị Sẹo Rỗ</a></li>
+                                                <li><a href="">Trị Sẹo Rỗ 4.0</a></li>
+                                                <li><a href="">DR. Seoul Trị Sẹo Rỗ SEL 5.0</a></li>
+                                                    </ul>
+                                                </li>
+                                               
+                                        </div>
+                                   
+                                </ul>
+                            </li>
+                               <li class="menu-sub-page">Cẩm nang bổ ích</li>
+                               <li><a href="contact.html">Trải Nghiệm khách hàng</a></li>
+                               <li><a href="contact.html">Chính sách</a></li>
+                               <li><a href="contact.html">Liên Hệ</a></li>
+              <li class="pe-3">  <button type="button" onclick="" class="user-login-responsive w-100">
+              <a href="login.html" class="text-white border-0 d-flex align-items-center gap-3 p-2"><i class='bx bx-user-circle'></i> Đăng Nhập</a>
+            </button></li>
+              <li class="user-account pe-3">
+            <button class="box-account-responsive border-0 d-flex align-items-center gap-3 p-2 w-100">
+                <img src="https://images.unsplash.com/photo-1503023345310-bd7c1de61c7d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8aHVtYW58ZW58MHx8MHx8&w=1000&q=80" alt=""> 
+              <span class="fs-5">Lê Sỹ Hải</span>
+            </button>
+                <ul class="box-fs-account-responsive">
+                  <li><a href="">Xem thông tin</a></li>
+                  <li><a href="">Sửa thông tin</a></li>
+                  <li><a href="">Đăng Xuất</a></li>
+                </ul></li>
+            </ul>
+          </div>
     </div>
     <script src="../src/Js/main.js"></script>
     <script

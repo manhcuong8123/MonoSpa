@@ -25,6 +25,7 @@
   left: -500px;
   transition: 0.4s;
   display: none;
+  z-index: 6;
 }
 
 .icon-menu-sub-responsive {
@@ -64,7 +65,7 @@
 }
 
 .box-fs-account {
-  right: 1%;
+  left: 0;
   top: 70%;
   overflow: hidden;
   height: 0;
@@ -219,8 +220,8 @@
   transition: 0.4s;
 }
 
-.click-menu-responsive-page {
-  height: 350px !important;
+.click-menu-responsive-dv {
+  height: 300px !important;
   transition: 0.3s;
 }
 
@@ -236,13 +237,111 @@
 /* End Menu sub reposive  */
 
 /* Menu Home Pc  */
+.box-navbar-top{
+  background-color: white;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 5;
+  
+}
+.user-login{
+  border: none;
+  background-color: #b69077;
+}
+.email-sdt div p{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.ul-box-categories-service{
+  width: 700px;
+  top: 33px;
+  left: -300px;
+  height: 0 !important;
+  transition: .3s;
+  border: none;
+}
+.categosies-dv:hover .ul-box-categories-service{
+  height: 500px !important;
+  transition: .3s;
+  border: 1px solid #b69077;
 
+}
+.ul-box-categories-service{
+  background-color: white;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  height: 500px;
+  overflow: scroll;
+  overflow: -moz-scrollbars-none;
+  -ms-overflow-style: none;
+}
+.box-ul .text-title-li span,.box-ul .text-title-li span a{
+  padding: 5px;
+  transition: .3s;
+  color: #b69077 !important;
+  font-weight: bold;
+}
+.box-ul .text-title-li:hover span{
+  background-color: #a47b60;
+  color: white !important;
+  transition: .3s;
+}
+.box-ul .text-title-li:hover span a{
+  color: white !important;
+}
+.box-ul  li{
+  height: auto !important;
+  padding: 10px 0 !important;
+}
+.box-ul  li  ul  li {
+  padding: 10px 0 !important;
+}
+.box-ul  li  ul  li a{
+  font-size: 15px !important;
+  transition: .3s;
+}
+.box-ul  li  ul  li a:hover{
+  color: #a47b60;
+  transition: .3s;
+}
+.ul-box-categories-service-respon{
+  height: 0 ;
+  overflow: hidden;
+  transition: .3s;
+  margin-left: -20px;
+  padding-right: 10px;
+    overflow: scroll;
+  overflow: -moz-scrollbars-none;
+  -ms-overflow-style: none;
+   transition: .3s;
+}
+.box-ul-respon  li {
+  padding: 10px;
+  cursor: pointer;
+}
+.box-ul-respon  li  ul{
+  height: 0;
+   overflow: scroll;
+  overflow: -moz-scrollbars-none;
+  -ms-overflow-style: none;
+  transition: .3s;
+}
+.box-ul-respon  li  ul  li a{
+   color: black !important;
+   margin-right: 10px !important;
+}
 .menu-oppentime .menu ul {
   list-style: none;
 }
-
+.showcate-list{
+  height: 200px !important;
+  transition: .3s;
+}
 .menu-oppentime .menu ul li {
   transition: 0.3s;
+  height: 30px;
 }
 
 .menu-oppentime .menu>ul>li:hover {
@@ -255,11 +354,15 @@
   color: #262626;
   font-family: 'Philosopher', sans-serif;
 }
-
+.menu-oppentime{
+  height: 40px;
+}
 .logo-menu-oppenTime .logo img {
   width: 120px;
 }
-
+.img-banner-homePage{
+  margin-top: 120px;
+}
 .banner-page {
   z-index: -1;
   height: 45%;
@@ -865,7 +968,9 @@ hr.dotted {
 .service-menu .title-service-menu span {
   font-size: 20px;
 }
-
+h1,h2,h3{
+color: #a47b60 !important;
+}
 .select-booking,
 .email-booking,
 .phone-booking,
@@ -1072,10 +1177,16 @@ hr.dotted {
   .text-question-click-left button {
     width: 30%;
   }
-
+.user-login-responsive
   .box-question-text-booking {
     margin-top: 10%;
     width: 100%;
+  }
+  .email-sdt{
+    display: none !important;
+  }
+  .user-login{
+    display: none !important;
   }
 }
 
@@ -1117,7 +1228,7 @@ footer .link-icon li {
 
 footer .link-icon a {
   font-size: 20px;
-  color: aliceblue;
+  color: #653a1d;
   transition: 1s;
 }
 
@@ -1128,7 +1239,8 @@ footer .link-icon a:hover {
 
 footer .text a {
   text-decoration: none;
-  color: #f7f5f2;
+  color: #321807;
+  
 }
 
 footer .text p {
@@ -1137,7 +1249,7 @@ footer .text p {
 
 footer h4 {
   font-size: 26px;
-  font-family: "Amiri", serif;
+
 }
 
 footer .box-input-email input {
@@ -1145,7 +1257,7 @@ footer .box-input-email input {
   background-color: #043542;
   outline: none;
   border-radius: 1px;
-  color: #ffffff;
+  color: #653a1d;
   padding-left: 10px !important;
   height: 40px;
   transition: 1s;
@@ -1179,6 +1291,9 @@ footer .box-input-email button {
 
   .oppenTime-box {
     display: none;
+  }
+  .box-navbar-top{
+   box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
   }
 }
 
@@ -1398,6 +1513,10 @@ footer .box-input-email button {
 .form-service{
   margin: 150px auto;
 }
+/*  blog */
+.form-service-blog{
+  margin-top: 0px;
+}
 .left-row-form-service{
   padding: 0px 20px;
 }
@@ -1414,6 +1533,12 @@ footer .box-input-email button {
 .right-row-form-service table {
   width: 60%;
   margin: 0 auto;
+}
+/* reposnive blog  */
+@media(max-width:768px){
+    .table-blog{
+      width: auto !important;
+    }
 }
 .right-row-form-service input{
   outline: none;
@@ -1641,14 +1766,22 @@ footer .box-input-email button {
   border-bottom: 1px solid #fff;
 }
 
-.btn-book {
+.btn-book ,.btn-ourSerVice{
   padding: 15px 25px;
   background-color: #053543;
   color: #fff;
   margin-top: 60px;
   transition: 0.2s linear;
 }
-
+.btn-ourSerVice{
+background-color: #a47b60 !important;
+transition: .3s;
+}
+.btn-ourSerVice:hover{
+background-color: #8b6952 !important;
+color: white !important;
+transition: .3s;
+}
 .btn-book:hover {
   background-color: #043542;
   transform: scale(0.9);
@@ -1725,6 +1858,7 @@ footer .box-input-email button {
 .modal-mockup {
   position: relative;
   display: none;
+  z-index: 6;
 }
 
 .content-modal-mockup {
@@ -2045,45 +2179,39 @@ span {
   margin: 10px 0px;
 }
 
-/* questions */
-.box-right .have-any-question {
-  background-image: url("../src/Image/set-of-manicure-pedicure-tools-and-accessories-stone-concrete-background-e1643215490787.jpg");
-  background-position: 0 77%;
-  background-repeat: no-repeat;
-  background-size: cover;
+/* them */
+.box-right .categories-title:hover{
+  color: brown;
+  cursor: pointer;
+}
+.box-right .categories-list li {
+  margin-top: 10px;
+}
+.box-right .categories-list a:hover {
+  color: brown;
+}
+.categories-list {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s ease-out;
+} 
 
-  z-index: -100;
+.categories-two:hover .categories-list {
+  max-height: 200px; 
+  transition: max-height 0.5s ease-in;
+  animation: fadeIn 0.5s;
 }
 
-.box-right .have-any-question-box {
-  background-color: rgba(35, 75, 88, 0.878);
-}
-
-.box-right .have-any-question-box h3 {
-  color: #fdf5e6;
-}
-
-.box-right .box-question-list a {
-  text-decoration: none;
-  color: #fff;
-}
-
-.box-right .box-question-list span i {
-  color: #fdf5e6;
-  margin: 0px 10px;
-  font-size: 19px;
-}
-
-.box-right .box-question-list li {
-  margin: 10px 0px;
-}
-
-@media (max-width: 768px) {
-  .box-right .have-any-question-box {
-    background-color: rgba(35, 75, 88, 0.878);
+ @keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
   }
 }
 
+/*  them */
 /*-------------SINGLE BLOG*/
 
 main .single-blog {
@@ -2092,21 +2220,6 @@ main .single-blog {
   width: 80%;
   height: 300px;
 }
-
-/*  single blog-item */
-
-/* main .single-blog h1,
-main .blog p {
-  font-family: "Amiri", sans-serif;
-}
-
-.single-blog-page h3 {
-  font-family: "Amiri", sans-serif;
-}
-
-.single-blog-page p {
-  font-family: "Amiri", sans-serif;
-} */
 
 /* content  */
 .content-single-blog-page img {
@@ -2404,8 +2517,9 @@ footer .background-image-footer {
   background-position: 0 77%;
   background-repeat: no-repeat;
   background-size: cover;
-  background-color: #333333;
+  background-color: #f2dfbc ;
   z-index: -1000;
+  opacity: 0.3;
 }
 
 footer .text {
@@ -2413,7 +2527,7 @@ footer .text {
 }
 
 footer .text .row-footer .col {
-  color: white !important;
+  color: #653a1d  !important;
 }
 
 footer .text .row-footer .col img {
@@ -2421,7 +2535,7 @@ footer .text .row-footer .col img {
 }
 
 footer .text .row-footer .col h4 {
-  color: white;
+  color: #653a1d;
 }
 
 footer .list-support li {
@@ -2434,7 +2548,7 @@ footer .link-icon li {
 
 footer .link-icon a {
   font-size: 20px;
-  color: white;
+  color: #653a1d;
   transition: 1s;
 }
 
@@ -2445,7 +2559,7 @@ footer .link-icon a:hover {
 
 footer .text a {
   text-decoration: none;
-  color: white;
+  color: #653a1d;
 }
 
 footer .text p {
@@ -2461,7 +2575,7 @@ footer .box-input-email input {
   background-color: transparent;
   outline: none;
   border-radius: 1px;
-  color: #043542;
+  color: #653a1d;
 
   padding: 3px;
   height: 40px;
@@ -2478,12 +2592,12 @@ footer .box-input-email button {
   border: none;
   height: 40px;
   padding: 5px;
-  color: #fff;
+  color: #ffffff;
   border: 2px solid #a47b60;
 }
 
 footer .coppyright {
-  color: aliceblue;
+  color: #653a1d;
   display: flex;
   justify-content: space-between;
 }
@@ -2498,7 +2612,7 @@ footer .coppyright {
 @media (max-width: 1200px) {}
 
 @media (max-width: 1000px) {
-  .logo-menu-oppenTime .menu-oppentime {
+   .menu-oppentime {
     display: none !important;
   }
 
@@ -2802,6 +2916,9 @@ main {
 
   .professional-team {
     margin-top: 70%;
+  }
+  .banner-page {
+    height: 60%;
   }
 }
 
